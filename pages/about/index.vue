@@ -4,33 +4,26 @@
       <div class="row pt-4">
         <div class="col-md-12">
           <h1>About</h1>
-          <img src="/wall-climbers.png" class="w-100 mb-4" alt="">
+          <!-- <img src="/wall-climbers.png" class="w-100 mb-4" alt=""> -->
           We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
           </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col-md-12 text-center pb-1 letter-spacing">
+          <h5 class="font-light">
+            <nuxt-link to="/about">History</nuxt-link>
+            <nuxt-link to="/about/leadership">Leadership</nuxt-link>
+            <nuxt-link to="/about/safety">Safety</nuxt-link>
+            <nuxt-link to="/about/careers">Careers</nuxt-link>
+          </h5>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <nuxt-child></nuxt-child>
     <!-- <div class="container">
-      <div class="row pt-4">
-        <div class="col-md-12">
-          <h1>About</h1>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <img src="/wall-climbers.png" class="w-100 mb-4" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
-        </div>
-      </div>
-    </div> -->
-    <div class="container">
       <div class="row pt-5">
         <div class="col-md-12">
           <h4>History</h4>
@@ -42,14 +35,14 @@
       <div class="row pt-4">
         <div class="col-md-12">
           <h4>Leadership</h4>
-          Paul M. Popa – President & CEO<br>
+          Paul M. Popa – <i>President & CEO</i><br>
           We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
           <br><br>
-          David M. Popa – Director of Field Operations<br>
+          David M. Popa – <i>Director of Field Operations</i><br>
           We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- <div class="container">
       <div class="row pt-4">
         <div class="col-md-12">
@@ -65,7 +58,7 @@
        </div>
       </div>
     </div> -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row pt-4">
         <div class="col-md-12">
           <h4>Safety</h4>
@@ -76,6 +69,19 @@
           Our company has invested resources, time, and money to ensure that every job site is safe for our employees, subcontractors and suppliers. This investment has paid off for our people and ultimately, our clients. PPCS maintains one of the lowest injury rates in the country – year after year – and has never experienced a loss of life or serious injury. </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-md-12">
+          <h4>Careers</h4>
+            We are always looking for talented and client-focused people. <br><br>
+            Please email your cover letter and resume to ppc@ppc-restore.com or send to: <br><br>
+
+            PPC&S, Inc.<br>
+            584 Castro Street, Suite 512<br>
+            San Francisco, CA 94114
+        </div>
+      </div>
+    </div> -->
   </div>
 </template>
 
@@ -85,7 +91,8 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  transition: 'fade'
 }
 </script>
 

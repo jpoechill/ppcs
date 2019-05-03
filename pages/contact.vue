@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-4 pb-5">
+      <div class="row pt-4 pb-4">
         <div class="col-md-12">
           <h1>Contact</h1>
           <img src="desk.png" class="w-100 mb-4" alt="">
@@ -57,7 +57,8 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  transition: 'fade'
 }
 </script>
 
