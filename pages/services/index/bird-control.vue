@@ -1,23 +1,38 @@
 <template>
   <div>
     <div class="container">
+      <div class="row pb-3">
+        <div class="col-md-12">
+          <nuxt-link to="/services">Back to Services</nuxt-link> | 
+          <nuxt-link to="/services/historic-restoration">View next service →</nuxt-link> 
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h5>Bird Control Systems</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, suscipit! Obcaecati minus quibusdam exercitationem laudantium dolorum. Animi impedit quos eum nostrum aut voluptatem voluptate aliquid qui sapiente ipsum. Veniam voluptate inventore vel, animi porro, et temporibus ex quae accusantium cumque maiores error ratione aut quidem ut similique ipsa vitae facilis maxime? Quia deleniti ducimus neque voluptates ratione magnam ab placeat delectus nam, eos doloremque ex sed cum amet vero illum, nobis similique sequi quod iste ut alias eius exercitationem necessitatibus? Provident ad perspiciatis assumenda aut velit, ab eum quidem? Earum quibusdam, eius illo iure nemo accusantium corrupti iusto esse veniam?
+            The droppings and nesting of pest birds cost individuals and businesses an estimated millions of dollars a year in clean-up expense, repairs, and damaged equipment. The corrosive effects of bird droppings can cause irreversible damage defacing rooftops, walkways, walls, vehicles, mechanical equipment, etc.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima blanditiis omnis consectetur neque, dolor doloremque iste quae praesentium dignissimos consequuntur possimus odio nostrum, similique enim id, saepe itaque incidunt autem inventore quibusdam vel illo atque. Laudantium tempore eligendi, impedit eius aliquam veritatis asperiores qui accusamus quos natus explicabo itaque sapiente voluptatibus est? Modi ducimus, a eius quasi sit accusantium totam quaerat eaque perferendis consequuntur provident hic, saepe corrupti porro, voluptatibus quae! Non perferendis fuga ut esse similique, sit vitae voluptas voluptates voluptatem adipisci optio ad laboriosam possimus cumque dignissimos exercitationem iste enim molestiae minus assumenda veritatis ullam accusamus laudantium. Ipsam, reiciendis commodi deleniti magni incidunt sit rerum illo consectetur quam quis ex qui unde, explicabo dolores vero facere minus reprehenderit labore omnis officia soluta voluptates rem quod! Tenetur dicta optio quas voluptate aspernatur labore, expedita harum similique, sunt ab adipisci neque deleniti asperiores assumenda. Sed tempore iusto quos nam? Rerum!
+            Bird droppings quickly turn to salt and ammonia and after it rains, electrochemical reactions speed up the rusting and corrosion processes. These acidic droppings eat away at paint, concrete, and metal, which eventually leads to structural failure. Over time, the droppings of pest birds can result in an expensive renovation of the structure and façade of your building!
           </p>
-          </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-md-12">
-          <nuxt-link to="/services">Back to Services</nuxt-link> | 
-          <nuxt-link to="/services/historic-restoration">View next service →</nuxt-link> 
+          <p>
+            It is widely believed that corrosion caused by bird droppings was instrumental in causing metal fatigue leading to the collapse of the Madison, Wisconsin Bridge. Birds are known to carry over sixty transmissible diseases – some potentially fatal. Without properly installed and effective bird control systems, your building can become a potential hazard to your workers, customers, and anyone else who comes in contact with your building.
+          </p>
+          <p>
+            At PPC&S, the leading source for high quality building restoration and cleaning, our experts understand that you need effective bird control systems for your building. Our bird management and bird control systems are designed to eliminate the threat of these pest birds causing irreparable and often expensive damage to your building. Our efficient and humane bird management systems protect your property from unnecessary damage and decreasing liability.
+          </p>
+          <p>
+            When we engineered our bird control systems, our experts designed it with the intent for it to be effective while also harmlessly and humanely deterring birds from roosting and nesting. We also made sure our bird control systems are specifically designed to be relatively unnoticeable, preserving the structure and maintaining the architectural integrity of the property.
+          </p>
+          <p>
+            If you are tired of having pest birds defecate and destroy your beautiful building, trust in the professional at PPC&S. We strive to install our premium quality bird control systems as quick as possible so that your building stays clean.
+          </p>
+          <p>
+            We also provide top notch building restoration and cleaning, commercial window washing, building waterproofing services, historic building restoration, and property consulting services.
+          </p>
         </div>
       </div>
     </div>

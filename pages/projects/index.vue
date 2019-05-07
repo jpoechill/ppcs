@@ -12,9 +12,7 @@
       <div class="row pt-5">
         <div class="col-md-12 text-center pb-1 letter-spacing">
           <h5 class="font-light">
-            <nuxt-link to="">Featured Work</nuxt-link>
-            <nuxt-link to="">Recent Work</nuxt-link>
-            <nuxt-link to="">All Work</nuxt-link>
+            <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
           </h5>
           <hr>
         </div>
@@ -23,13 +21,45 @@
     <nuxt-child></nuxt-child>
   </div>
 </template>
-
+            <nuxt-link to="/projects"></nuxt-link>
+            <nuxt-link to="/projects/recent">Recent Work</nuxt-link>
+            <nuxt-link to="/projects/all">All Work</nuxt-link>
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  data() {
+    return {
+      links: [
+        {
+          title: 'Featured Work',
+          name: 'featured',
+          url: '/projects',
+          isActive: true
+        },
+        {
+          title: 'Recent Work',
+          name: 'recent',
+          url: '/projects/recent',
+          isActive: false
+        },
+        {
+          title: 'All Work',
+          name: 'all',
+          url: '/projects/all',
+          isActive: false
+        },
+      ]
+    }
+  },
+  methods: {
+    handleClick(linkName) {
+      this.links.forEach(function(link) {
+        if (link.name === linkName) {
+          link.isActive = true
+        } else {
+          link.isActive = false
+        }
+      })
+    }
   },
   transition: 'fade'
 }

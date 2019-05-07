@@ -13,10 +13,7 @@
       <div class="row pt-5">
         <div class="col-md-12 text-center pb-1 letter-spacing">
           <h5 class="font-light">
-            <nuxt-link to="/about">History</nuxt-link>
-            <nuxt-link to="/about/leadership">Leadership</nuxt-link>
-            <nuxt-link to="/about/safety">Safety</nuxt-link>
-            <nuxt-link to="/about/careers">Careers</nuxt-link>
+            <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
           </h5>
           <hr>
         </div>
@@ -86,11 +83,47 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  data() {
+    return {
+      links: [
+        {
+          title: 'History',
+          name: 'history',
+          url: '/about',
+          isActive: true
+        },
+        {
+          title: 'Leadership',
+          name: 'leadership',
+          url: '/about/leadership',
+          isActive: false
+        },
+        {
+          title: 'Safety',
+          name: 'safety',
+          url: '/about/safety',
+          isActive: false
+        },
+        {
+          title: 'Careers',
+          name: 'careers',
+          url: '/about/careers',
+          isActive: false
+        }
+      ]
+    }
+  },
+  methods: {
+    handleClick(linkName) {
+      this.links.forEach(function(link) {
+        if (link.name === linkName) {
+          link.isActive = true
+        } else {
+          link.isActive = false
+        }
+      })
+    }
   },
   transition: 'fade'
 }

@@ -24,7 +24,7 @@
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/consulting">
-              <h5>Consulting & Testing</h5>
+              <h5>Project Consulting & Testing</h5>
             </nuxt-link>
             We pride ourselves in offering a comprehensive list of building preservation services. It includes property consulting services that involve a thorough evaluation of your desired project. We determine the best solution with you and once we can establish the most effective approach, we begin the process.
           </div>
@@ -38,7 +38,7 @@
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/cleaning">
-              <h5>Building Cleaning</h5>
+              <h5>Building Restoration & Cleaning</h5>
             </nuxt-link>
             Our building cleaning consists of cleaning up years of waste and pollutants that build up on GRFC panels, stone, brick, concrete, aluminum, and other materials. Our building preservation services are guaranteed to make your building or property look beautiful again!
           </div>
@@ -62,7 +62,7 @@
             <nuxt-link to="/services/glass-restoration">
               <h5>Glass Restoration & Cleaning</h5>
             </nuxt-link>
-            PPC&S also provides a thorough and high quality commercial window washing service and glass restoration for commercial buildings. We also have the technology and skills to remove graffiti, scratches, stains, and other damage.
+            We provide a thorough and high quality window washing service and glass restoration for commercial buildings. We also have the technology and skills to remove graffiti, scratches, stains, and other damage.
           </div>
         </div>
         <div class="col-md-4 mb-5">
@@ -97,10 +97,10 @@ export default {
 
 <style>
 a h5 {
-  color: #2a90fd;
+  color: #333;
 }
 
 a h5:hover {
-  color: #2a90fd;
+  color: #0056b3;
 }
 </style>

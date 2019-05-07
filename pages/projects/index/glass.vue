@@ -2,6 +2,13 @@
   <div>
     <div class="container">
       <div class="row">
+        <div class="col-md-12 pb-3">
+          <nuxt-link to="/">
+            <h6>Glass Restoration & Cleaning (12)</h6> 
+          </nuxt-link>
+        </div>
+      </div>
+      <div class="row">
         <div v-for="project in projects" :key="project.name" class="col-md-4 mb-4">
           <div class="w-100 bg-light pt-5 pb-5">
             <nuxt-link to="/projects/sitel">
@@ -14,11 +21,6 @@
             </nuxt-link>
             <p>
               {{ project.description }}
-            </p>
-          </div>
-          <div>
-            <p>
-              #{{ project.reference }}
             </p>
           </div>
         </div>

@@ -7,10 +7,7 @@
         </div>
         <div class="col-md-6 word-spacing text-right letter-spacing">
           <h5>
-          <nuxt-link to="/about">About</nuxt-link>
-          <nuxt-link to="/services">Services</nuxt-link>
-          <nuxt-link to="/projects">Projects</nuxt-link>
-          <nuxt-link to="/contact">Contact</nuxt-link>   
+            <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
           </h5>
         </div>
       </div>
@@ -29,6 +26,61 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      links: [
+        {
+          title: 'About',
+          name: 'about',
+          url: '/about',
+          isActive: false
+        },
+        {
+          title: 'Services',
+          name: 'services',
+          url: '/services',
+          isActive: false
+        },
+        {
+          title: 'Projects',
+          name: 'projects',
+          url: '/projects',
+          isActive: false
+        },
+        {
+          title: 'Contact',
+          name: 'contact',
+          url: '/contact',
+          isActive: false
+        },
+      ]
+    }
+  },
+  mounted () {
+    let currPath = this.$route.path.split('/')[1]
+
+    this.links.forEach(function (link) {
+      if (link.name === currPath) {
+        link.isActive = true
+      }
+    })
+  },
+  methods: {
+    handleClick(linkName) {
+      this.links.forEach(function(link) {
+        if (link.name === linkName) {
+          link.isActive = true
+        } else {
+          link.isActive = false
+        }
+      })
+    }
+  },
+}
+</script>
+
 <style>
 .word-spacing {
   word-spacing: 0px;
@@ -41,6 +93,10 @@ body, html {
 
 .letter-spacing {
   letter-spacing: .02rem;
+}
+
+.active {
+  color: #0056b3;
 }
 
 a {
