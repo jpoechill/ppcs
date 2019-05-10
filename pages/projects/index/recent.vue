@@ -13,7 +13,7 @@
               <h6>{{ project.title }}</h6>
             </nuxt-link>
             <p>
-              {{ project.shortDescription }}
+              {{ project.description }}
             </p>
           </div>
         </div>
@@ -28,7 +28,7 @@ import { mapMutations } from 'vuex'
 export default {
   computed: {
     recentProjects () {
-      return this.$store.state.allWork
+      return this.$store.state.recentProjects
     },
   },
   data () {

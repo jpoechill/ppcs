@@ -111,7 +111,7 @@ body, html {
 }
 
 a {
-  color: #999;
+  color: #777;
   font-weight: 400;
 }
 
