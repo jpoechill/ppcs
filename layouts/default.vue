@@ -2,13 +2,15 @@
   <div>
     <div class="container pt-4">
       <div class="row">
-        <div class="col-md-6">
-          <nuxt-link to="/"><img src="/logo_updated.png" class="w-25" alt=""></nuxt-link>
+        <div class="col-md-4 d-flex align-items-middle justify-content-start">
+          <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-50" alt=""></nuxt-link>
         </div>
-        <div class="col-md-6 word-spacing text-right letter-spacing">
+        <div class="col-md-8 word-spacing text-right letter-spacing pt-1">
+          <!-- <div class="d-flex align-items-middle justify-content-end"> -->
           <h5>
             <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
           </h5>
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -55,6 +57,15 @@ export default {
           url: '/contact',
           isActive: false
         },
+      ]
+    }
+  },
+  head () {
+    return {
+      title: 'PPC&S | Professional Property Consultants & Services',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: 'My custom description' }
       ]
     }
   },

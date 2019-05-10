@@ -3,22 +3,24 @@
     <div class="container">
       <div class="row pt-4">
         <div class="col-md-12">
-          <h1>About</h1>
-          We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
-          </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-md-12 text-center pb-1 letter-spacing">
-          <h5 class="font-light">
-            <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
-          </h5>
-          <hr>
+          <p>
+            Project Detail Page
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus veniam perspiciatis asperiores labore sequi. Debitis, quod pariatur cumque nobis incidunt esse, saepe ullam in voluptate nisi iste quis. Esse quasi et corrupti facere dolorem nam voluptates culpa dicta, molestiae, quis vitae maiores explicabo repudiandae molestias sed eaque. Nisi perferendis omnis quo cupiditate reprehenderit dolore tempore perspiciatis optio dignissimos sint, hic commodi animi, cumque magnam beatae et? Quidem illo eum, nemo debitis rem praesentium amet maxime, mollitia quod et blanditiis laudantium nisi quisquam iure magni corporis veritatis modi perspiciatis, esse earum dignissimos maiores rerum recusandae. Accusamus odio nam accusantium tenetur suscipit laudantium nemo? Aut iste similique velit non modi adipisci in itaque doloremque laudantium neque inventore quo eos cupiditate fuga, atque nesciunt ullam illum excepturi nisi perferendis error maxime doloribus? Ratione, amet et! Voluptas vitae velit earum, harum magni numquam nulla assumenda magnam corporis consectetur architecto in nam odio mollitia ratione nihil accusamus? Aut obcaecati quaerat porro minima veniam maxime, eveniet dolore doloribus enim! Ipsam minus cumque sequi aspernatur et reprehenderit labore fugit aut? Delectus facilis dolores distinctio, nam sint similique sit excepturi sequi neque praesentium deserunt voluptatibus. A, labore facilis laboriosam minus sunt doloribus consequatur porro iusto autem architecto?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus veniam perspiciatis asperiores labore sequi. Debitis, quod pariatur cumque nobis incidunt esse, saepe ullam in voluptate nisi iste quis. Esse quasi et corrupti facere dolorem nam voluptates culpa dicta, molestiae, quis vitae maiores explicabo repudiandae molestias sed eaque. Nisi perferendis omnis quo cupiditate reprehenderit dolore tempore perspiciatis optio dignissimos sint, hic commodi animi, cumque magnam beatae et? Quidem illo eum, nemo debitis rem praesentium amet maxime, mollitia quod et blanditiis laudantium nisi quisquam iure magni corporis veritatis modi perspiciatis, esse earum dignissimos maiores rerum recusandae. Accusamus odio nam accusantium tenetur suscipit laudantium nemo? Aut iste similique velit non modi adipisci in itaque doloremque laudantium neque inventore quo eos cupiditate fuga, atque nesciunt ullam illum excepturi nisi perferendis error maxime doloribus? Ratione, amet et! Voluptas vitae velit earum, harum magni numquam nulla assumenda magnam corporis consectetur architecto in nam odio mollitia ratione nihil accusamus? Aut obcaecati quaerat porro minima veniam maxime, eveniet dolore doloribus enim! Ipsam minus cumque sequi aspernatur et reprehenderit labore fugit aut? Delectus facilis dolores distinctio, nam sint similique sit excepturi sequi neque praesentium deserunt voluptatibus. A, labore facilis laboriosam minus sunt doloribus consequatur porro iusto autem architecto?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus veniam perspiciatis asperiores labore sequi. Debitis, quod pariatur cumque nobis incidunt esse, saepe ullam in voluptate nisi iste quis. Esse quasi et corrupti facere dolorem nam voluptates culpa dicta, molestiae, quis vitae maiores explicabo repudiandae molestias sed eaque. Nisi perferendis omnis quo cupiditate reprehenderit dolore tempore perspiciatis optio dignissimos sint, hic commodi animi, cumque magnam beatae et? Quidem illo eum, nemo debitis rem praesentium amet maxime, mollitia quod et blanditiis laudantium nisi quisquam iure magni corporis veritatis modi perspiciatis, esse earum dignissimos maiores rerum recusandae. Accusamus odio nam accusantium tenetur suscipit laudantium nemo? Aut iste similique velit non modi adipisci in itaque doloremque laudantium neque inventore quo eos cupiditate fuga, atque nesciunt ullam illum excepturi nisi perferendis error maxime doloribus? Ratione, amet et! Voluptas vitae velit earum, harum magni numquam nulla assumenda magnam corporis consectetur architecto in nam odio mollitia ratione nihil accusamus? Aut obcaecati quaerat porro minima veniam maxime, eveniet dolore doloribus enim! Ipsam minus cumque sequi aspernatur et reprehenderit labore fugit aut? Delectus facilis dolores distinctio, nam sint similique sit excepturi sequi neque praesentium deserunt voluptatibus. A, labore facilis laboriosam minus sunt doloribus consequatur porro iusto autem architecto?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus veniam perspiciatis asperiores labore sequi. Debitis, quod pariatur cumque nobis incidunt esse, saepe ullam in voluptate nisi iste quis. Esse quasi et corrupti facere dolorem nam voluptates culpa dicta, molestiae, quis vitae maiores explicabo repudiandae molestias sed eaque. Nisi perferendis omnis quo cupiditate reprehenderit dolore tempore perspiciatis optio dignissimos sint, hic commodi animi, cumque magnam beatae et? Quidem illo eum, nemo debitis rem praesentium amet maxime, mollitia quod et blanditiis laudantium nisi quisquam iure magni corporis veritatis modi perspiciatis, esse earum dignissimos maiores rerum recusandae. Accusamus odio nam accusantium tenetur suscipit laudantium nemo? Aut iste similique velit non modi adipisci in itaque doloremque laudantium neque inventore quo eos cupiditate fuga, atque nesciunt ullam illum excepturi nisi perferendis error maxime doloribus? Ratione, amet et! Voluptas vitae velit earum, harum magni numquam nulla assumenda magnam corporis consectetur architecto in nam odio mollitia ratione nihil accusamus? Aut obcaecati quaerat porro minima veniam maxime, eveniet dolore doloribus enim! Ipsam minus cumque sequi aspernatur et reprehenderit labore fugit aut? Delectus facilis dolores distinctio, nam sint similique sit excepturi sequi neque praesentium deserunt voluptatibus. A, labore facilis laboriosam minus sunt doloribus consequatur porro iusto autem architecto?
+          </p>
         </div>
       </div>
     </div>
-    <nuxt-child></nuxt-child>
   </div>
 </template>
 

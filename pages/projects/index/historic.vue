@@ -3,9 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 pb-3">
-          <nuxt-link to="/">
-            <h6>Historic Restoration (12)</h6> 
-          </nuxt-link>
+          <h6>
+            <nuxt-link to="/">Historic Restoration (12)</nuxt-link> | All Work</h6> 
         </div>
       </div>
       <div class="row">
@@ -30,76 +29,9 @@
 </template>
 
 <script>
-
 export default {
   data () {
-    return {
-      projects: [
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-      ]
-    }
+    return {}
   },
   transition: 'fade'
 }

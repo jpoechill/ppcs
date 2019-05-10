@@ -2,8 +2,34 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <img src="covers/vegas.png" class="w-100 pt-3" alt="">
+        <div class="col-md-12 pt-3">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="/covers/miami.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/covers/houston.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="/covers/vegas.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- <img src="covers/vegas.png" class="w-100 pt-3" alt=""> -->
         </div>
       </div>
     </div>
@@ -17,12 +43,19 @@
     </div>
     <div class="container">
       <div class="row pt-5">
+        <div class="col-md-12">
+          <h5>Services</h5>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-md-4 mb-5">
           <div class="w-100 bg-light pt-5 pb-5">
             <img src="" class="pt-5 pb-5" alt="">
           </div>
           <div class="w-100 pt-3">
-            <h5>Historic Restoration</h5>
+            <nuxt-link to="/services/historic-restoration">
+              <h5>Historic Restoration</h5>
+            </nuxt-link>
             Our historic building restoration services allow important and historically valuable buildings and property to be restored to original or close to original condition.
           </div>
         </div>
@@ -31,7 +64,9 @@
             <img src="" class="pt-5 pb-5" alt="">
           </div>
           <div class="w-100 pt-3">
-            <h5>Consulting & Testing</h5>
+            <nuxt-link to="/services/consulting">
+              <h5>Consulting & Testing</h5>
+            </nuxt-link>
             We pride ourselves in offering a comprehensive list of building preservation services.
           </div>
         </div>
@@ -49,7 +84,9 @@
             <img src="" class="pt-5 pb-5" alt="">
           </div>
           <div class="w-100 pt-3">
-            <h5>Sealants, Coatings, & Weatherproofing</h5>
+            <nuxt-link to="/services/weatherproofing">
+              <h5>Sealants, Coatings, & Weatherproofing</h5>
+            </nuxt-link>
             Constant exposure to rain, snow, and other weather conditions can cause decay to the exterior of buildings.
           </div>
         </div>
@@ -58,7 +95,9 @@
             <img src="" class="pt-5 pb-5" alt="">
           </div>
           <div class="w-100 pt-3">
-            <h5>Glass Restoration & Cleaning</h5>
+            <nuxt-link to="/services/glass-restoration">
+              <h5>Glass Restoration & Cleaning</h5>
+            </nuxt-link>
             PPC&S also provides a thorough and high quality commercial window washing service and glass restoration for commercial buildings.
           </div>
         </div>
@@ -67,7 +106,9 @@
             <img src="" class="pt-5 pb-5" alt="">
           </div>
           <div class="w-100 pt-3">
+            <nuxt-link to="/services/bird-control">
             <h5>Bird Control Systems</h5>
+            </nuxt-link>
            Bird droppings can carry numerous diseases that can be transmitted to people who come in contact with the building or structure.
           </div>
         </div>
@@ -75,17 +116,42 @@
     </div>
     <div class="container">
       <div class="row pt-4">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <h5>Recent Projects</h5>
-          Our client list is proof positive and the most significant testimony to who we are, what we do, and how well we do it.
+        </div>
+        <div class="col-md-6 text-right">
+          View All
+        </div>
+      </div>
+      <div class="row">
+        <div v-for="project in projects" :key="project.name" class="col-md-4 mb-4">
+          <div class="w-100 bg-light">
+            <nuxt-link to="/projects/sitel">
+              <img :src="project.thumbnail" class="w-100" alt="">
+            </nuxt-link>
+          </div>
+          <div class="w-100 pt-2">
+            <nuxt-link :to="project.url">
+              <h6>{{ project.title }}</h6>
+            </nuxt-link>
+            <p>
+              {{ project.description }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row pt-4">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <h5>Client List</h5>
-          Our client list is proof positive and the most significant testimony to who we are, what we do, and how well we do it.
+        </div>
+        <div class="col-md-6 text-right">
+          <nuxt-link to="/clients">View All</nuxt-link>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
           <img src="construction-logos.png" class="w-100" alt="">
         </div>
       </div>
@@ -94,11 +160,36 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  data () {
+    return {
+      projects: [
+        {
+          title: 'Sitel Corporation – San Angelo, TX',
+          name: 'sitel-san-angelo',
+          description: 'The Sitel Building had gone through decades of harsh weather.',
+          url: '',
+          thumbnail: '/_thumbnails/hyatt-regency-sculpture.png',
+          reference: 'HistoricRestoration'
+        },
+        {
+          title: 'Sitel Corporation – San Angelo, TX',
+          name: 'sitel-san-angelo',
+          description: 'The Sitel Building had gone through decades of harsh weather.',
+          url: '',
+          thumbnail: '/_thumbnails/los-rios.png',
+          reference: 'HistoricRestoration'
+        },
+        {
+          title: 'Sitel Corporation – San Angelo, TX',
+          name: 'sitel-san-angelo',
+          description: 'The Sitel Building had gone through decades of harsh weather.',
+          url: '',
+          thumbnail: '/_thumbnails/hyatt-regency-bird-01.png',
+          reference: 'HistoricRestoration'
+        },
+      ]
+    }
   },
   transition: 'fade'
 }

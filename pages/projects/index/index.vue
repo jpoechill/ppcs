@@ -2,10 +2,10 @@
   <div>
     <div class="container">
       <div class="row">
-        <div v-for="project in projects" :key="project.name" class="col-md-4 mb-4">
-          <div class="w-100 bg-light pt-5 pb-5">
+        <div v-for="project in featuredProjects" :key="project.name" class="col-md-4 mb-4">
+          <div class="w-100 bg-light">
             <nuxt-link to="/projects/sitel">
-              <img src="" class="pt-5 pb-5" alt="">
+              <img :src="project.thumbnail" class="w-100" alt="">
             </nuxt-link>
           </div>
           <div class="w-100 pt-2">
@@ -16,11 +16,6 @@
               {{ project.description }}
             </p>
           </div>
-          <div>
-            <p>
-              #{{ project.reference }}
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -28,75 +23,16 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 
 export default {
+  computed: {
+    featuredProjects () {
+      return this.$store.state.featuredProjects
+    },
+  },
   data () {
     return {
-      projects: [
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-      ]
     }
   },
   transition: 'fade'
