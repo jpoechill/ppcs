@@ -5,15 +5,24 @@
         <div class="col-md-4 d-flex align-items-middle justify-content-start">
           <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-50" alt=""></nuxt-link>
         </div>
-        <div class="col-md-8 word-spacing text-right letter-spacing pt-1">
-          <!-- <div class="d-flex align-items-middle justify-content-end"> -->
+        <div class="col-md-8 text-right pt-1">
           <h5>
             <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
           </h5>
-          <!-- </div> -->
         </div>
       </div>
     </div>
+    <transition name="fade" appear>
+      <div v-if="currIndex !== -1" class="container">
+        <div class="row pt-4">
+          <div class="col-md-12">
+            <nuxt-link to="/projects">Back to Projects</nuxt-link> | 
+            <nuxt-link :to="'/projects/' + listProjects[prevIndex].name">View Previous</nuxt-link> | 
+            <nuxt-link :to="'/projects/' + listProjects[nextIndex].name">View Next →</nuxt-link> 
+          </div>
+        </div>
+      </div>
+    </transition>
     <nuxt />
     <div class="container pt-5 pb-4">
       <div class="row">
@@ -29,7 +38,18 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
+  head () {
+    return {
+      title: 'PPC&S | Professional Property Consultants & Services',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: 'My custom description' }
+      ]
+    }
+  },
   data() {
     return {
       links: [
@@ -60,13 +80,36 @@ export default {
       ]
     }
   },
-  head () {
-    return {
-      title: 'PPC&S | Professional Property Consultants & Services',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'My custom description' }
-      ]
+  computed: {
+    nextIndex() {
+      if (this.currIndex === (this.listProjects.length-1)) {
+        return 0
+      } else {
+        return this.currIndex + 1
+      }
+    },
+    prevIndex() {
+      if (this.currIndex === 0) {
+        return this.listProjects.length-1
+      } else {
+        return this.currIndex - 1
+      }
+    },
+    currIndex() {
+      return this.$store.state.allWork.map(function (project) {
+          return project.name
+        }).indexOf(this.$route.params.projectName)
+    },
+    currProject () {
+      let self = this 
+
+      return this.$store.state.allWork.filter(function (project, index) {
+        console.log('index:' + index)
+        return project.name === self.$route.params.projectName
+      })[0]
+    },
+    listProjects () {
+      return this.$store.state.allWork
     }
   },
   mounted () {
@@ -93,10 +136,6 @@ export default {
 </script>
 
 <style>
-.word-spacing {
-  word-spacing: 0px;
-}
-
 body, html {
   font-size: 18px;
 }

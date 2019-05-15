@@ -142,7 +142,7 @@
           View All
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div v-for="project in projects" :key="project.name" class="col-md-4 mb-4">
           <div class="w-100 bg-light">
             <nuxt-link to="/projects/sitel">
@@ -158,7 +158,7 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="container">
       <div class="row pt-4">

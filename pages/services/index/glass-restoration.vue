@@ -1,14 +1,6 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pb-3">
-        <div class="col-md-12">
-          <nuxt-link to="/services">Back to Services</nuxt-link> | 
-          <nuxt-link to="/services/bird-control">View next service →</nuxt-link> 
-        </div>
-      </div>
-    </div>
-    <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h5>Glass Restoration & Cleaning</h5>

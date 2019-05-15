@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row pt-4 pb-4">
         <div class="col-md-12">
-          <h1>Contact</h1>
-          <img src="desk.png" class="w-100 mb-4" alt="">
+          <h3>Contact</h3>
+          <img src="desk.png" class="w-100 mb-3" alt="">
           We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
         </div>
       </div>

@@ -2,10 +2,16 @@
   <div>
     <div class="container">
       <div class="row">
-        <div v-for="project in featuredProjects" :key="project.name" class="col-md-4 mb-4">
-          <div class="w-100 bg-light">
-            <nuxt-link to="/projects/sitel">
-              <img :src="project.thumbnail" class="w-100" alt="">
+        <div v-for="(project, index) in projects" :key="index" class="col-md-4 mb-4">
+          <div class="position-relative">
+            <nuxt-link :to="project.url">
+              <div class="position-absolute w-100 bg-custom h-100">
+              </div>
+              <div>
+                <div class="w-100 bg-light">
+                  <img :src="project.thumbnail" class="w-100" alt="">
+                </div>
+              </div>
             </nuxt-link>
           </div>
           <div class="w-100 pt-2">
@@ -13,7 +19,10 @@
               <h6>{{ project.title }}</h6>
             </nuxt-link>
             <p>
-              {{ project.description }}
+              {{ project.shortDescription }}
+            </p>
+            <p>
+              {{ project.type[0] }}
             </p>
           </div>
         </div>
@@ -27,9 +36,11 @@ import { mapMutations } from 'vuex'
 
 export default {
   computed: {
-    featuredProjects () {
-      return this.$store.state.featuredProjects
-    },
+    projects () {
+      return this.$store.state.allWork.filter(function (project) {
+        return project.featured
+      })
+    }
   },
   data () {
     return {
@@ -39,7 +50,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .font-light {
   font-weight: 500;
 }
@@ -50,5 +61,16 @@ a h6 {
 
 a h6:hover {
   color: #0056b3;
+}
+
+.bg-custom {
+  background-color: #111;
+  opacity: .4;
+  transition: 0.4s ease;
+}
+
+.bg-custom:hover {
+  cursor: pointer;
+  opacity: .1;
 }
 </style>

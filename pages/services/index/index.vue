@@ -4,13 +4,10 @@
       <div class="row pt-4">
         <div class="col-md-4 mb-4">
           <div class="w-100 bg-light">
-            <img src="/services/historic.png" class="w-100" alt="">
-          </div>
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
             <nuxt-link to="/services/historic-restoration">
-              <img src="" class="pt-5 pb-5" alt="">
+              <img src="/services/historic.png" class="w-100" alt="">
             </nuxt-link>
-          </div> -->
+          </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/historic-restoration">
               <h5>Historic Restoration</h5>
@@ -20,11 +17,10 @@
         </div>
         <div class="col-md-4 mb-5">
           <div class="w-100 bg-light">
-            <img src="/services/consulting.png" class="w-100" alt="">
+            <nuxt-link to="/services/consulting">
+              <img src="/services/consulting.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 pt-3">
             <nuxt-link to="/services/consulting">
               <h5>Project Consulting & Testing</h5>
@@ -34,11 +30,10 @@
         </div>
         <div class="col-md-4 mb-5">
           <div class="w-100 bg-light">
-            <img src="/services/building.png" class="w-100" alt="">
+            <nuxt-link to="/services/cleaning">
+              <img src="/services/building.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 pt-3">
             <nuxt-link to="/services/cleaning">
               <h5>Building Restoration & Cleaning</h5>
@@ -47,11 +42,10 @@
           </div>
         </div>
         <div class="col-md-4 mb-5">
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 bg-light">
-            <img src="/services/weatherproofing.png" class="w-100" alt="">
+            <nuxt-link to="/services/weatherproofing">
+              <img src="/services/weatherproofing.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/weatherproofing">
@@ -61,11 +55,10 @@
           </div>
         </div>
         <div class="col-md-4 mb-5">
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 bg-light">
-            <img src="/services/glass.png" class="w-100" alt="">
+            <nuxt-link to="/services/glass-restoration">
+              <img src="/services/glass.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/glass-restoration">
@@ -76,7 +69,9 @@
         </div>
         <div class="col-md-4 mb-5">
           <div class="w-100 bg-light">
-            <img src="/services/birdnetting.png" class="w-100" alt="">
+            <nuxt-link to="/services/bird-control">
+              <img src="/services/birdnetting.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/bird-control">
@@ -94,6 +89,11 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
+  data() {
+    return {
+      showNav: false
+    }
+  },
   components: {
     Logo
   },
