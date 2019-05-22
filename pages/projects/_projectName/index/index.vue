@@ -34,6 +34,10 @@
           <h6>Location</h6>
           {{ currProject.location }}
         </div>
+        <div class="col-md-4">
+          <h6>Project Type</h6>
+          {{ currProject.reference }}
+        </div>
       </div>
     </div>
   </div>

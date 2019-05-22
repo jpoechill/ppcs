@@ -193,7 +193,17 @@ export default {
       return this.$store.state.allWork.filter(function (project) {
         return project.recent
       }).slice(0, 3)
+    },
+    allWork () {
+      return this.$store.state.allWork.map(function (item) {
+        return item.name
+      })
     }
+  },
+  mounted() {
+    console.log(
+      this.allWork
+    )
   },
   data () {
     return {}

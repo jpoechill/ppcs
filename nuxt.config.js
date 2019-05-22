@@ -4,6 +4,49 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
 
+  generate: {
+    routes: [
+      "/projects/sitel-san-angelo",
+      "/projects/hamilton-palo-alto",
+      "/projects/panama-stanford",
+      "/projects/hilton-waco",
+      "/projects/sculpture-hyatt",
+      "/projects/samsung-mountain-view",
+      "/projects/harley-davidson-stafford",
+      "/projects/anti-graff-ucsf",
+      "/projects/hyatt-san-francisco",
+      "/projects/true-wind-sf",
+      "/projects/oyster-point-ssf",
+      "/projects/childrens-hospital-slc",
+      "/projects/stanford-palo-alto",
+      "/projects/pge-san-luis",
+      "/projects/hyatt-sf-balcony",
+      "/projects/wells-houston",
+      "/projects/one-hawthorne-sf",
+      "/projects/1200-california",
+      "/projects/wynot-towers-ks",
+      "/projects/st-pauls-oakland",
+      "/projects/mcdills-tampa",
+      "/projects/los-rios-cc",
+      "/projects/mozart-dev",
+      "/projects/lv-cc",
+      "/projects/us-customs-house",
+      "/projects/rr-square-san-luis",
+      "/projects/david-cowens-drive",
+      "/projects/juhl-condo-lv",
+      "/projects/hyatt-monthly-sf",
+      "/projects/genentech-vacaville",
+      "/projects/devry-uni-fremont",
+      "/projects/944-market-sf",
+      "/projects/benicia-martinez",
+      "/projects/alcatraz-sf",
+      "/projects/anheuser-houston",
+      "/projects/central-oakland",
+      "/projects/boto-sf",
+      "/projects/bishop-ranch-san-ramon",
+    ]
+  },
+
   /*
   ** Headers of the page
   */
