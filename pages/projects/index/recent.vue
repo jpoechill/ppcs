@@ -5,7 +5,7 @@
         <div v-for="(project, index) in projects" :key="index" class="col-md-4 mb-4">
           <div class="position-relative">
             <nuxt-link :to="project.url">
-              <div class="position-absolute w-100 bg-custom h-100">
+              <div class="position-absolute w-100 bg-overlay h-100">
               </div>
               <div>
                 <div class="w-100 bg-light">
@@ -20,9 +20,6 @@
             </nuxt-link>
             <p>
               {{ project.shortDescription }}
-            </p>
-            <p>
-              {{ project.type[0] }}
             </p>
           </div>
         </div>
@@ -63,13 +60,14 @@ a h6:hover {
   color: #0056b3;
 }
 
-.bg-custom {
-  background-color: #111;
+
+.bg-overlay {
   opacity: .4;
   transition: 0.4s ease;
 }
 
-.bg-custom:hover {
+.bg-overlay:hover {
+  background-color: #555;
   cursor: pointer;
   opacity: .1;
 }

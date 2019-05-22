@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-4">
+      <div class="row pt-3">
         <div class="col-md-12">
           <h4>Safety</h4>
           Safe job sites are all about protecting our people. We believe it is our moral responsibility to make sure every single worker in the field and in the office goes home safely every day, our friends and families count on this. Our initiatives reach well-beyond wearing safety glasses and hard hats. We make prevention and awareness a priority and it has become second nature.

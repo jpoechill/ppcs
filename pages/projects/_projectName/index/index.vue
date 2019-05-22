@@ -6,19 +6,11 @@
           <h3>{{ currProject.title }}</h3>
           <div id="carouselExampleIndicators" class="carousel slide pb-3" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li v-for="(headerImg, index) in currProject.headerImages" :key="index" data-target="#carouselExampleIndicators" :data-slide-to="index" :class="{ active: (index===0) }"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="/covers/miami.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="/covers/houston.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="/covers/vegas.png" alt="Third slide">
+              <div class="carousel-item" :class="{ active: (index === 0) }" v-for="(headerImg, index) in currProject.headerImages" :key="index">
+                <img class="d-block w-100" :src="headerImg" alt="First slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -42,10 +34,6 @@
           <h6>Location</h6>
           {{ currProject.location }}
         </div>
-        <div class="col-md-4">
-          <h6>Type of Work</h6>
-          {{ currProject.type }}
-        </div>
       </div>
     </div>
   </div>
@@ -68,6 +56,7 @@ export default {
     }
   },
   mounted() {},
+  scrollToTop: true,
   transition: 'fade'
 }
 </script>

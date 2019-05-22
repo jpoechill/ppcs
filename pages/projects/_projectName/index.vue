@@ -1,14 +1,5 @@
 <template>
   <div>
-    <!-- <div class="container">
-      <div class="row pt-4">
-        <div class="col-md-12">
-          <nuxt-link to="/projects">Back to Projects</nuxt-link> | 
-          <nuxt-link :to="'/projects/' + listProjects[currIndex-1].name">View Previous</nuxt-link> | 
-          <nuxt-link :to="'/projects/' + listProjects[currIndex+1].name">View Next →</nuxt-link> 
-        </div>
-      </div>
-    </div> -->
     <transition name="fade" appear>
       <nuxt />
     </transition>

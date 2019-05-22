@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-4">
+      <div class="row pt-3">
         <div class="col-md-12">
           <h4>Careers</h4>
           We are always looking for talented and client-focused people. <br><br>

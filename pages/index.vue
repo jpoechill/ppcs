@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 pt-3">
+        <div class="col-md-12 pt-4">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -142,11 +142,17 @@
           View All
         </div>
       </div>
-      <!-- <div class="row">
-        <div v-for="project in projects" :key="project.name" class="col-md-4 mb-4">
-          <div class="w-100 bg-light">
-            <nuxt-link to="/projects/sitel">
-              <img :src="project.thumbnail" class="w-100" alt="">
+      <div class="row">
+        <div v-for="(project, index) in recentProjects" :key="index" class="col-md-4 mb-4">
+          <div class="position-relative">
+            <nuxt-link :to="project.url">
+              <div class="position-absolute w-100 bg-overlay h-100">
+              </div>
+              <div>
+                <div class="w-100 bg-light">
+                  <img :src="project.thumbnail" class="w-100" alt="">
+                </div>
+              </div>
             </nuxt-link>
           </div>
           <div class="w-100 pt-2">
@@ -154,11 +160,11 @@
               <h6>{{ project.title }}</h6>
             </nuxt-link>
             <p>
-              {{ project.description }}
+              {{ project.shortDescription }}
             </p>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
     <div class="container">
       <div class="row pt-4">
@@ -179,7 +185,16 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
+
 export default {
+  computed: {
+    recentProjects () {
+      return this.$store.state.allWork.filter(function (project) {
+        return project.recent
+      }).slice(0, 3)
+    }
+  },
   data () {
     return {}
   },
@@ -188,4 +203,18 @@ export default {
 </script>
 
 <style>
+.link-dark {
+  color: #333;
+}
+
+.bg-overlay {
+  opacity: .4;
+  transition: 0.4s ease;
+}
+
+.bg-overlay:hover {
+  background-color: #555;
+  cursor: pointer;
+  opacity: .1;
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-4">
+      <div class="row pt-3">
         <div class="col-md-12">
           <h3>Projects</h3>
           It is our mission to provide high quality and effective building restoration and preservation services. Our team consists experienced and highly trained men and women who have extensive knowledge and experience. It is important to us that we provide the highest quality service and the results you desire.

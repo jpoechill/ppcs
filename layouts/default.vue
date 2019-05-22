@@ -1,20 +1,22 @@
 <template>
   <div>
-    <div class="container pt-4">
-      <div class="row">
-        <div class="col-md-4 d-flex align-items-middle justify-content-start">
-          <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-50" alt=""></nuxt-link>
-        </div>
-        <div class="col-md-8 text-right pt-1">
-          <h5>
-            <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
-          </h5>
+    <div class="bg-custom">
+      <div class="container pt-3 pb-2">
+        <div class="row">
+          <div class="col-md-4 d-flex align-items-middle justify-content-start">
+            <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-custom pb-2" alt=""></nuxt-link>
+          </div>
+          <div class="col-md-8 text-right pt-1">
+            <h5>
+              <nuxt-link v-for="link in links" :key="link.name" :to="link.url" class="header-links" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
+              <img src="/30-years.png" class="service-years pb-1 ml-1" alt=""> </h5>
+          </div>
         </div>
       </div>
     </div>
     <transition name="fade" appear>
       <div v-if="currIndex !== -1" class="container">
-        <div class="row pt-4">
+        <div class="row pt-3">
           <div class="col-md-12">
             <nuxt-link to="/projects">Back to Projects</nuxt-link> | 
             <nuxt-link :to="'/projects/' + listProjects[prevIndex].name">View Previous</nuxt-link> | 
@@ -146,7 +148,7 @@ body, html {
 }
 
 .active {
-  color: #0056b3;
+  color: #0080ff !important;
 }
 
 a {
@@ -156,6 +158,26 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+.header-links {
+  color: #FFF;
+}
+
+.header-links:hover {
+  color: #0080ff;
+}
+
+.service-years {
+  width: 60px;
+}
+
+.w-custom {
+  width: 60%;
+}
+
+.bg-custom {
+  background-color: #111;
 }
 
 .fade-enter-active, .fade-leave-active {

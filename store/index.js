@@ -17,12 +17,16 @@ export const state = () => ({
             url: '/projects/sitel-san-angelo',
             client: 'Sitel Corporation',
             location: 'San Angelo, TX',
-            headerImages: [],
             featured: true,
             recent: true,
             type: ['historic'],
             thumbnail: '/_thumbnails/sitel-corp.png',
-            reference: 'HistoricRestoration'
+            headerImages: [
+                '/_headerImgs/sitel-01.jpg',
+                '/_headerImgs/sitel-02.jpg',
+                '/_headerImgs/sitel-03.jpg'
+            ],
+            reference: 'Historic Restoration'
         },
         {
             title: '135 Hamilton – Palo Alto, CA',
@@ -44,13 +48,17 @@ export const state = () => ({
             `,
             url: '/projects/hamilton-palo-alto',
             client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            location: 'San Angelo, TX',      
             featured: true,
-            recent: false,
+            recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/hyatt-regency-bird-01.png',
-            reference: 'HistoricRestoration'
+            headerImages: [
+                '/_headerImgs/hamilton-01.jpg',
+                '/_headerImgs/hamilton-02.jpg',
+                '/_headerImgs/hamilton-03.jpg'
+            ],
+            reference: 'Restoration'
         },
         {
             title: '408 Panama – Stanford University',
@@ -58,18 +66,28 @@ export const state = () => ({
             shortDescription: 'The Science Department of Stanford University required cleaning and repairing discolored panels.',
             fullDescription: `
                 <p>
-                    A new construction project for the Science Depatment of Stanford University, required us to clean and blend discolored GFRC panels throughout the entire building.We went through a series of test to come up with the best solution to in turn, make this building look uniform and all one color.Our strategy included pressure washing and removal of efferosence to bring the natural color to each panel and provide a consistancy in the overall appearance of the building.As you can see in the pictures we accomplished our goal and Walters and Wolf, a great client of ours, were pleased with the outcome! 
-                < /p>
+                    A new construction project for the Science Department of Stanford University that required us to clean and blend discolored GFRC panels throughout the entire building.
+                </p>
+                <p>
+                    We went through a series of test to come up with the best solution to in turn, make this building look uniform and all one color. Our strategy included pressure washing and removal of efferosence to bring the natural color to each panel and provide a consistancy in the overall appearance of the building. 
+                </p>
+                <p>
+                    As you can see in the pictures we accomplished our goal and Walters and Wolf, a great client of ours, were pleased with the outcome! 
+                </p>
             `,
             url: '/projects/panama-stanford',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Stanford University',
+            location: 'Palo Alto, CA',           
             featured: true,
-            recent: false,
+            recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/408-panama-stanford.png',
-            reference: 'HistoricRestoration'
+            headerImages: [
+                '/_headerImgs/panama-01.jpg',
+                '/_headerImgs/panama-02.jpg',
+                '/_headerImgs/panama-03.jpg'
+            ],
+            reference: 'Restoration'
         },
         {
             title: 'Hilton Hotel – Waco, TX',
@@ -77,52 +95,67 @@ export const state = () => ({
             shortDescription: 'The Hilton had wear and tear from decades of harsh weather, along with other structural needs.',
             fullDescription: `
                 <p>
-                    The Hilton in Waco Texas had a good amount of wear and tear from decades of harsh weather and some structual failure.Our job was to remove calcium build up from the windows and window frames and restore them back to their original state.Once cleaned, we applied a metal defender to sustain its natural look and to protect from the elements of the environment.We also re - coated the EIFS of the entire building, and recaulked windows that had leakage issues.This building had great results and not to mention was a pleasure dealing with the friendly people of Texas. 
-                < /p>
+                    The Hilton in Waco, Texas had a good amount of wear and tear from decades of harsh weather and some structual failure. Our job was to remove calcium build up from the windows and window frames and restore them back to their original state. Once cleaned, we applied a metal defender to sustain its natural look and to protect from the elements of the environment. We also re-coated the EIFS of the entire building, and recaulked windows that had leakage issues.This building had great results and not to mention was a pleasure dealing with the friendly people of Texas. 
+                </p>
             `,
             url: '/projects/hilton-waco',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Hilton Hotel',
+            location: 'Waco, TX',        
             featured: true,
-            recent: false,
+            recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/hilton-hotel-waco.png',
-            reference: 'HistoricRestoration'
+            headerImages: [
+                '/_headerImgs/hilton-waco-01.jpg',
+                '/_headerImgs/hilton-waco-02.jpg',
+                '/_headerImgs/hilton-waco-03.jpg',
+                '/_headerImgs/hilton-waco-04.jpg'
+            ],
+            reference: 'Restoration'
         },
         {
             title: 'Sculpture Cleaning – Hyatt Regency',
             name: 'sculpture-hyatt',
             shortDescription: 'A large sculpture in the atrium of the Hyatt Regency in San Francisco require cleaning and repairs.',
             fullDescription: `
-                <p></p>
+                <p>No description.</p>
             `,
             url: '/projects/sculpture-hyatt',
             client: 'Hyatt Regency',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            location: 'San Francisco, CA',         
             featured: true,
-            recent: false,
+            recent: true,
             type: ['historic', 'restoration'],
             thumbnail: '/_thumbnails/hyatt-regency-sculpture.png',
-            reference: 'HistoricRestoration'
+            headerImages: [
+                '/_headerImgs/hyatt-sculpture-01.jpg',
+                '/_headerImgs/hyatt-sculpture-02.jpg',
+                '/_headerImgs/hyatt-sculpture-03.jpg',
+                '/_headerImgs/hyatt-sculpture-04.jpg'
+            ],
+            reference: 'Historic Restoration'
         },
         {
             title: 'Samsung – Mountain View, CA',
             name: 'samsung-mountain-view',
             shortDescription: 'The Samsung building in Mountain View required chemical cleaning and panel blending.',
             fullDescription: `
-                <p></p>
+                <p>No description.</p>
             `,
             url: '/projects/samsung-mountain-view',
             client: 'Walters & Wolf',
             location: 'Mountain View, CA',
-            headerImages: [],             
             featured: true,
-            recent: false,
+            recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/samsung-mountain-view.png',
-            reference: 'HistoricRestoration'
+            headerImages: [
+                '/_headerImgs/samsung-01.jpg',
+                '/_headerImgs/samsung-02.jpg',
+                '/_headerImgs/samsung-03.jpg',
+                '/_headerImgs/samsung-04.jpg'
+            ],
+            reference: 'Restoration'
         },
         {
             title: 'Harley Davidson – Stafford, TX',
@@ -136,12 +169,14 @@ export const state = () => ({
             url: '/projects/harley-davidson-stafford',
             client: 'Harley Davidson',
             location: 'Stafford, TX',
-            headerImages: [],             
             featured: true,
-            recent: false,
+            recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/harley-davidson.png',
-            reference: 'HistoricRestoration'
+            headerImages: [
+                '/_headerImgs/harley-01.jpg',
+            ],
+            reference: 'Restoration'
         },
         {
             title: 'Anti Graffiti Coating – UCSF',
@@ -155,12 +190,19 @@ export const state = () => ({
             url: '/projects/anti-graff-ucsf',
             client: 'Walters & Wolf',
             location: 'San Francisco, CA',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/ucsf-01.jpg',
+                '/_headerImgs/ucsf-02.jpg',
+                '/_headerImgs/ucsf-03.jpg',
+                '/_headerImgs/ucsf-04.jpg',
+                '/_headerImgs/ucsf-05.jpg',
+                '/_headerImgs/ucsf-06.jpg',
+            ],             
             featured: true,
-            recent: false,
+            recent: true,
             type: ['weather-proofing', 'restoration'],
             thumbnail: '/_thumbnails/ucsf-anti-graff.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing'
         },
         {
             title: 'Hyatt Regency – San Francisco, CA',
@@ -168,18 +210,23 @@ export const state = () => ({
             shortDescription: 'A building at the UCSF campus required specialized anti-graffiti coating.',
             fullDescription: `
                 <p>
-                    We constructed and implemented a bird - deterrent system for the Hyatt Regency in San Francisco.
+                    We constructed and implemented a bird-deterrent system for the Hyatt Regency in San Francisco.
                 </p>
             `,
             url: '/projects/hyatt-san-francisco',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Hyatt Regency',
+            location: 'San Francisco, CA',
+            headerImages: [
+                '/_headerImgs/hyatt-01.jpg',
+                '/_headerImgs/hyatt-02.jpg',
+                '/_headerImgs/hyatt-03.jpg',
+                '/_headerImgs/hyatt-04.jpg',
+            ],             
             featured: true,
-            recent: false,
-            type: ['weather-proofing', 'restoration'],
+            recent: true,
+            type: ['weather-proofing', 'restoration', 'bird-control'],
             thumbnail: '/_thumbnails/hyatt-regency-bird-01.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing, Bird Control Systems'
         },
         {
             title: 'True Wind Capital – San Francisco, CA',
@@ -193,12 +240,16 @@ export const state = () => ({
             url: '/projects/true-wind-sf',
             client: 'True Wind Capital',
             location: 'San Francisco, CA',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/true-wind-01.jpg',
+                '/_headerImgs/true-wind-02.jpg',
+                '/_headerImgs/true-wind-03.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration'],
+            type: ['restoration', 'glass'],
             thumbnail: '/_thumbnails/tw-capital-sf.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Glass Cleaning'
         },
         {
             title: 'Oyster Point – South San Francisco, CA',
@@ -212,12 +263,18 @@ export const state = () => ({
             url: '/projects/oyster-point-ssf',
             client: 'CBRE',
             location: 'South San Francisco, CA',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/oyster-01.jpg',
+                '/_headerImgs/oyster-02.jpg',
+                '/_headerImgs/oyster-03.jpg',
+                '/_headerImgs/oyster-04.jpg',
+                '/_headerImgs/oyster-05.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration'],
+            type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/oyster-point-sf.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing'
         },
         {
             title: 'Children’s Hospital – Salt Lake City, UT',
@@ -230,13 +287,22 @@ export const state = () => ({
             `,
             url: '/projects/childrens-hospital-slc',
             client: 'Presto',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            location: 'Salt Lake City, UT',
+            headerImages: [
+                '/_headerImgs/childrens-01.jpg',
+                '/_headerImgs/childrens-02.jpg',
+                '/_headerImgs/childrens-03.jpg',
+                '/_headerImgs/childrens-04.jpg',
+                '/_headerImgs/childrens-05.jpg',
+                '/_headerImgs/childrens-06.jpg',
+                '/_headerImgs/childrens-07.jpg',
+                '/_headerImgs/childrens-08.jpg',  
+            ],           
             featured: false,
             recent: false,
-            type: ['restoration', 'weather-proofing'],
+            type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/childrens-hospital-ut.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing'
         },
         {
             title: 'Stanford University – Palo Alto, CA',
@@ -244,55 +310,55 @@ export const state = () => ({
             shortDescription: 'We provided exterior-concrete cleaning services for Stanford University, in Palo Alto, CA.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                   We provided exterior-concrete cleaning services for Stanford University, in Palo Alto, CA. 
                 </p>
             `,
             url: '/projects/stanford-palo-alto',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Whiting-Turner',
+            location: 'Palo Alto, CA',
+            headerImages: [
+                '/_headerImgs/standford-01.jpg',
+                '/_headerImgs/standford-02.jpg',
+                '/_headerImgs/standford-03.jpg',
+                '/_headerImgs/standford-04.jpg',
+                '/_headerImgs/standford-05.jpg',
+                '/_headerImgs/standford-06.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/stanford-exterior.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'PG&E – San luis Obispo, CA',
+            title: 'PG&E – San Luis Obispo, CA',
             name: 'pge-san-luis',
             shortDescription: 'We provided historical building restoration services for the PG&E building in San Luis Obispo, CA.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We provided historical building restoration services for the PG&E building in San Luis Obispo, CA.
                 </p>
             `,
             url: '/projects/pge-san-luis',
             client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            location: 'San Luis Obispo, CA',
+            headerImages: [
+                '/_headerImgs/pge-01.jpg',
+                '/_headerImgs/pge-02.jpg',
+                '/_headerImgs/pge-03.jpg',
+                '/_headerImgs/pge-04.jpg',
+                '/_headerImgs/pge-05.jpg',
+                '/_headerImgs/pge-06.jpg',
+                '/_headerImgs/pge-07.jpg',
+                '/_headerImgs/pge-08.jpg',
+                '/_headerImgs/pge-09.jpg',
+                '/_headerImgs/pge-10.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['historic'],
+            type: ['historic', 'restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/pge-slo-ca.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing'
         },
         {
             title: 'Hyatt Regency – San Francisco, CA',
@@ -300,27 +366,29 @@ export const state = () => ({
             shortDescription: 'We provided balcony refinishing services for the Hyatt Regency, in San Francisco, CA.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We provided balcony refinishing services for the Hyatt Regency, in San Francisco, CA.
                 </p>
             `,
             url: '/projects/hyatt-sf-balcony',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Hyatt Regency',
+            location: 'San Francisco, CA',
+            headerImages: [
+                '/_headerImgs/hyatt-balcony-01.jpg',
+                '/_headerImgs/hyatt-balcony-02.jpg',
+                '/_headerImgs/hyatt-balcony-03.jpg',
+                '/_headerImgs/hyatt-balcony-04.jpg',
+                '/_headerImgs/hyatt-balcony-05.jpg',
+                '/_headerImgs/hyatt-balcony-06.jpg',
+                '/_headerImgs/hyatt-balcony-07.jpg',
+                '/_headerImgs/hyatt-balcony-08.jpg',
+                '/_headerImgs/hyatt-balcony-09.jpg',
+                '/_headerImgs/hyatt-balcony-10.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration'],
+            type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/hyatt-balcony.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing'
         },
         {
             title: 'Wells Fargo – Houston, TX',
@@ -328,27 +396,23 @@ export const state = () => ({
             shortDescription: 'We provided exterior chemical cleaning and sealing services for the Well Fargo.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We provided exterior chemical cleaning and sealing services for the Well Fargo building in Houston, TX.
                 </p>
             `,
             url: '/projects/wells-houston',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Wells Fargo',
+            location: 'Houston, TX',
+            headerImages: [
+                '/_headerImgs/wells-01.jpg',
+                '/_headerImgs/wells-02.jpg',
+                '/_headerImgs/wells-03.jpg',
+                '/_headerImgs/wells-04.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration', 'weatherproofing'],
+            type: ['restoration', 'weatherproofing', 'consulting'],
             thumbnail: '/_thumbnails/wells-houston.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration, Weather-Proofing, Consulting'
         },
         {
             title: 'One Hawthorne – San Francisco, CA',
@@ -356,27 +420,27 @@ export const state = () => ({
             shortDescription: 'We provided exterior window cleaning services for the One Hawthorne building in San Francisco, CA.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We provided exterior window cleaning services for the One Hawthorne building in San Francisco, CA.
                 </p>
             `,
             url: '/projects/one-hawthorne-sf',
             client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            location: 'San Francisco, CA',
+            headerImages: [
+                '/_headerImgs/hawthorne-01.jpg',
+                '/_headerImgs/hawthorne-02.jpg',
+                '/_headerImgs/hawthorne-03.jpg',
+                '/_headerImgs/hawthorne-04.jpg',
+                '/_headerImgs/hawthorne-05.jpg',
+                '/_headerImgs/hawthorne-06.jpg',
+                '/_headerImgs/hawthorne-07.jpg',
+                '/_headerImgs/hawthorne-08.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['weather-proofing'],
+            type: ['weatherproofing', 'glass'],
             thumbnail: '/_thumbnails/one-hawthorne.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing, Window Cleaning'
         },
         {
             title: '1200 California – San Francisco, CA',
@@ -384,18 +448,21 @@ export const state = () => ({
             shortDescription: 'We provided grinding and polishing services of 1200 California, in San Francisco, CA.',
             fullDescription: `
                 <p>
-                    We provided grinding and polishing services of 1200 California, a 27 - story building located in San Francisco, CA.
+                    We provided grinding and polishing services of 1200 California, a 27-story building located in San Francisco, CA.
                 </p>
             `,
             url: '/projects/1200-california',
             client: '1200 California Corp.',
             location: 'San Angelo, TX',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/1200-01.jpg',
+                '/_headerImgs/1200-02.jpg'
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration'],
+            type: ['restoration', 'glass'],
             thumbnail: '/_thumbnails/1200-ca.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration'
         },
         {
             title: 'Wynot Towers – Kansas City, KS',
@@ -409,12 +476,18 @@ export const state = () => ({
             url: '/projects/wynot-towers-ks',
             client: 'Terminix Pest Control',
             location: 'Kansas City, KS',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/wynot-01.jpg',
+                '/_headerImgs/wynot-02.jpg',
+                '/_headerImgs/wynot-03.jpg',
+                '/_headerImgs/wynot-04.jpg',
+                '/_headerImgs/wynot-05.jpg'
+            ],             
             featured: false,
             recent: false,
             type: ['bird-control'],
             thumbnail: '/_thumbnails/wynot-towers.png',
-            reference: 'HistoricRestoration'
+            reference: 'Bird Control Systems'
         },
         {
             title: 'St Paul’s Towers – Oakland, CA',
@@ -428,12 +501,17 @@ export const state = () => ({
             url: '/projects/st-pauls-oakland',
             client: 'Ecolab Pest Elimination',
             location: 'San Angelo, TX',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/st-pauls-01.jpg',
+                '/_headerImgs/st-pauls-02.jpg',
+                '/_headerImgs/st-pauls-03.jpg',
+                '/_headerImgs/st-pauls-04.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['bird-control'],
             thumbnail: '/_thumbnails/stpauls-oakland.png',
-            reference: 'HistoricRestoration'
+            reference: 'Bird Control Systems'
         },
         {
             title: 'McDills Air Force Base – Tampa, FL',
@@ -447,12 +525,22 @@ export const state = () => ({
             url: '/projects/mcdills-tampa',
             client: 'Orkin Pest Control',
             location: 'San Angelo, TX',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/mcdills-01.jpg',
+                '/_headerImgs/mcdills-02.jpg',
+                '/_headerImgs/mcdills-03.jpg',
+                '/_headerImgs/mcdills-04.jpg',
+                '/_headerImgs/mcdills-05.jpg',
+                '/_headerImgs/mcdills-06.jpg',
+                '/_headerImgs/mcdills-07.jpg',
+                '/_headerImgs/mcdills-08.jpg',
+                '/_headerImgs/mcdills-09.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['bird-control'],
+            type: ['bird-control', 'consulting'],
             thumbnail: '/_thumbnails/mcdills.png',
-            reference: 'HistoricRestoration'
+            reference: 'Consulting, Bird Control Systems'
         },
         {
             title: 'Los Rios Community College – Sacramento, CA',
@@ -466,12 +554,19 @@ export const state = () => ({
             url: '/projects/los-rios-cc',
             client: 'Los Rios Community College District',
             location: 'Sacramento, California',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/los-rios-01.jpg',
+                '/_headerImgs/los-rios-02.jpg',
+                '/_headerImgs/los-rios-03.jpg',
+                '/_headerImgs/los-rios-04.jpg',
+                '/_headerImgs/los-rios-05.jpg',
+                '/_headerImgs/los-rios-06.jpg'
+            ],             
             featured: false,
             recent: false,
             type: ['restoration', 'weatherproofing', 'bird-control'],
             thumbnail: '/_thumbnails/los-rios.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing, Bird Control Systems'
         },
         {
             title: 'Mozart Development Building – Palo Alto, California',
@@ -479,18 +574,26 @@ export const state = () => ({
             shortDescription: 'We were commissioned by Mozart Development Company to clean and re-seal 3 buildings.',
             fullDescription: `
                 <p>
-                    We were commissioned by Mozart Development Company(a premier real estate developer in CA) to perform extensive chemical cleaning and to re - seal 3 buildings, total 162, 000 square feet.
+                    We were commissioned by Mozart Development Company(a premier real estate developer in CA) to perform extensive chemical cleaning and to re-seal 3 buildings, total 162, 000 square feet.
                 </p>
             `,
             url: '/projects/mozart-dev',
             client: 'Mozart Development Company',
             location: 'San Angelo, TX',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/mozart-01.jpg',
+                '/_headerImgs/mozart-02.jpg',
+                '/_headerImgs/mozart-03.jpg',
+                '/_headerImgs/mozart-04.jpg',
+                '/_headerImgs/mozart-05.jpg',
+                '/_headerImgs/mozart-06.jpg',
+                '/_headerImgs/mozart-07.jpg'
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration', 'weather-proofing'],
+            type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/mozart.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration, Weather-Proofing'
         },
         {
             title: 'Las Vegas Convention Center – Las Vegas, NV',
@@ -498,18 +601,28 @@ export const state = () => ({
             shortDescription: 'We designed and installed an expansive bird control systems for the Las Vegas Convention Center.',
             fullDescription: `
                 <p>
-                    We designed and installed an expansive bird control systems protecting over 80, 000 square feet of canopy covering the loading docks.
+                    We designed and installed an expansive bird control systems protecting over 80,000 square feet of canopy covering the loading docks.
                 </p>
             `,
             url: '/projects/lv-cc',
             client: 'Las Vegas Convention Center',
             location: 'San Angelo, TX',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/lv-cc-01.jpg',
+                '/_headerImgs/lv-cc-02.jpg',
+                '/_headerImgs/lv-cc-03.jpg',
+                '/_headerImgs/lv-cc-04.jpg',
+                '/_headerImgs/lv-cc-05.jpg',
+                '/_headerImgs/lv-cc-06.jpg',
+                '/_headerImgs/lv-cc-07.jpg',
+                '/_headerImgs/lv-cc-08.jpg',
+                '/_headerImgs/lv-cc-09.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['bird-control'],
             thumbnail: '/_thumbnails/lv-convention.png',
-            reference: 'HistoricRestoration'
+            reference: 'Bird Control Systems'
         },
         {
             title: 'US Customs House – San Francisco, CA',
@@ -517,18 +630,25 @@ export const state = () => ({
             shortDescription: 'We chemically cleaned, sealed and repaired the faltering granite on this historic building.',
             fullDescription: `
                 <p>
-                    We chemically cleaned, sealed and repaired the faltering granite on this historic building using several restoration techniques with epoxy injections.We also applied a sealant to repel further graffiti damage, along with installing a brand new bird control system.
+                    We chemically cleaned, sealed and repaired the faltering granite on this historic building using several restoration techniques with epoxy injections. We also applied a sealant to repel further graffiti damage, along with installing a brand new bird control system.
                 </p>
             `,
             url: '/projects/us-customs-house',
             client: 'US Department of Homeland Security',
             location: 'San Francisco, CA',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/us-customs-01.jpg',
+                '/_headerImgs/us-customs-02.jpg',
+                '/_headerImgs/us-customs-03.jpg',
+                '/_headerImgs//_headerImgs/us-customs-04.jpg',
+                '/_headerImgs/us-customs-05.jpg',
+                '/_headerImgs/us-customs-06.jpg'
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration', 'weatherproofing'],
+            type: ['restoration', 'weatherproofing', 'historic'],
             thumbnail: '/_thumbnails/us-customs.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration, Restoration, Weather-Proofing'
         },
         {
             title: 'Railroad Square – San Luis Obispo, CA',
@@ -536,18 +656,26 @@ export const state = () => ({
             shortDescription: 'We chemically cleaned and sealed the brick façade of this aged building.',
             fullDescription: `
                 <p>
-                    We chemically cleaned and sealed the brick façade of this aged building, which suffered significant fire damaged– it had more than 100 years of built up coatings.We also re - created the mortar to be consistent with the building’ s original time period and tuck - pointed the entire building.    
+                    We chemically cleaned and sealed the brick façade of this aged building, which suffered significant fire damaged – it had more than 100 years of built up coatings. We also re-created the mortar to be consistent with the building’s original time period and tuck-pointed the entire building.    
                 </p>
             `,
             url: '/projects/rr-square-san-luis',
             client: 'Specialty Construction, Inc.',
             location: 'San Luis Obispo, CA',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/rr-01.jpg',
+                '/_headerImgs/rr-02.jpg',
+                '/_headerImgs/rr-03.jpg',
+                '/_headerImgs/rr-04.jpg',
+                '/_headerImgs/rr-05.jpg',
+                '/_headerImgs/rr-06.jpg',
+                '/_headerImgs/rr-07.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration'],
+            type: ['restoration', 'weatherproofing', 'historic'],
             thumbnail: '/_thumbnails/railroad.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration, Restoration, Weather-Proofing'
         },
         {
             title: 'David Cowens Drive – Newark, CA',
@@ -555,18 +683,25 @@ export const state = () => ({
             shortDescription: 'We performed power washing to clean GFRC panels, and thoroughly washed all building windows.',
             fullDescription: `
                 <p>
-                    We performed power washing to clean GFRC panels, and thoroughly washed all building windows as part of the final construction clean - up.    
+                    We performed power washing to clean GFRC panels, and thoroughly washed all building windows as part of the final construction clean-up.    
                 </p>
             `,
             url: '/projects/david-cowens-drive',
             client: 'Walters & Wolfe',
             location: 'Newark, CA',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/david-cohens-01.jpg',
+                '/_headerImgs/david-cohens-02.jpg',
+                '/_headerImgs/david-cohens-03.jpg',
+                '/_headerImgs/david-cohens-04.jpg',
+                '/_headerImgs/david-cohens-05.jpg',
+                '/_headerImgs/david-cohens-06.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['weatherproofing'],
+            type: ['weatherproofing', 'glass', 'consulting'],
             thumbnail: '/_thumbnails/david-cowens.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration, Glass Cleaning'
         },
         {
             title: 'Juhl Condominium – Las Vegas, NV',
@@ -580,12 +715,23 @@ export const state = () => ({
             url: '/projects/juhl-condo-lv',
             client: 'Turner Construction',
             location: 'Las Vegas, NV',
-            headerImages: [],             
+            headerImages: [
+                '/_headerImgs/juhl-01.jpg',
+                '/_headerImgs/juhl-02.jpg',
+                '/_headerImgs/juhl-03.jpg',
+                '/_headerImgs/juhl-04.jpg',
+                '/_headerImgs/juhl-05.jpg',
+                '/_headerImgs/juhl-06.jpg',
+                '/_headerImgs/juhl-07.jpg',
+                '/_headerImgs/juhl-08.jpg',
+                '/_headerImgs/juhl-09.jpg',
+                '/_headerImgs/juhl-10.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['weatherproofing'],
+            type: ['weatherproofing', 'glass'],
             thumbnail: '/_thumbnails/juhl.png',
-            reference: 'HistoricRestoration'
+            reference: 'Glass Cleaning'
         },
         {
             title: 'Hyatt Regency Hotel – San Francisco, CA',
@@ -593,27 +739,24 @@ export const state = () => ({
             shortDescription: 'We perform monthly and quarterly interior and exterior window cleaning for the Hyatt Regency Hotel.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We perform monthly and quarterly interior and exterior window cleaning for the Hyatt Regency Hotel. For this particular project, we restored all of the windows and frames on Justin Herman Plaza, which has extremely limited access.
                 </p>
             `,
             url: '/projects/hyatt-monthly-sf',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Hyatt Regency Hotel',
+            location: 'San Francisco, CA',
+            headerImages: [
+                '/_headerImgs/hyatt-monthly-01.jpg',
+                '/_headerImgs/hyatt-monthly-02.jpg',
+                '/_headerImgs/hyatt-monthly-03.jpg',
+                '/_headerImgs/hyatt-monthly-04.jpg',
+                '/_headerImgs/hyatt-monthly-05.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['weatherproofing'],
+            type: ['weatherproofing', 'glass'],
             thumbnail: '/_thumbnails/hyatt-regency.png',
-            reference: 'HistoricRestoration'
+            reference: 'Weather-Proofing, Glass Cleaning'
         },
         {
             title: 'Genentech – Vacaville, CA',
@@ -621,27 +764,30 @@ export const state = () => ({
             shortDescription: 'We were hired by Walters & Wolfe (GFRC panel manufacturers) to remove rust window cleaning services.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We were hired by Walters & Wolfe (GFRC panel manufacturers) to remove rust from panels, and to provide window cleaning on several buildings.    
                 </p>
             `,
             url: '/projects/genentech-vacaville',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Walters & Wolfe',
+            location: 'Vacaville, CA',
+            headerImages: [
+                '/_headerImgs/genen-01.jpg',
+                '/_headerImgs/genen-02.jpg',
+                '/_headerImgs/genen-03.jpg',
+                '/_headerImgs/genen-04.jpg',
+                '/_headerImgs/genen-05.jpg',
+                '/_headerImgs/genen-06.jpg',
+                '/_headerImgs/genen-07.jpg',
+                '/_headerImgs/genen-08.jpg',
+                '/_headerImgs/genen-09.jpg',
+                '/_headerImgs/genen-10.jpg',
+                '/_headerImgs/genen-11.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['weatherproofing'],
             thumbnail: '/_thumbnails/genentech.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Weather-Proofing'
         },
         {
             title: 'DeVry University – Fremont, CA',
@@ -649,27 +795,25 @@ export const state = () => ({
             shortDescription: 'We chemically cleaned and re-sealed GFRC panels, returning them to their original condition.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We chemically cleaned and re-sealed GFRC panels, returning them to their original condition. We also chemically cleaned the exterior windows, removing etching and hard water stains that occurred over time.    
                 </p>
             `,
             url: '/projects/devry-uni-fremont',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'DeVry University',
+            location: 'Fremont, CA',
+            headerImages: [
+                '/_headerImgs/devry-01.jpg',
+                '/_headerImgs/devry-02.jpg',
+                '/_headerImgs/devry-03.jpg',
+                '/_headerImgs/devry-04.jpg',
+                '/_headerImgs/devry-05.jpg',
+                '/_headerImgs/devry-06.jpg'
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration'],
+            type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/devry.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration'
         },
         {
             title: '944 Market Street – San Francisco, CA',
@@ -677,27 +821,24 @@ export const state = () => ({
             shortDescription: 'We provided a bird netting system for this building in San Francisco, CA.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We provided a bird netting system for this residential building in San Francisco, CA.    
                 </p>
             `,
             url: '/projects/944-market-sf',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: '944 Market Street',
+            location: 'San Francisco, CA',
+            headerImages: [
+                '/_headerImgs/market-01.jpg',
+                '/_headerImgs/market-02.jpg',
+                '/_headerImgs/market-03.jpg',
+                '/_headerImgs/market-04.jpg',
+                '/_headerImgs/market-05.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['bird-control'],
             thumbnail: '/_thumbnails/944-market.png',
-            reference: 'HistoricRestoration'
+            reference: 'Bird Control Systems'
         },
         {
             title: 'Benicia-Martinez Bridge – Pacheco, CA',
@@ -705,27 +846,25 @@ export const state = () => ({
             shortDescription: 'We installed a complete bird-netting barrier system designed to move with the bridge.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We designed and installed a complete, bird-netting barrier system that moved with the expansion and contraction of the bridge. We also designed and installed steel doors to block birds from flying between different sections of the bridge.    
                 </p>
             `,
             url: '/projects/benicia-martinez',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'California Department of Transportation',
+            location: 'Pacheco, California',
+            headerImages: [
+                '/_headerImgs/benicia-01.jpg',
+                '/_headerImgs/benicia-02.jpg',
+                '/_headerImgs/benicia-03.jpg',
+                '/_headerImgs/benicia-04.jpg',
+                '/_headerImgs/benicia-05.jpg',
+                '/_headerImgs/benicia-06.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['bird-control'],
             thumbnail: '/_thumbnails/benicia.png',
-            reference: 'HistoricRestoration'
+            reference: 'Bird Control Systems'
         },
         {
             title: 'Alcatraz Island – San Francisco, CA',
@@ -733,27 +872,25 @@ export const state = () => ({
             shortDescription: 'We installed a bird-netting system for the historical Alcatraz Island, in San Francisco, CA.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We provided a bird netting system on the entire side of a yard wall, on Alcatraz Island, in San Francisco, CA. The netting also served as a safety barrier for loose concrete, and also prevents unwanted birds on roosting on the hillside.
                 </p>
             `,
             url: '/projects/alcatraz-sf',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'National Park Service',
+            location: 'San Francisco, CA',
+            headerImages: [
+                '/_headerImgs/alcatraz-01.jpg',
+                '/_headerImgs/alcatraz-02.jpg',
+                '/_headerImgs/alcatraz-03.jpg',
+                '/_headerImgs/alcatraz-04.jpg',
+                '/_headerImgs/alcatraz-05.jpg',
+                '/_headerImgs/alcatraz-06.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['bird-control'],
             thumbnail: '/_thumbnails/alcatraz.png',
-            reference: 'HistoricRestoration'
+            reference: 'Bird Control Systems'
         },
         {
             title: 'Anheuser-Busch – Houston, TX',
@@ -761,27 +898,26 @@ export const state = () => ({
             shortDescription: 'We designed and installed specialized bird control systems at Anheuser-Busch throughout the US.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We design and install specialized bird control systems for Anheuser-Busch.    
                 </p>
             `,
             url: '/projects/anheuser-houston',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Ecolab Pest Elimination',
+            location: 'Houston, TX',
+            headerImages: [
+                '/_headerImgs/anheuser-01.jpg',
+                '/_headerImgs/anheuser-02.jpg',
+                '/_headerImgs/anheuser-03.jpg',
+                '/_headerImgs/anheuser-04.jpg',
+                '/_headerImgs/anheuser-05.jpg',
+                '/_headerImgs/anheuser-06.jpg',
+                '/_headerImgs/anheuser-07.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['bird-control'],
+            type: ['bird-control', 'consulting'],
             thumbnail: '/_thumbnails/anheuser.png',
-            reference: 'HistoricRestoration'
+            reference: 'Bird Control Systems'
         },
         {
             title: 'Central Building – Oakland, CA',
@@ -789,27 +925,31 @@ export const state = () => ({
             shortDescription: 'This restoration project was featured in Prosoco’s magazine, and was recognized for an award.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We chemically cleaned and sealed an aging brick façade, restored the exterior glass, and completely serviced the entire front lobby. This project was featured in Prosoco’s magazine, and won an award for outstanding work.
                 </p>
             `,
             url: '/projects/central-oakland',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Access for Disabled Americans',
+            location: 'Oakland, CA',
+            headerImages: [
+                '/_headerImgs/central-01.jpg',
+                '/_headerImgs/central-02.jpg',
+                '/_headerImgs/central-03.jpg',
+                '/_headerImgs/central-04.jpg',
+                '/_headerImgs/central-05.jpg',
+                '/_headerImgs/central-06.jpg',
+                '/_headerImgs/central-07.jpg',
+                '/_headerImgs/central-08.jpg',
+                '/_headerImgs/central-09.jpg',
+                '/_headerImgs/central-10.jpg',
+                '/_headerImgs/central-11.jpg',
+                '/_headerImgs/central-12.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['historic', 'restoration'],
+            type: ['historic', 'restoration', 'glass'],
             thumbnail: '/_thumbnails/central.png',
-            reference: 'HistoricRestoration'
+            reference: 'Historic Restoration'
         },
         {
             title: 'Bank of the Orient – San Francisco, CA',
@@ -817,27 +957,29 @@ export const state = () => ({
             shortDescription: 'We perform monthly and quarterly interior and exterior window cleaning for the Bank of the Orient.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We perform monthly and quarterly interior and exterior window cleaning for the Bank of the Orient. Previously, we restored the entire exterior and lobby for this building.
                 </p>
             `,
             url: '/projects/boto-sf',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Bank of the Orient',
+            location: 'San Francisco, CA',
+            headerImages: [
+                '/_headerImgs/orient-01.jpg',
+                '/_headerImgs/orient-02.jpg',
+                '/_headerImgs/orient-03.jpg',
+                '/_headerImgs/orient-04.jpg',
+                '/_headerImgs/orient-05.jpg',
+                '/_headerImgs/orient-06.jpg',
+                '/_headerImgs/orient-07.jpg',
+                '/_headerImgs/orient-08.jpg',
+                '/_headerImgs/orient-09.jpg',
+                '/_headerImgs/orient-10.jpg',
+            ],             
             featured: false,
             recent: false,
             type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/boto.png',
-            reference: 'HistoricRestoration'
+            reference: 'Window Cleaning'
         },
         {
             title: 'Bishop Ranch – San Ramon, CA',
@@ -845,27 +987,29 @@ export const state = () => ({
             shortDescription: 'We removed rust from exterior panels, provided final construction clean-up, and window cleaning.',
             fullDescription: `
                 <p>
-                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-                </p>
-                <p>
-                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-                </p>
-                <p>
-                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-                </p>
-                <p>
-                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                    We removed rust from exterior panels, provided final construction clean-up, and window cleaning.
                 </p>
             `,
             url: '/projects/bishop-ranch-san-ramon',
-            client: 'Sitel Corporation',
-            location: 'San Angelo, TX',
-            headerImages: [],             
+            client: 'Walters & Wolfe',
+            location: 'San Ramon, CA',
+            headerImages: [
+                '/_headerImgs/bishop-01.jpg',
+                '/_headerImgs/bishop-02.jpg',
+                '/_headerImgs/bishop-03.jpg',
+                '/_headerImgs/bishop-04.jpg',
+                '/_headerImgs/bishop-05.jpg',
+                '/_headerImgs/bishop-06.jpg',
+                '/_headerImgs/bishop-07.jpg',
+                '/_headerImgs/bishop-08.jpg',
+                '/_headerImgs/bishop-09.jpg',
+                '/_headerImgs/bishop-10.jpg',
+            ],             
             featured: false,
             recent: false,
-            type: ['restoration', 'cleaning'],
+            type: ['restoration', 'cleaning', 'consulting', 'weatherproofing'],
             thumbnail: '/_thumbnails/bishop-ranch.png',
-            reference: 'HistoricRestoration'
+            reference: 'Restoration, Window Cleaning'
         },
     ]
 })

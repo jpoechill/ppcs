@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-4 pb-4">
+      <div class="row pt-3 pb-4">
         <div class="col-md-12">
           <h3>Contact</h3>
           <img src="desk.png" class="w-100 mb-3" alt="">
