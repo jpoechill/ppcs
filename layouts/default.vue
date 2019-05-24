@@ -68,15 +68,6 @@
 import { mapMutations } from 'vuex'
 
 export default {
-  head () {
-    return {
-      title: 'PPC&S | Professional Property Consultants & Services',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'My custom description' }
-      ]
-    }
-  },
   data() {
     return {
       links: [

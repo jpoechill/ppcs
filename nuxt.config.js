@@ -51,11 +51,15 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'PPC&S | Professional Building Restoration, Window Cleaning, and Bird Control Services',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services throughout the nation.'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png?v=3' },
