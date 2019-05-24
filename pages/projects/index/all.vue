@@ -3,9 +3,7 @@
     <div v-for="(service, index) in services" :key="index" class="container">
       <div class="row">
         <div class="col-md-6 pb-2">
-          <nuxt-link to="/projects/historic">
-            <h6>{{ service.title }} ({{ filterWork(service.filter) }})</h6> 
-          </nuxt-link>
+          <h6>{{ service.title }} ({{ filterWork(service.filter) }})</h6> 
         </div>
         <div class="col-md-6 text-right">
           <nuxt-link :to="service.url">

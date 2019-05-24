@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12 pb-3">
           <h6>
-            Historic Restoration ({{projects.length}})</h6> 
+            Building Restoration & Cleaning ({{projects.length}})</h6> 
         </div>
       </div>
       <div class="row">
@@ -37,7 +37,7 @@ export default {
   computed: {
     projects () {
       return this.$store.state.allWork.filter(function (project) {
-        return project.type.includes('historic')
+        return project.type.includes('restoration')
       })
     }
   },

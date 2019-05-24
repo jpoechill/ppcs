@@ -3,25 +3,26 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 pb-3">
-          <nuxt-link to="/">
-            <h6>Project Consulting & Testing (12)</h6> 
-          </nuxt-link>
+          <h6>
+            Project Consulting & Testing ({{projects.length}})</h6> 
         </div>
       </div>
       <div class="row">
-        <div v-for="project in projects" :key="project.name" class="col-md-4 mb-4">
-          <div class="w-100 bg-light pt-5 pb-5">
-            <nuxt-link to="/projects/sitel">
-              <img src="" class="pt-5 pb-5" alt="">
+        <div v-for="(historic, index) in projects" :key="index" class="col-md-4 mb-4">
+          <div class="position-relative">
+            <nuxt-link :to="historic.url">
+              <div class="position-absolute bg-overlay w-100 h-100">
+              </div>
+              <div class="w-100 bg-light">
+                  <img :src="historic.thumbnail" class="w-100" alt="">
+              </div>
             </nuxt-link>
           </div>
           <div class="w-100 pt-2">
-            <nuxt-link :to="project.url">
-              <h6>{{ project.title }}</h6>
+            <nuxt-link to="/projects/historic/sitel-san-angelo-tx">
+              <h6>{{ historic.title }}</h6>
             </nuxt-link>
-            <p>
-              {{ project.description }}
-            </p>
+            {{ historic.shortDescription }}
           </div>
         </div>
       </div>
@@ -30,76 +31,18 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 
 export default {
-  data () {
-    return {
-      projects: [
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-        {
-          title: 'Sitel Corporation – San Angelo, TX',
-          name: 'sitel-san-angelo',
-          description: 'The Sitel Building had gone through decades of harsh weather.',
-          url: '',
-          reference: 'HistoricRestoration'
-        },
-      ]
+  computed: {
+    projects () {
+      return this.$store.state.allWork.filter(function (project) {
+        return project.type.includes('consulting')
+      })
     }
+  },
+  data () {
+    return {}
   },
   transition: 'fade'
 }

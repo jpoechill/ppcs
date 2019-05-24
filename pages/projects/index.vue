@@ -81,6 +81,7 @@ export default {
       this.updatePath()
     }
   },
+  scrollToTop: true,
   transition: 'fade'
 }
 </script>

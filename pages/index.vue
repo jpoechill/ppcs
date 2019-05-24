@@ -37,7 +37,8 @@
       <div class="row pt-4">
         <div class="col-md-12">
           <h5>The Leading Company for Building Restoration and Preservation </h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum hendrerit dui, at mollis mi vestibulum in. Morbi porttitor turpis eget tortor lacinia, id venenatis felis vehicula. Vivamus porttitor, arcu sit amet mollis semper, mauris est sodales lacus, eu iaculis ligula est at velit. Aliquam quis magna eget eros pharetra rutrum molestie id urna.
+          Since 1983, it has been our mission to be the leading source for efficient building restoration and preservation services.
+          When you choose PPC&S’s building preservation services, you are receiving services from our efficient and results driven professionals. We are proud to have an exemplary safety record and a work force of over 100 highly trained and dedicated men and women. 
         </div>
       </div>
     </div>
@@ -50,13 +51,10 @@
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="w-100 bg-light">
-            <img src="/services/historic.png" class="w-100" alt="">
-          </div>
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
             <nuxt-link to="/services/historic-restoration">
-              <img src="" class="pt-5 pb-5" alt="">
+              <img src="/services/historic.png" class="w-100" alt="">
             </nuxt-link>
-          </div> -->
+          </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/historic-restoration">
               <h5>Historic Restoration</h5>
@@ -66,25 +64,23 @@
         </div>
         <div class="col-md-4 mb-5">
           <div class="w-100 bg-light">
-            <img src="/services/consulting.png" class="w-100" alt="">
+            <nuxt-link to="/services/consulting">
+              <img src="/services/consulting.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 pt-3">
             <nuxt-link to="/services/consulting">
               <h5>Project Consulting & Testing</h5>
             </nuxt-link>
-            We pride ourselves in offering a comprehensive list of building preservation services. It includes property consulting services that involve a thorough evaluation of your desired project. We determine the best solution with you and once we can establish the most effective approach, we begin the process.
+            Our primary service includes property consulting services that involve a thorough evaluation of your desired project. We determine the best solution with you and once we can establish the most effective approach, we begin the process.
           </div>
         </div>
         <div class="col-md-4 mb-5">
           <div class="w-100 bg-light">
-            <img src="/services/building.png" class="w-100" alt="">
+            <nuxt-link to="/services/cleaning">
+              <img src="/services/building.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 pt-3">
             <nuxt-link to="/services/cleaning">
               <h5>Building Restoration & Cleaning</h5>
@@ -93,11 +89,10 @@
           </div>
         </div>
         <div class="col-md-4 mb-5">
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 bg-light">
-            <img src="/services/weatherproofing.png" class="w-100" alt="">
+            <nuxt-link to="/services/weatherproofing">
+              <img src="/services/weatherproofing.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/weatherproofing">
@@ -107,11 +102,10 @@
           </div>
         </div>
         <div class="col-md-4 mb-5">
-          <!-- <div class="w-100 bg-light pt-5 pb-5">
-            <img src="" class="pt-5 pb-5" alt="">
-          </div> -->
           <div class="w-100 bg-light">
-            <img src="/services/glass.png" class="w-100" alt="">
+            <nuxt-link to="/services/glass-restoration">
+              <img src="/services/glass.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/glass-restoration">
@@ -122,7 +116,9 @@
         </div>
         <div class="col-md-4 mb-5">
           <div class="w-100 bg-light">
-            <img src="/services/birdnetting.png" class="w-100" alt="">
+            <nuxt-link to="/services/bird-control">
+              <img src="/services/birdnetting.png" class="w-100" alt="">
+            </nuxt-link>
           </div>
           <div class="w-100 pt-3">
             <nuxt-link to="/services/bird-control">
@@ -139,7 +135,9 @@
           <h5>Recent Projects</h5>
         </div>
         <div class="col-md-6 text-right">
-          View All
+          <nuxt-link to="projects/recent">
+            View All
+          </nuxt-link>
         </div>
       </div>
       <div class="row">
@@ -157,7 +155,7 @@
           </div>
           <div class="w-100 pt-2">
             <nuxt-link :to="project.url">
-              <h6>{{ project.title }}</h6>
+              <h6 class="link-dark">{{ project.title }}</h6>
             </nuxt-link>
             <p>
               {{ project.shortDescription }}
@@ -172,7 +170,7 @@
           <h5>Client List</h5>
         </div>
         <div class="col-md-6 text-right">
-          <nuxt-link to="/clients">View All</nuxt-link>
+          <!-- <nuxt-link to="/clients">View All</nuxt-link> -->
         </div>
       </div>
       <div class="row">
@@ -213,8 +211,12 @@ export default {
 </script>
 
 <style>
-.link-dark {
+.link-dark, a {
   color: #333;
+}
+
+.link-dark:hover, a:hover {
+  color: #0056b3;
 }
 
 .bg-overlay {

@@ -8,11 +8,23 @@
           </div>
       </div>
     </div>
-    <div class="container">
+    <!-- Desktop -->
+    <div class="container d-none d-md-block">
       <div class="row pt-4">
         <div class="col-md-12 text-center pb-1 letter-spacing">
           <h5 class="font-light">
             <nuxt-link v-for="link in links" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
+          </h5>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile -->
+    <div class="container d-md-none">
+      <div class="row pt-4">
+        <div class="col-md-12 text-center pb-0">
+          <h5 class="font-light">
+            <nuxt-link v-for="link in links" class="p-2" :key="link.name" :to="link.url" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
           </h5>
           <hr>
         </div>

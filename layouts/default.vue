@@ -1,7 +1,8 @@
 <template>
   <div>
     <div class="bg-custom">
-      <div class="container pt-3 pb-2">
+      <!-- Desktop -->
+      <div class="container pt-3 pb-2 d-none d-md-block">
         <div class="row">
           <div class="col-md-4 d-flex align-items-middle justify-content-start">
             <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-custom pb-2" alt=""></nuxt-link>
@@ -9,7 +10,21 @@
           <div class="col-md-8 text-right pt-1">
             <h5>
               <nuxt-link v-for="link in links" :key="link.name" :to="link.url" class="header-links" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
-              <img src="/30-years.png" class="service-years pb-1 ml-1" alt=""> </h5>
+              <img src="/30-years.png" class="service-years pb-1 ml-1" alt=""> 
+            </h5>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile -->
+      <div class="container pt-3 pb-2 d-md-none">
+        <div class="row">
+          <div class="col-md-4 d-flex text-center align-items-middle justify-content-center">
+            <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-custom pb-2" alt=""></nuxt-link>
+          </div>
+          <div class="col-md-8 text-center pt-1">
+            <h5>
+              <nuxt-link v-for="link in links" :key="link.name" :to="link.url" class="header-links" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
+            </h5>
           </div>
         </div>
       </div>
@@ -26,12 +41,22 @@
       </div>
     </transition>
     <nuxt />
-    <div class="container pt-5 pb-4">
+    <div class="container pt-5 pb-4 d-none d-md-block">
       <div class="row">
         <div class="col-md-6">
           Professional Property Consultants & Services, Inc. © 2019 
         </div>
         <div class="col-md-6 text-right">
+          CL# 927489 | Classification: C61, D63, D64
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5 pb-4 d-md-none">
+      <div class="row">
+        <div class="col-md-6">
+          PPC&S, Inc. © 2019 
+        </div>
+        <div class="col-md-6">
           CL# 927489 | Classification: C61, D63, D64
         </div>
       </div>
@@ -146,6 +171,11 @@ body, html {
 .letter-spacing {
   letter-spacing: .02rem;
 }
+
+.letter-spacing-sm {
+  letter-spacing: .0rem;
+}
+
 
 .active {
   color: #0080ff !important;
