@@ -57,7 +57,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.'
+        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside.'
       }, 
       {
         hid: 'title',
@@ -72,7 +72,7 @@ module.exports = {
       {
         hid: 'og:apple-mobile-web-app-title',
         property: 'og:apple-mobile-web-app-title',
-        content: 'PPC&S | Professional Property Consultants & Services, Inc.'
+        content: 'website'
       },
       {
         hid: 'og:title',
@@ -92,7 +92,7 @@ module.exports = {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside.'
+        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.'
       },
       {
         hid: 'og:image',
