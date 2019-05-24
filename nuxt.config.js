@@ -1,6 +1,5 @@
 const pkg = require('./package')
 
-
 module.exports = {
   mode: 'universal',
 
@@ -51,14 +50,19 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'PPC&S | Professional Building Restoration, Window Cleaning, and Bird Control Services',
+    title: 'PPC&S | Professional Property Consultants & Services, Inc.',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services throughout the nation.'
+        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/covers/vegas.png'
       }
     ],
     link: [
