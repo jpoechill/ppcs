@@ -70,8 +70,18 @@ module.exports = {
         content: 'website'
       },
       {
+        hid: 'og:apple-mobile-web-app-title',
+        property: 'og:apple-mobile-web-app-title',
+        content: 'PPC&S | Professional Property Consultants & Services, Inc.'
+      },
+      {
         hid: 'og:title',
         property: 'og:title',
+        content: 'PPC&S | Professional Property Consultants & Services, Inc.'
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
         content: 'PPC&S | Professional Property Consultants & Services, Inc.'
       },
       {
