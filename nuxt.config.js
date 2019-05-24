@@ -58,12 +58,37 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.'
+      }, 
+      {
+        hid: 'title',
+        name: 'title',
+        content: 'PPC&S | Professional Property Consultants & Services, Inc.'
+      }, 
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'PPC&S | Professional Property Consultants & Services, Inc.'
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://ppc-restore.com'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.'
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/covers/vegas.png'
-      }
+        content: 'https://ppc-restore.com/covers/vegas.png'
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png?v=3' },
