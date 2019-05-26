@@ -22,7 +22,9 @@
             <nuxt-link to="/projects/historic/sitel-san-angelo-tx">
               <h6>{{ historic.title }}</h6>
             </nuxt-link>
-            {{ historic.shortDescription }}
+            <p>
+              {{ historic.shortDescription }}
+            </p>
           </div>
         </div>
       </div>
@@ -49,15 +51,4 @@ export default {
 </script>
 
 <style>
-.font-light {
-  font-weight: 500;
-}
-
-a h6 {
-  color: #333;
-}
-
-a h6:hover {
-  color: #0056b3;
-}
 </style>

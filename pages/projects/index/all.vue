@@ -5,7 +5,7 @@
         <div class="col-md-6 pb-2">
           <h6>{{ service.title }} ({{ filterWork(service.filter) }})</h6> 
         </div>
-        <div class="col-md-6 text-right">
+        <div class="col-md-6 text-right font-sml">
           <nuxt-link :to="service.url">
             View All →
           </nuxt-link>
@@ -26,7 +26,9 @@
             <nuxt-link to="/projects/historic/sitel-san-angelo-tx">
               <h6>{{ historic.title }}</h6>
             </nuxt-link>
-            {{ historic.shortDescription }}
+            <p>
+              {{ historic.shortDescription }}
+            </p>
           </div>
         </div>
       </div>

@@ -106,15 +106,4 @@ export default {
 </script>
 
 <style>
-.font-light {
-  font-weight: 500;
-}
-
-a h6 {
-  color: #333;
-}
-
-a h6:hover {
-  color: #0056b3;
-}
 </style>

@@ -3,8 +3,10 @@
     <div class="container">
       <div class="row pt-3">
         <div class="col-md-12">
-          <h4>Leadership</h4>
-          <strong>Paul M. Popa</strong> | <i>President & CEO</i><br>
+          <h4 class="pb-2">Leadership</h4>
+          <div class="pb-2">
+            <strong>Paul M. Popa</strong> | <i>President & CEO</i>
+          </div>
           <p>
             A native of Canton Ohio Paul M. Popa has been working in the building restoration and preservation industry since 1965. Following in his Father’s footsteps (John Z. Popa) who found and operated Ace Window Cleaning in Brooklyn NY and  where Paul began working at the age of 15. He migrated to the San Francisco area in 1976 and started as a single man operation cleaning high rise windows. Since the early days, he has statically built and diversified the company into a multi-faceted national Building restoration/preservation company with completed/ongoing project is almost every state. 
           </p>
@@ -20,7 +22,9 @@
           <p>
             Mr. Popa is President and Chief Executive Officer of the corporation and serves as chairman of its board of directors.
           </p>
-          <strong>David M. Popa</strong> | <i>Director of Field Operations</i>
+          <div class="pb-2">
+            <strong>David M. Popa</strong> | <i>Director of Field Operations</i>
+          </div>
           <p>
             As director of field operations, David is responsible for overseeing all field operations. Mr. Popa Joined PPC&S in 2004 and has work his way up the ladder holding several different positions. He is a 3rd generation specialty contactor, following in the footsteps of his father Paul M. Popa and his grandfather John Z. Popa.
           </p>

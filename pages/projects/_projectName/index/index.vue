@@ -1,9 +1,8 @@
 <template>
   <div>
     <div class="container mh-custom">
-      <div class="row pt-1 pb-4">
+      <div class="row pt-2 pb-32">
         <div class="col-md-12">
-          <h3>{{ currProject.title }}</h3>
           <div id="carouselExampleIndicators" class="carousel slide pb-3" data-ride="carousel">
             <ol class="carousel-indicators">
               <li v-for="(headerImg, index) in currProject.headerImages" :key="index" data-target="#carouselExampleIndicators" :data-slide-to="index" :class="{ active: (index===0) }"></li>
@@ -22,21 +21,28 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+          <h3 class="pb-1">{{ currProject.title }}</h3>
           <div v-html="currProject.fullDescription"></div>
         </div>
       </div>
       <div class="row mb-4 mt-4">
         <div class="col-md-4">
           <h6>Client</h6>
-          {{ currProject.client }}
+          <p>
+            {{ currProject.client }}
+          </p>
         </div>
         <div class="col-md-4">
           <h6>Location</h6>
-          {{ currProject.location }}
+          <p>
+            {{ currProject.location }}
+          </p>
         </div>
         <div class="col-md-4">
           <h6>Project Type</h6>
-          {{ currProject.reference }}
+          <p>
+            {{ currProject.reference }}
+          </p>
         </div>
       </div>
     </div>

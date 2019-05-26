@@ -4,35 +4,41 @@
       <!-- Desktop -->
       <div class="container pt-3 pb-2 d-none d-md-block">
         <div class="row">
-          <div class="col-md-4 d-flex align-items-middle justify-content-start">
-            <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-custom pb-2" alt=""></nuxt-link>
+          <div class="col-md-4 d-flex pt-2 align-items-middle justify-content-start">
+            <nuxt-link to="/" @click.native="handleClick('')">
+              <img src="/logo-light.png" class="w-custom pb-1 pt-1" alt="">
+            </nuxt-link>
           </div>
-          <div class="col-md-8 text-right pt-1">
+          <div class="col-md-8 text-right pt-2 pb-1">
             <h5>
+              <img src="/30-years-light.png" class="service-years pb-0 pr-2 ml-1" alt=""> 
               <nuxt-link v-for="link in links" :key="link.name" :to="link.url" class="header-links" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
-              <img src="/30-years.png" class="service-years pb-1 ml-1" alt=""> 
+              
             </h5>
           </div>
         </div>
       </div>
       <!-- Mobile -->
-      <div class="container pt-3 pb-2 d-md-none">
+      <div class="container pt-3 pb-0 d-md-none">
         <div class="row">
           <div class="col-md-4 d-flex text-center align-items-middle justify-content-center">
-            <nuxt-link to="/" @click.native="handleClick('')"><img src="/logo-02.png" class="w-custom pb-2" alt=""></nuxt-link>
+            <nuxt-link to="/" @click.native="handleClick('')">
+              <img src="/logo-light.png" class="w-custom pb-2" alt="">
+            </nuxt-link>
           </div>
           <div class="col-md-8 text-center pt-1">
             <h5>
-              <nuxt-link v-for="link in links" :key="link.name" :to="link.url" class="header-links" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
+              <nuxt-link v-for="link in links" :key="link.name" :to="link.url" class="header-links p-2" :class="{ 'active': link.isActive }" @click.native="handleClick(link.name)">{{ link.title }}</nuxt-link>
             </h5>
           </div>
         </div>
       </div>
     </div>
+    <!-- Project Header Links -->
     <transition name="fade" appear>
       <div v-if="currIndex !== -1" class="container">
         <div class="row pt-3">
-          <div class="col-md-12">
+          <div class="col-md-12 font-sml">
             <nuxt-link to="/projects">Back to Projects</nuxt-link> | 
             <nuxt-link :to="'/projects/' + listProjects[prevIndex].name">View Previous</nuxt-link> | 
             <nuxt-link :to="'/projects/' + listProjects[nextIndex].name">View Next →</nuxt-link> 
@@ -41,23 +47,33 @@
       </div>
     </transition>
     <nuxt />
-    <div class="container pt-5 pb-4 d-none d-md-block">
-      <div class="row">
-        <div class="col-md-6">
-          Professional Property Consultants & Services, Inc. © 2019 
+    <div class="footer ">
+      <div class="container mt-5 pt-5 pb-5 d-none d-md-block">
+        <div class="row">
+          <div class="offset-md-6 col-md-6 text-right">
+          </div>
         </div>
-        <div class="col-md-6 text-right">
-          CL# 927489 | Classification: C61, D63, D64
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/logo-light.png" class="w-25 pb-2" alt=""> <br>
+            Professional Property Consultants & Services, Inc. © 2019 <br>
+            CL# 927489 | Classification: C61, D63, D64
+          </div>
+          <div class="col-md-6 text-right">
+            <img src="/social.png" class="w-25" alt="">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container pt-5 pb-4 d-md-none">
-      <div class="row">
-        <div class="col-md-6">
-          PPC&S, Inc. © 2019 
-        </div>
-        <div class="col-md-6">
-          CL# 927489 | Classification: C61, D63, D64
+      <div class="container pt-5 pb-5 d-md-none">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="/social.png" class="w-25" alt=""><br><br><br>
+            <img src="/logo-light.png" class="w-25 pb-2" alt=""> <br>
+            PPC&S, Inc. © 2019 
+          </div>
+          <div class="col-md-6">
+            CL# 927489 | Classification: C61, D63, D64
+          </div>
         </div>
       </div>
     </div>
@@ -158,6 +174,10 @@ body, html {
   font-size: 18px;
 }
 
+p, ul li, .font-sml {
+  font-size: 16px;
+  color: #555;
+}
 
 .letter-spacing {
   letter-spacing: .02rem;
@@ -182,7 +202,7 @@ a:hover {
 }
 
 .header-links {
-  color: #FFF;
+  color: #111;
 }
 
 .header-links:hover {
@@ -193,12 +213,19 @@ a:hover {
   width: 60px;
 }
 
+.footer {
+  background-color: #fafafa;
+  font-size: 16px;
+  color: #555;
+}
+
 .w-custom {
   width: 60%;
 }
 
 .bg-custom {
-  background-color: #111;
+  background-color: #fafafa;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .fade-enter-active, .fade-leave-active {
