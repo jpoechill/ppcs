@@ -1,7 +1,7 @@
 export const state = () => ({
     allWork: [
         {
-            title: 'Sitel Corporation – San Angelo, TX',
+            title: 'Sitel Corporation',
             name: 'sitel-san-angelo',
             shortDescription: 'The Sitel Building had gone through decades of harsh weather.',
             fullDescription: `
@@ -29,7 +29,7 @@ export const state = () => ({
             reference: 'Historic Restoration'
         },
         {
-            title: '135 Hamilton – Palo Alto, CA',
+            title: '135 Hamilton',
             name: 'hamilton-palo-alto',
             shortDescription: 'A luxury condominium complex in the final stages of construction in downtown Palo Alto.',
             fullDescription: `
@@ -61,7 +61,7 @@ export const state = () => ({
             reference: 'Restoration'
         },
         {
-            title: '408 Panama – Stanford University',
+            title: '408 Panama',
             name: 'panama-stanford',
             shortDescription: 'The Science Department of Stanford University required cleaning and repairing discolored panels.',
             fullDescription: `
@@ -90,7 +90,7 @@ export const state = () => ({
             reference: 'Restoration'
         },
         {
-            title: 'Hilton Hotel – Waco, TX',
+            title: 'Hilton Hotel',
             name: 'hilton-waco',
             shortDescription: 'The Hilton had wear and tear from decades of harsh weather, along with other structural needs.',
             fullDescription: `
@@ -114,7 +114,7 @@ export const state = () => ({
             reference: 'Restoration'
         },
         {
-            title: 'Sculpture Cleaning – Hyatt Regency',
+            title: 'Hyatt Regency',
             name: 'sculpture-hyatt',
             shortDescription: 'A large sculpture in the atrium of the Hyatt Regency in San Francisco require cleaning and repairs.',
             fullDescription: `
@@ -136,7 +136,7 @@ export const state = () => ({
             reference: 'Historic Restoration'
         },
         {
-            title: 'Samsung – Mountain View, CA',
+            title: 'Samsung',
             name: 'samsung-mountain-view',
             shortDescription: 'The Samsung building in Mountain View required chemical cleaning and panel blending.',
             fullDescription: `
@@ -158,7 +158,7 @@ export const state = () => ({
             reference: 'Restoration'
         },
         {
-            title: 'Harley Davidson – Stafford, TX',
+            title: 'Harley Davidson',
             name: 'harley-davidson-stafford',
             shortDescription: 'The Harley Davidson building in Stafford, TX, required maintenance and coatings for their ACM panels.',
             fullDescription: `
@@ -179,7 +179,7 @@ export const state = () => ({
             reference: 'Restoration'
         },
         {
-            title: 'Anti Graffiti Coating – UCSF',
+            title: 'UCSF',
             name: 'anti-graff-ucsf',
             shortDescription: 'A building at the UCSF campus required specialized anti-graffiti coating.',
             fullDescription: `
@@ -205,7 +205,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'Hyatt Regency – San Francisco, CA',
+            title: 'Hyatt Regency',
             name: 'hyatt-san-francisco',
             shortDescription: 'A building at the UCSF campus required specialized anti-graffiti coating.',
             fullDescription: `
@@ -229,7 +229,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing, Bird Control Systems'
         },
         {
-            title: 'True Wind Capital – San Francisco, CA',
+            title: 'True Wind Capital',
             name: 'true-wind-sf',
             shortDescription: 'We provided glass restoration services for True Wind Capital in San Francisco, CA.',
             fullDescription: `
@@ -252,7 +252,7 @@ export const state = () => ({
             reference: 'Restoration, Glass Cleaning'
         },
         {
-            title: 'Oyster Point – South San Francisco, CA',
+            title: 'Oyster Point',
             name: 'oyster-point-ssf',
             shortDescription: 'We provided exterior GFRC cleaning & sealing services for CBRE in South San Francisco, CA.',
             fullDescription: `
@@ -277,7 +277,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'Children’s Hospital – Salt Lake City, UT',
+            title: 'Children’s Hospital',
             name: 'childrens-hospital-slc',
             shortDescription: 'We provided exterior frame-restoration services for the Children\'s Hospital in Salt Lake City, UT.',
             fullDescription: `
@@ -305,7 +305,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'Stanford University – Palo Alto, CA',
+            title: 'Stanford University',
             name: 'stanford-palo-alto',
             shortDescription: 'We provided exterior-concrete cleaning services for Stanford University, in Palo Alto, CA.',
             fullDescription: `
@@ -331,7 +331,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'PG&E – San Luis Obispo, CA',
+            title: 'PG&E',
             name: 'pge-san-luis',
             shortDescription: 'We provided historical building restoration services for the PG&E building in San Luis Obispo, CA.',
             fullDescription: `
@@ -361,7 +361,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'Hyatt Regency – San Francisco, CA',
+            title: 'Hyatt Regency',
             name: 'hyatt-sf-balcony',
             shortDescription: 'We provided balcony refinishing services for the Hyatt Regency, in San Francisco, CA.',
             fullDescription: `
@@ -391,7 +391,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'Wells Fargo – Houston, TX',
+            title: 'Wells Fargo',
             name: 'wells-houston',
             shortDescription: 'We provided exterior chemical cleaning and sealing services for the Well Fargo.',
             fullDescription: `
@@ -415,7 +415,7 @@ export const state = () => ({
             reference: 'Historic Restoration, Weather-Proofing, Consulting'
         },
         {
-            title: 'One Hawthorne – San Francisco, CA',
+            title: 'One Hawthorne',
             name: 'one-hawthorne-sf',
             shortDescription: 'We provided exterior window cleaning services for the One Hawthorne building in San Francisco, CA.',
             fullDescription: `
@@ -443,7 +443,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing, Window Cleaning'
         },
         {
-            title: '1200 California – San Francisco, CA',
+            title: '1200 California',
             name: '1200-california',
             shortDescription: 'We provided grinding and polishing services of 1200 California, in San Francisco, CA.',
             fullDescription: `
@@ -465,7 +465,7 @@ export const state = () => ({
             reference: 'Historic Restoration'
         },
         {
-            title: 'Wynot Towers – Kansas City, KS',
+            title: 'Wynot Towers',
             name: 'wynot-towers-ks',
             shortDescription: 'We designed and installed bird netting on an entire 17-story building.',
             fullDescription: `
@@ -490,7 +490,7 @@ export const state = () => ({
             reference: 'Bird Control Systems'
         },
         {
-            title: 'St Paul’s Towers – Oakland, CA',
+            title: 'St Paul’s Towers',
             name: 'st-pauls-oakland',
             shortDescription: 'We designed and installed 3/4" bird netting for a community of senior citizens.',
             fullDescription: `
@@ -514,7 +514,7 @@ export const state = () => ({
             reference: 'Bird Control Systems'
         },
         {
-            title: 'McDills Air Force Base – Tampa, FL',
+            title: 'McDills Air Force Base',
             name: 'mcdills-tampa',
             shortDescription: 'We designed and installed bird netting systems in 7 aircraft hangars.',
             fullDescription: `
@@ -543,7 +543,7 @@ export const state = () => ({
             reference: 'Consulting, Bird Control Systems'
         },
         {
-            title: 'Los Rios Community College – Sacramento, CA',
+            title: 'Los Rios Community College',
             name: 'los-rios-cc',
             shortDescription: 'We provided chemical cleaning, building resealing, and bird netting services.',
             fullDescription: `
@@ -569,7 +569,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing, Bird Control Systems'
         },
         {
-            title: 'Mozart Development Building – Palo Alto, California',
+            title: 'Mozart Development Building',
             name: 'mozart-dev',
             shortDescription: 'We were commissioned by Mozart Development Company to clean and re-seal 3 buildings.',
             fullDescription: `
@@ -596,7 +596,7 @@ export const state = () => ({
             reference: 'Historic Restoration, Weather-Proofing'
         },
         {
-            title: 'Las Vegas Convention Center – Las Vegas, NV',
+            title: 'Las Vegas Convention Center',
             name: 'lv-cc',
             shortDescription: 'We designed and installed an expansive bird control systems for the Las Vegas Convention Center.',
             fullDescription: `
@@ -625,7 +625,7 @@ export const state = () => ({
             reference: 'Bird Control Systems'
         },
         {
-            title: 'US Customs House – San Francisco, CA',
+            title: 'US Customs House',
             name: 'us-customs-house',
             shortDescription: 'We chemically cleaned, sealed and repaired the faltering granite on this historic building.',
             fullDescription: `
@@ -651,7 +651,7 @@ export const state = () => ({
             reference: 'Historic Restoration, Restoration, Weather-Proofing'
         },
         {
-            title: 'Railroad Square – San Luis Obispo, CA',
+            title: 'Railroad Square',
             name: 'rr-square-san-luis',
             shortDescription: 'We chemically cleaned and sealed the brick façade of this aged building.',
             fullDescription: `
@@ -678,7 +678,7 @@ export const state = () => ({
             reference: 'Historic Restoration, Restoration, Weather-Proofing'
         },
         {
-            title: 'David Cowens Drive – Newark, CA',
+            title: 'David Cowens Drive',
             name: 'david-cowens-drive',
             shortDescription: 'We performed power washing to clean GFRC panels, and thoroughly washed all building windows.',
             fullDescription: `
@@ -704,7 +704,7 @@ export const state = () => ({
             reference: 'Historic Restoration, Glass Cleaning'
         },
         {
-            title: 'Juhl Condominium – Las Vegas, NV',
+            title: 'Juhl Condominium',
             name: 'juhl-condo-lv',
             shortDescription: 'We removed scratches from over 5,000 damaged windows on this major building in downtown Las Vegas.',
             fullDescription: `
@@ -734,7 +734,7 @@ export const state = () => ({
             reference: 'Glass Cleaning'
         },
         {
-            title: 'Hyatt Regency Hotel – San Francisco, CA',
+            title: 'Hyatt Regency Hotel',
             name: 'hyatt-monthly-sf',
             shortDescription: 'We perform monthly and quarterly interior and exterior window cleaning for the Hyatt Regency Hotel.',
             fullDescription: `
@@ -759,7 +759,7 @@ export const state = () => ({
             reference: 'Weather-Proofing, Glass Cleaning'
         },
         {
-            title: 'Genentech – Vacaville, CA',
+            title: 'Genentech',
             name: 'genentech-vacaville',
             shortDescription: 'We were hired by Walters & Wolfe (GFRC panel manufacturers) to remove rust window cleaning services.',
             fullDescription: `
@@ -790,7 +790,7 @@ export const state = () => ({
             reference: 'Restoration, Weather-Proofing'
         },
         {
-            title: 'DeVry University – Fremont, CA',
+            title: 'DeVry University',
             name: 'devry-uni-fremont',
             shortDescription: 'We chemically cleaned and re-sealed GFRC panels, returning them to their original condition.',
             fullDescription: `
@@ -816,7 +816,7 @@ export const state = () => ({
             reference: 'Historic Restoration'
         },
         {
-            title: '944 Market Street – San Francisco, CA',
+            title: '944 Market Street',
             name: '944-market-sf',
             shortDescription: 'We provided a bird netting system for this building in San Francisco, CA.',
             fullDescription: `
@@ -841,7 +841,7 @@ export const state = () => ({
             reference: 'Bird Control Systems'
         },
         {
-            title: 'Benicia-Martinez Bridge – Pacheco, CA',
+            title: 'Benicia-Martinez Bridge',
             name: 'benicia-martinez',
             shortDescription: 'We installed a complete bird-netting barrier system designed to move with the bridge.',
             fullDescription: `
@@ -867,7 +867,7 @@ export const state = () => ({
             reference: 'Bird Control Systems'
         },
         {
-            title: 'Alcatraz Island – San Francisco, CA',
+            title: 'Alcatraz Island',
             name: 'alcatraz-sf',
             shortDescription: 'We installed a bird-netting system for the historical Alcatraz Island, in San Francisco, CA.',
             fullDescription: `
@@ -893,7 +893,7 @@ export const state = () => ({
             reference: 'Bird Control Systems'
         },
         {
-            title: 'Anheuser-Busch – Houston, TX',
+            title: 'Anheuser-Busch',
             name: 'anheuser-houston',
             shortDescription: 'We designed and installed specialized bird control systems at Anheuser-Busch throughout the US.',
             fullDescription: `
@@ -920,7 +920,7 @@ export const state = () => ({
             reference: 'Bird Control Systems'
         },
         {
-            title: 'Central Building – Oakland, CA',
+            title: 'Central Building',
             name: 'central-oakland',
             shortDescription: 'This restoration project was featured in Prosoco’s magazine, and was recognized for an award.',
             fullDescription: `
@@ -952,7 +952,7 @@ export const state = () => ({
             reference: 'Historic Restoration'
         },
         {
-            title: 'Bank of the Orient – San Francisco, CA',
+            title: 'Bank of the Orient',
             name: 'boto-sf',
             shortDescription: 'We perform monthly and quarterly interior and exterior window cleaning for the Bank of the Orient.',
             fullDescription: `
@@ -982,7 +982,7 @@ export const state = () => ({
             reference: 'Window Cleaning'
         },
         {
-            title: 'Bishop Ranch – San Ramon, CA',
+            title: 'Bishop Ranch',
             name: 'bishop-ranch-san-ramon',
             shortDescription: 'We removed rust from exterior panels, provided final construction clean-up, and window cleaning.',
             fullDescription: `

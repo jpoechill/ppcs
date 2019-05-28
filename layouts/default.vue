@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="bg-custom">
+    <div class="bg-custom fixed-top">
       <!-- Desktop -->
-      <div class="container pt-3 pb-2 d-none d-md-block">
+      <div class="container pt-2 pb-2 d-none d-md-block">
         <div class="row">
           <div class="col-md-4 d-flex pt-2 align-items-middle justify-content-start">
             <nuxt-link to="/" @click.native="handleClick('')">
@@ -36,7 +36,7 @@
     </div>
     <!-- Project Header Links -->
     <transition name="fade" appear>
-      <div v-if="currIndex !== -1" class="container">
+      <div v-if="currIndex !== -1" class="container mt-80 mb-80-custom">
         <div class="row pt-3">
           <div class="col-md-12 font-sml">
             <nuxt-link to="/projects">Back to Projects</nuxt-link> | 
@@ -46,9 +46,9 @@
         </div>
       </div>
     </transition>
-    <nuxt />
-    <div class="footer ">
-      <div class="container mt-5 pt-5 pb-5 d-none d-md-block">
+    <nuxt class="mt-80" />
+    <div class="footer">
+      <div class="container mt-0 pt-5 pb-5 d-none d-md-block">
         <div class="row">
           <div class="offset-md-6 col-md-6 text-right">
           </div>
@@ -172,6 +172,7 @@ export default {
 <style>
 body, html {
   font-size: 18px;
+  background-color: #f7f7f7;
 }
 
 p, ul li, .font-sml {
@@ -214,7 +215,7 @@ a:hover {
 }
 
 .footer {
-  background-color: #fafafa;
+  background-color: #f6f6f6;
   font-size: 16px;
   color: #555;
 }

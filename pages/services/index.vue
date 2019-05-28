@@ -29,7 +29,7 @@ export default {
   data () {
     return {
       showNav: false,
-      nextPage: null,
+      nextPage: 'historic-restoration',
       linksList: [
         'historic-restoration',
         'consulting',
@@ -76,6 +76,7 @@ export default {
       this.updatePath()
     }
   },
+  scrollToTop: true,
   transition: 'fade'
 }
 </script>
