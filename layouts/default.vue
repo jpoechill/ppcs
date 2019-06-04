@@ -60,14 +60,31 @@
             CL# 927489 | Classification: C61, D63, D64
           </div>
           <div class="col-md-6 text-right">
-            <img src="/social.png" class="w-25" alt="">
+            <a href="https://instagram.com/ppcsrestore" target="_blank">
+              <img src="/social-instagram.svg" class="pl-4" alt="instagram">
+            </a>
+            <a href="https://twitter.com/ppcsrestore" target="_blank">
+              <img src="/social-twitter.svg" class="pl-4" alt="twitter">
+            </a>
+            <a href="https://www.facebook.com/ppcsrestore" target="_blank">
+              <img src="/social-facebook.svg" class="pl-4" alt="facebook">
+            </a>
           </div>
         </div>
       </div>
       <div class="container pt-5 pb-5 d-md-none">
         <div class="row">
           <div class="col-md-6">
-            <img src="/social.png" class="w-25" alt=""><br><br><br>
+            <a href="https://instagram.com/ppcsrestore" target="_blank">
+              <img src="/social-instagram.svg" class="pl-4" alt="instagram">
+            </a>
+            <a href="https://twitter.com/ppcsrestore" target="_blank">
+              <img src="/social-twitter.svg" class="pl-4" alt="twitter">
+            </a>
+            <a href="https://www.facebook.com/ppcsrestore" target="_blank">
+              <img src="/social-facebook.svg" class="pl-4" alt="facebook">
+            </a>
+            <br><br><br>
             <img src="/logo-light.png" class="w-25 pb-2" alt=""> <br>
             PPC&S, Inc. © 2019 
           </div>
@@ -220,8 +237,16 @@ a:hover {
   color: #555;
 }
 
+.container {
+  max-width: 1040px;
+}
+
 .w-custom {
   width: 60%;
+}
+
+.mb-custom {
+  margin-bottom: 2.25rem!important;
 }
 
 .bg-custom {

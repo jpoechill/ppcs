@@ -35,7 +35,7 @@
         <!-- </div>
       </div> -->
       <div class="container">
-        <div class="row pt-4 pb-4">
+        <div class="row pt-4 pb-5">
           <div class="col-md-12">
             <h5>The Leading Company for Building Restoration and Preservation </h5>
             <p>
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="(service, index) in services" :key="index" class="col-md-4 mb-4">
+          <div v-for="(service, index) in services" :key="index" class="col-md-4 mb-custom">
             <div class="services-panel h-100">
               <div class="w-100 bg-light">
                 <nuxt-link :to="service.url">
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="row">
-        <div v-for="(project, index) in recentProjects" :key="index" class="col-md-4 mb-4">
+        <div v-for="(project, index) in recentProjects" :key="index" class="col-md-4 mb-custom">
           <div class="services-panel h-100">
             <div class="position-relative">
               <nuxt-link :to="project.url">
@@ -116,6 +116,15 @@
         </div>
       </div>
     </div>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            Request a Free Estimate
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="bg-white">
       <div class="container pb-4 mt-4">
         <div class="row pt-4">

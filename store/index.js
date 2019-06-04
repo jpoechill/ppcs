@@ -1,6 +1,118 @@
 export const state = () => ({
     allWork: [
         {
+            title: 'Millenium Tower',
+            name: 'millenium-tower',
+            shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
+            fullDescription: `
+                <p>
+                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
+                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
+                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
+                </p>
+                <p>
+                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                </p>
+            `,
+            url: '/projects/sitel-san-angelo',
+            client: 'Sitel Corporation',
+            location: 'San Angelo, TX',
+            featured: true,
+            recent: true,
+            type: ['historic'],
+            thumbnail: '/_thumbnails/sitel-corp.png',
+            headerImages: [
+                '/_headerImgs/sitel-01.jpg',
+                '/_headerImgs/sitel-02.jpg',
+                '/_headerImgs/sitel-03.jpg'
+            ],
+            reference: 'Historic Restoration'
+        },
+        {
+            title: 'Dropbox',
+            name: 'millenium-tower',
+            shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
+            fullDescription: `
+                <p>
+                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
+                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
+                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
+                </p>
+                <p>
+                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                </p>
+            `,
+            url: '/projects/sitel-san-angelo',
+            client: 'Sitel Corporation',
+            location: 'San Angelo, TX',
+            featured: true,
+            recent: true,
+            type: ['historic'],
+            thumbnail: '/_thumbnails/sitel-corp.png',
+            headerImages: [
+                '/_headerImgs/sitel-01.jpg',
+                '/_headerImgs/sitel-02.jpg',
+                '/_headerImgs/sitel-03.jpg'
+            ],
+            reference: 'Historic Restoration'
+        },
+        {
+            title: 'NOLA',
+            name: 'millenium-tower',
+            shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
+            fullDescription: `
+                <p>
+                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
+                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
+                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
+                </p>
+                <p>
+                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                </p>
+            `,
+            url: '/projects/sitel-san-angelo',
+            client: 'Sitel Corporation',
+            location: 'San Angelo, TX',
+            featured: true,
+            recent: true,
+            type: ['historic'],
+            thumbnail: '/_thumbnails/sitel-corp.png',
+            headerImages: [
+                '/_headerImgs/sitel-01.jpg',
+                '/_headerImgs/sitel-02.jpg',
+                '/_headerImgs/sitel-03.jpg'
+            ],
+            reference: 'Historic Restoration'
+        },
+        {
+            title: 'Dallas, TX',
+            name: 'millenium-tower',
+            shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
+            fullDescription: `
+                <p>
+                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
+                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
+                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
+                </p>
+                <p>
+                    Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
+                </p>
+            `,
+            url: '/projects/sitel-san-angelo',
+            client: 'Sitel Corporation',
+            location: 'San Angelo, TX',
+            featured: true,
+            recent: true,
+            type: ['historic'],
+            thumbnail: '/_thumbnails/sitel-corp.png',
+            headerImages: [
+                '/_headerImgs/sitel-01.jpg',
+                '/_headerImgs/sitel-02.jpg',
+                '/_headerImgs/sitel-03.jpg'
+            ],
+            reference: 'Historic Restoration'
+        },
+        {
             title: 'Sitel Corporation',
             name: 'sitel-san-angelo',
             shortDescription: 'The Sitel Building had gone through decades of harsh weather.',
@@ -49,7 +161,7 @@ export const state = () => ({
             url: '/projects/hamilton-palo-alto',
             client: 'Sitel Corporation',
             location: 'San Angelo, TX',      
-            featured: true,
+            featured: false,
             recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/hyatt-regency-bird-01.png',
@@ -145,8 +257,8 @@ export const state = () => ({
             url: '/projects/samsung-mountain-view',
             client: 'Walters & Wolf',
             location: 'Mountain View, CA',
-            featured: true,
-            recent: true,
+            featured: false,
+            recent: false,
             type: ['restoration'],
             thumbnail: '/_thumbnails/samsung-mountain-view.png',
             headerImages: [
@@ -169,8 +281,8 @@ export const state = () => ({
             url: '/projects/harley-davidson-stafford',
             client: 'Harley Davidson',
             location: 'Stafford, TX',
-            featured: true,
-            recent: true,
+            featured: false,
+            recent: false,
             type: ['restoration'],
             thumbnail: '/_thumbnails/harley-davidson.png',
             headerImages: [
@@ -198,8 +310,8 @@ export const state = () => ({
                 '/_headerImgs/ucsf-05.jpg',
                 '/_headerImgs/ucsf-06.jpg',
             ],             
-            featured: true,
-            recent: true,
+            featured: false,
+            recent: false,
             type: ['weather-proofing', 'restoration'],
             thumbnail: '/_thumbnails/ucsf-anti-graff.png',
             reference: 'Restoration, Weather-Proofing'
@@ -222,8 +334,8 @@ export const state = () => ({
                 '/_headerImgs/hyatt-03.jpg',
                 '/_headerImgs/hyatt-04.jpg',
             ],             
-            featured: true,
-            recent: true,
+            featured: false,
+            recent: false,
             type: ['weather-proofing', 'restoration', 'bird-control'],
             thumbnail: '/_thumbnails/hyatt-regency-bird-01.png',
             reference: 'Restoration, Weather-Proofing, Bird Control Systems'
@@ -886,7 +998,7 @@ export const state = () => ({
                 '/_headerImgs/alcatraz-05.jpg',
                 '/_headerImgs/alcatraz-06.jpg',
             ],             
-            featured: false,
+            featured: true,
             recent: false,
             type: ['bird-control'],
             thumbnail: '/_thumbnails/alcatraz.png',

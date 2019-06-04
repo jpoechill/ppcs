@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-3 pb-1">
+      <div class="row pt-3 pb-4">
         <div class="col-md-12">
           <h3>Services</h3>
           <p>

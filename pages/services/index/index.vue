@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <div class="row">
-        <div v-for="(service, index) in services" :key="index" class="col-md-4 mb-4">
+        <div v-for="(service, index) in services" :key="index" class="col-md-4 mb-custom">
           <div class="services-panel h-100">
             <div class="w-100 bg-light">
               <nuxt-link :to="service.url">
