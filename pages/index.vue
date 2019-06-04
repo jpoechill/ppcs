@@ -116,7 +116,7 @@
         </div>
       </div>
     </div>
-    <section>
+    <!-- <section>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -124,7 +124,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="bg-white">
       <div class="container pb-4 mt-4">
         <div class="row pt-4">
