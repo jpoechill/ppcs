@@ -5,6 +5,11 @@
         <div class="col-md-12">
           <h4 class="pb-2">Leadership</h4>
           <div class="pb-2">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="/_avatars/man-02.png" class="w-75 mb-2" alt="Paul Popa Avatar"> 
+              </div>
+            </div>
             <strong>Paul M. Popa</strong> | <i>President & CEO</i>
           </div>
           <p>
@@ -22,7 +27,12 @@
           <p>
             Mr. Popa is President and Chief Executive Officer of the corporation and serves as chairman of its board of directors.
           </p>
-          <div class="pb-2">
+          <div class="pt-4 pb-2">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="/_avatars/man-03.png" class="w-75 mb-2" alt="Paul Popa Avatar"> 
+              </div>
+            </div>
             <strong>David M. Popa</strong> | <i>Director of Field Operations</i>
           </div>
           <p>

@@ -1,61 +1,78 @@
 export const state = () => ({
     allWork: [
-        // {
-        //     title: 'Millenium Tower',
-        //     name: 'millenium-tower',
-        //     shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
-        //     fullDescription: `
-        //         <p>
-        //             The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-        //             There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-        //             After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-        //         </p>
-        //         <p>
-        //             Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
-        //         </p>
-        //     `,
-        //     url: '/projects/sitel-san-angelo',
-        //     client: 'Sitel Corporation',
-        //     location: 'San Angelo, TX',
-        //     featured: true,
-        //     recent: true,
-        //     type: ['historic'],
-        //     thumbnail: '/_thumbnails/sitel-corp.png',
-        //     headerImages: [
-        //         '/_headerImgs/sitel-01.jpg',
-        //         '/_headerImgs/sitel-02.jpg',
-        //         '/_headerImgs/sitel-03.jpg'
-        //     ],
-        //     reference: 'Historic Restoration'
-        // },
-        // {
-        //     title: 'Dropbox',
-        //     name: 'millenium-tower',
-        //     shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
-        //     fullDescription: `
-        //         <p>
-        //             The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-        //             There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-        //             After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-        //         </p>
-        //         <p>
-        //             Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
-        //         </p>
-        //     `,
-        //     url: '/projects/sitel-san-angelo',
-        //     client: 'Sitel Corporation',
-        //     location: 'San Angelo, TX',
-        //     featured: true,
-        //     recent: true,
-        //     type: ['historic'],
-        //     thumbnail: '/_thumbnails/sitel-corp.png',
-        //     headerImages: [
-        //         '/_headerImgs/sitel-01.jpg',
-        //         '/_headerImgs/sitel-02.jpg',
-        //         '/_headerImgs/sitel-03.jpg'
-        //     ],
-        //     reference: 'Historic Restoration'
-        // },
+        {
+            title: 'Millenium Tower',
+            name: 'millenium-tower',
+            shortDescription: 'We are contracted to clean and fix cracks in the exteriors windows of the renowned Millenium Tower.',
+            fullDescription: `
+                <p>
+                    The Millenium Tower in San Francisco opened to resident in 2009, and includes two buildings – one over 12 stories tall, and the other over 58 stories. In 2016, it was discovered and released to the public that the tower was sinking and leaning. With this, many respective experts have been called to find a solution. The Millenium Tower is the fourth tallest building in San Francisco overall.
+                </p>
+                <p>
+                    Being DMU certified operators and trained industrial window cleaners, we were able to safely clean all of the exterior windows, and fix damaged areas due to the wind erosian, and the building's now infamous sink and lean.
+                </p>
+                <p>
+                    This project – for which we are able to complete multiple times a year – requires the highest level of safety, industry experience, and state certifications to complete.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <img src="/_gallery/millenium/millenium-01.png" class="w-100">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/_gallery/millenium/millenium-02.png" class="w-100">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/_gallery/millenium/millenium-03.png" class="w-100">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/_gallery/millenium/millenium-04.png" class="w-100">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/_gallery/millenium/millenium-05.png" class="w-100">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="/_gallery/millenium/millenium-06.png" class="w-100">
+                    </div>
+                </div>
+            `,
+            url: '/projects/millenium-tower',
+            client: 'Millenium Tower',
+            location: 'San Francisco, CA',
+            featured: true,
+            recent: true,
+            type: ['restoration'],
+            thumbnail: '/_thumbnails/millenium.png',
+            headerImages: [
+                '/_headerImgs/millenium-01.png',
+                // '/_headerImgs/millenium-02.png',
+            ],
+            reference: 'Restoration, Window Cleaning'
+        },
+        {
+            title: 'Dropbox',
+            name: 'dropbox',
+            shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
+            fullDescription: `
+                <p>
+                    The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
+                    There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
+                    After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
+                </p>
+            `,
+            url: '/projects/sitel-san-angelo',
+            client: 'Sitel Corporation',
+            location: 'San Angelo, TX',
+            featured: true,
+            recent: true,
+            type: ['weatherproofing'],
+            thumbnail: '/_thumbnails/sitel-corp.png',
+            headerImages: [
+                '/_headerImgs/sitel-01.jpg',
+                '/_headerImgs/sitel-02.jpg',
+                '/_headerImgs/sitel-03.jpg'
+            ],
+            reference: 'Historic Restoration'
+        },
         // {
         //     title: 'NOLA',
         //     name: 'millenium-tower',
@@ -357,8 +374,8 @@ export const state = () => ({
                 '/_headerImgs/true-wind-02.jpg',
                 '/_headerImgs/true-wind-03.jpg',
             ],             
-            featured: false,
-            recent: false,
+            featured: true,
+            recent: true,
             type: ['restoration', 'glass'],
             thumbnail: '/_thumbnails/tw-capital-sf.png',
             reference: 'Restoration, Glass Cleaning'
@@ -382,8 +399,8 @@ export const state = () => ({
                 '/_headerImgs/oyster-04.jpg',
                 '/_headerImgs/oyster-05.jpg',
             ],             
-            featured: false,
-            recent: false,
+            featured: true,
+            recent: true,
             type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/oyster-point-sf.png',
             reference: 'Restoration, Weather-Proofing'
@@ -410,8 +427,8 @@ export const state = () => ({
                 '/_headerImgs/childrens-07.jpg',
                 '/_headerImgs/childrens-08.jpg',  
             ],           
-            featured: false,
-            recent: false,
+            featured: true,
+            recent: true,
             type: ['restoration', 'weatherproofing'],
             thumbnail: '/_thumbnails/childrens-hospital-ut.png',
             reference: 'Restoration, Weather-Proofing'

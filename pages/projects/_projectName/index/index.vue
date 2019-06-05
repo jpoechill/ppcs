@@ -3,7 +3,10 @@
     <div class="container mh-custom">
       <div class="row pt-2 pb-32">
         <div class="col-md-12">
-          <div id="carouselExampleIndicators" class="carousel slide pb-3" data-ride="carousel">
+          <div v-if="currProject.headerImages.length === 1">
+            <img :src="currProject.headerImages[0]" class="w-100 mb-3" alt="">
+          </div>
+          <div v-else id="carouselExampleIndicators" class="carousel slide pb-3" data-ride="carousel">
             <ol class="carousel-indicators">
               <li v-for="(headerImg, index) in currProject.headerImages" :key="index" data-target="#carouselExampleIndicators" :data-slide-to="index" :class="{ active: (index===0) }"></li>
             </ol>
