@@ -1,6 +1,6 @@
 export const state = () => ({
     allWork: [
-        {
+        // {
         //     title: 'Millenium Tower',
         //     name: 'millenium-tower',
         //     shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
