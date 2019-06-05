@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container mh-custom">
-      <div class="row pt-2 pb-32">
+      <div class="row mb-0-responsive pt-2-responsive pb-32">
         <div class="col-md-12">
           <div v-if="currProject.headerImages.length === 1">
             <img :src="currProject.headerImages[0]" class="w-100 mb-3" alt="">

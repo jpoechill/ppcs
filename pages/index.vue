@@ -271,4 +271,11 @@ export default {
 .mb-80-custom {
   margin-bottom: -80px;
 }
+
+@media only screen and (max-width: 768px) {
+  .mb-80-custom {
+    margin-bottom: -100px;
+  }
+}
+
 </style>

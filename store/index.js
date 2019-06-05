@@ -6,13 +6,16 @@ export const state = () => ({
             shortDescription: 'We are contracted to clean and fix cracks in the exteriors windows of the renowned Millenium Tower.',
             fullDescription: `
                 <p>
-                    The Millenium Tower in San Francisco opened to resident in 2009, and includes two buildings – one over 12 stories tall, and the other over 58 stories. In 2016, it was discovered and released to the public that the tower was sinking and leaning. With this, many respective experts have been called to find a solution. The Millenium Tower is the fourth tallest building in San Francisco overall.
+                    The Millenium Tower in San Francisco opened to residents in 2009, and includes two buildings – one over 12 stories tall, and the other over 58 stories. In 2016, it was discovered and released to the public that the tower was sinking and leaning.
                 </p>
                 <p>
                     Being DMU certified operators and trained industrial window cleaners, we were able to safely clean all of the exterior windows, and fix damaged areas due to the wind erosian, and the building's now infamous sink and lean.
                 </p>
                 <p>
                     This project – for which we are able to complete multiple times a year – requires the highest level of safety, industry experience, and state certifications to complete.
+                </p>
+                <p>
+                    The Millenium Tower is the fourth tallest building in San Francisco overall.
                 </p>
                 <div class="row mt-4">
                     <div class="col-md-4 mb-4">

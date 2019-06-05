@@ -35,8 +35,9 @@
       </div>
     </div>
     <!-- Project Header Links -->
+    <!-- Desktop -->
     <transition name="fade" appear>
-      <div v-if="currIndex !== -1" class="container mt-80 mb-80-custom">
+      <div v-if="currIndex !== -1" class="container mt-80 mb-80-custom d-none d-md-block">
         <div class="row pt-3">
           <div class="col-md-12 font-sml">
             <nuxt-link to="/projects">Back to Projects</nuxt-link> | 
@@ -46,7 +47,20 @@
         </div>
       </div>
     </transition>
-    <nuxt class="mt-80" />
+    <!-- Mobile -->
+    <transition name="fade" appear>
+      <div v-if="currIndex !== -1" class="container mt-100-responsive mb-80-custom d-md-none">
+        <div class="row pt-2">
+          <div class="col-md-12 font-sml">
+            <nuxt-link to="/projects">Back to Projects</nuxt-link> | 
+            <nuxt-link :to="'/projects/' + listProjects[prevIndex].name">View Previous</nuxt-link> | 
+            <nuxt-link :to="'/projects/' + listProjects[nextIndex].name">View Next →</nuxt-link> 
+          </div>
+        </div>
+      </div>
+    </transition>
+    <nuxt class="mt-100-responsive" />
+    <!-- Footer Detail -->
     <div class="footer">
       <div class="container mt-0 pt-5 pb-5 d-none d-md-block">
         <div class="row">
@@ -54,18 +68,15 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-8">
             <img src="/logo-light.png" class="w-25 pb-2" alt=""> <br>
             Professional Property Consultants & Services, Inc. © 2019 <br>
             CL# 927489 | Classification: C61, D63, D64
           </div>
-          <div class="col-md-6 text-right">
+          <div class="col-md-4 text-right">
             <a href="https://instagram.com/ppcsrestore" target="_blank">
               <img src="/social-instagram.svg" alt="instagram">
             </a>
-            <!-- <a href="https://twitter.com/ppcsrestore" target="_blank">
-              <img src="/social-twitter.svg" class="pl-4" alt="twitter">
-            </a> -->
             <a href="https://www.facebook.com/ppcsrestore" target="_blank">
               <img src="/social-facebook.svg" class="pl-4" alt="facebook">
             </a>
@@ -78,9 +89,6 @@
             <a href="https://instagram.com/ppcsrestore" target="_blank">
               <img src="/social-instagram.svg" alt="instagram">
             </a>
-            <!-- <a href="https://twitter.com/ppcsrestore" target="_blank">
-              <img src="/social-twitter.svg" class="pl-4" alt="twitter">
-            </a> -->
             <a href="https://www.facebook.com/ppcsrestore" target="_blank">
               <img src="/social-facebook.svg" class="pl-4" alt="facebook">
             </a>
@@ -252,6 +260,15 @@ a:hover {
 .bg-custom {
   background-color: #fafafa;
   border-bottom: 1px solid #d9d9d9;
+  /* height: 86px; */
+}
+
+.mt-100-responsive {
+  margin-top: 80px;
+}
+
+.pt-2-responsive {
+  padding-top: .5rem!important;
 }
 
 .fade-enter-active, .fade-leave-active {
@@ -266,7 +283,13 @@ a:hover {
   transition: opacity 3s;
 }
 
-.long-fade-enter, .long-fade-leave-to, .long-fade-leave-active {
+.long-fade-ente
+
+
+
+
+
+r, .long-fade-leave-to, .long-fade-leave-active {
   opacity: 0;
 }
 
@@ -306,4 +329,24 @@ a:hover {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .bg-custom {
+    background-color: #fafafa;
+    border-bottom: 1px solid #d9d9d9;
+    height: 110px;
+  }
+
+  .mt-100-responsive {
+    margin-top: 110px;
+  }
+
+  .pt-2-responsive {
+    padding-top: 0px!important;
+  }
+}
+
+
 </style>
