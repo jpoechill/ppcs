@@ -9,7 +9,7 @@ export const state = () => ({
                     The Millenium Tower in San Francisco opened to residents in 2009, and includes two buildings – one over 12 stories tall, and the other over 58 stories. In 2016, it was discovered and released to the public that the tower was sinking and leaning.
                 </p>
                 <p>
-                    Being DMU certified operators and trained industrial window cleaners, we were able to safely clean all of the exterior windows, and fix damaged areas due to the wind erosian, and the building's now infamous sink and lean.
+                    Being BMU certified operators and trained industrial window cleaners, we were able to safely clean all of the exterior windows, and fix damaged areas due to the wind erosian, and the building's now infamous sink and lean.
                 </p>
                 <p>
                     This project – for which we are able to complete multiple times a year – requires the highest level of safety, industry experience, and state certifications to complete.
@@ -47,35 +47,50 @@ export const state = () => ({
             thumbnail: '/_thumbnails/millenium.png',
             headerImages: [
                 '/_headerImgs/millenium-01.png',
-                // '/_headerImgs/millenium-02.png',
             ],
             reference: 'Restoration, Window Cleaning'
         },
-        // {
-        //     title: 'Dropbox',
-        //     name: 'dropbox',
-        //     shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
-        //     fullDescription: `
-        //         <p>
-        //             The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-        //             There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-        //             After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-        //         </p>
-        //     `,
-        //     url: '/projects/sitel-san-angelo',
-        //     client: 'Sitel Corporation',
-        //     location: 'San Angelo, TX',
-        //     featured: true,
-        //     recent: true,
-        //     type: ['weatherproofing'],
-        //     thumbnail: '/_thumbnails/sitel-corp.png',
-        //     headerImages: [
-        //         '/_headerImgs/sitel-01.jpg',
-        //         '/_headerImgs/sitel-02.jpg',
-        //         '/_headerImgs/sitel-03.jpg'
-        //     ],
-        //     reference: 'Historic Restoration'
-        // },
+        {
+            title: 'Dropbox',
+            name: 'dropbox',
+            shortDescription: 'No description.',
+            fullDescription: `
+                <p>
+                    No description.
+                </p>
+            `,
+            selectedImages: [
+                {
+                    url: '/_gallery/dropbox/dropbox-01.png'
+                },
+                {
+                    url: '/_gallery/dropbox/dropbox-02.png'
+                },
+                {
+                    url: '/_gallery/dropbox/dropbox-03.png'
+                },
+                {
+                    url: '/_gallery/dropbox/dropbox-04.png'
+                },
+                {
+                    url: '/_gallery/dropbox/dropbox-05.png'
+                },
+                {
+                    url: '/_gallery/dropbox/dropbox-06.png'
+                },
+            ],
+            url: '/projects/dropbox',
+            client: 'Dropbox',
+            location: 'San Francisco, CA',
+            featured: true,
+            recent: true,
+            type: ['weatherproofing'],
+            thumbnail: '/_thumbnails/dropbox.png',
+            headerImages: [
+                '/_headerImgs/dropbox.png',
+            ],
+            reference: 'Restoration'
+        },
         // {
         //     title: 'NOLA',
         //     name: 'millenium-tower',

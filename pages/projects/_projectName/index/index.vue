@@ -28,6 +28,20 @@
           <div v-html="currProject.fullDescription"></div>
         </div>
       </div>
+      <div v-if="currProject.selectedImages" class="container p-0">
+        <div class="row">
+          <div class="col-md-12">
+            <p>
+              <em>Selected Project Images</em>
+            </p>
+          </div>  
+        </div>
+        <div class="row">
+          <div v-for="(img, index) in currProject.selectedImages" :key="index" class="col-md-4">
+            <img :src="img.url" class="w-100 mb-4" alt="">
+          </div>
+        </div>
+      </div>
       <div class="row mb-4 mt-4">
         <div class="col-md-4">
           <h6>Client</h6>
