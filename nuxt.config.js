@@ -5,6 +5,8 @@ module.exports = {
 
   generate: {
     routes: [
+      "/projects/600-canal",
+      "/projects/dropbox",
       "/projects/millenium-tower",
       "/projects/sitel-san-angelo",
       "/projects/hamilton-palo-alto",
