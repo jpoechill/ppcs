@@ -17,27 +17,27 @@ export const state = () => ({
                 <p>
                     The Millenium Tower is the fourth tallest building in San Francisco overall.
                 </p>
-                <div class="row mt-4">
-                    <div class="col-md-4 mb-4">
-                        <img src="/_gallery/millenium/millenium-01.png" class="w-100">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="/_gallery/millenium/millenium-02.png" class="w-100">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="/_gallery/millenium/millenium-03.png" class="w-100">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="/_gallery/millenium/millenium-04.png" class="w-100">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="/_gallery/millenium/millenium-05.png" class="w-100">
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <img src="/_gallery/millenium/millenium-06.png" class="w-100">
-                    </div>
-                </div>
             `,
+            selectedImages: [
+                {
+                    url: '/_gallery/millenium/millenium-01.png'
+                },
+                {
+                    url: '/_gallery/millenium/millenium-02.png'
+                },
+                {
+                    url: '/_gallery/millenium/millenium-03.png'
+                },
+                {
+                    url: '/_gallery/millenium/millenium-04.png'
+                },
+                {
+                    url: '/_gallery/millenium/millenium-05.png'
+                },
+                {
+                    url: '/_gallery/millenium/millenium-06.png'
+                },
+            ],
             url: '/projects/millenium-tower',
             client: 'Millenium Tower',
             location: 'San Francisco, CA',
@@ -53,10 +53,19 @@ export const state = () => ({
         {
             title: 'Dropbox',
             name: 'dropbox',
-            shortDescription: 'No description.',
+            shortDescription: 'The Exchange building required exterior chemical cleaning due to calcium build-up and efflorescence.',
             fullDescription: `
                 <p>
-                    No description.
+                    The Exchange building in San Francisco, which houses Dropbox, holds the single largest lease for square footage in the history of the city at 736,000 sq. feet. 
+                </p>
+                <p>
+                    In a process that took 4 months, we were able to clean and restore its exterior walls that became damaged from calcium build-up and efflorescence.
+                </p>
+                <p>
+                    Particular to this project, we also washed and pre-casted all of the exterior panels.
+                </p>
+                <p>
+                    Along with restoring the building to its original condition, we removed graffiti on the lower levels of building and applied special anti-graffiti and rust removal coatings to protect its walls from future damage.
                 </p>
             `,
             selectedImages: [
@@ -80,47 +89,60 @@ export const state = () => ({
                 },
             ],
             url: '/projects/dropbox',
-            client: 'Dropbox',
+            client: 'The Exchange',
             location: 'San Francisco, CA',
             featured: true,
             recent: true,
             type: ['weatherproofing'],
             thumbnail: '/_thumbnails/dropbox.png',
             headerImages: [
-                '/_headerImgs/dropbox.png',
+                '/_headerImgs/dropbox-02.png',
             ],
-            reference: 'Restoration'
+            reference: 'Restoration, Window Cleaning, Anti-Graffiti'
+        },
+        {
+            title: '600 Canal',
+            name: '600-canal',
+            shortDescription: 'We worked on a weather proofing and restoration project for the University of New Orleans.',
+            fullDescription: `
+                <p>
+                    We worked on a project for the University of New Orleans, in Lousiana, during one of their most rainiest seasons on record. 
+                </p>
+                <p>
+                    Some of the details of this project included window restoration, ACM panel installations, and a full chemical cleaning. 
+                </p>
+                <p>
+                    We also placed 50,000 linear feet of caulking to further protect the exteriors of the building from rain and climate weather.
+                </p>
+                <p>
+                    This project was long term project, taking 8 months to complete. 
+                </p>
+            `,
+            selectedImages: [
+                {
+                    url: '/_gallery/600canal/600-canal-01.png'
+                },
+                {
+                    url: '/_gallery/600canal/600-canal-02.png'
+                },
+                {
+                    url: '/_gallery/600canal/600-canal-03.png'
+                },
+            ],
+            url: '/projects/600-canal',
+            client: '600 Canal',
+            location: 'New Orleans, LA',
+            featured: true,
+            recent: true,
+            type: ['restoration', 'weatherproofing'],
+            thumbnail: '/_thumbnails/600-canal.png',
+            headerImages: [
+                '/_headerImgs/600-canal.png',
+            ],
+            reference: 'Restoration, Window Cleaning, Weather Proofing'
         },
         // {
-        //     title: 'NOLA',
-        //     name: 'millenium-tower',
-        //     shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
-        //     fullDescription: `
-        //         <p>
-        //             The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-        //             There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-        //             After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-        //         </p>
-        //         <p>
-        //             Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
-        //         </p>
-        //     `,
-        //     url: '/projects/sitel-san-angelo',
-        //     client: 'Sitel Corporation',
-        //     location: 'San Angelo, TX',
-        //     featured: true,
-        //     recent: true,
-        //     type: ['historic'],
-        //     thumbnail: '/_thumbnails/sitel-corp.png',
-        //     headerImages: [
-        //         '/_headerImgs/sitel-01.jpg',
-        //         '/_headerImgs/sitel-02.jpg',
-        //         '/_headerImgs/sitel-03.jpg'
-        //     ],
-        //     reference: 'Historic Restoration'
-        // },
-        // {
-        //     title: 'Dallas, TX',
+        //     title: '1712 Commerce, Dallas, TX',
         //     name: 'millenium-tower',
         //     shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
         //     fullDescription: `
@@ -164,8 +186,8 @@ export const state = () => ({
             url: '/projects/sitel-san-angelo',
             client: 'Sitel Corporation',
             location: 'San Angelo, TX',
-            featured: true,
-            recent: true,
+            featured: false,
+            recent: false,
             type: ['historic'],
             thumbnail: '/_thumbnails/sitel-corp.png',
             headerImages: [
@@ -392,8 +414,8 @@ export const state = () => ({
                 '/_headerImgs/true-wind-02.jpg',
                 '/_headerImgs/true-wind-03.jpg',
             ],             
-            featured: true,
-            recent: true,
+            featured: false,
+            recent: false,
             type: ['restoration', 'glass'],
             thumbnail: '/_thumbnails/tw-capital-sf.png',
             reference: 'Restoration, Glass Cleaning'

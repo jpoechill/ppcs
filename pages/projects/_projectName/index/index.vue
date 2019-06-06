@@ -28,7 +28,7 @@
           <div v-html="currProject.fullDescription"></div>
         </div>
       </div>
-      <div v-if="currProject.selectedImages" class="container p-0">
+      <div v-if="currProject.selectedImages" class="container p-0 mt-4">
         <div class="row">
           <div class="col-md-12">
             <p>
