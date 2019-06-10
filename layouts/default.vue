@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-md-4 d-flex pt-2 align-items-middle justify-content-start">
             <nuxt-link to="/" @click.native="handleClick('')">
-              <img src="/logo-light.png" class="w-custom pb-1 pt-2" alt="">
+              <img src="/logo-light.svg" class="w-custom pb-1 pt-2 pr-4" alt="">
             </nuxt-link>
           </div>
           <div class="col-md-8 text-right pt-2 pb-1">
@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col-md-4 d-flex text-center align-items-middle justify-content-center">
             <nuxt-link to="/" @click.native="handleClick('')">
-              <img src="/logo-light.png" class="w-custom pb-2" alt="">
+              <img src="/logo-light.svg" class="w-custom pb-2" alt="">
             </nuxt-link>
           </div>
           <div class="col-md-8 text-center pt-1">
@@ -69,7 +69,7 @@
         </div>
         <div class="row">
           <div class="col-md-8">
-            <img src="/logo-light.png" class="w-25 pb-2" alt=""> <br>
+            <img src="/logo-light.svg" class="w-25 pb-2 pr-1" alt=""> <br>
             Professional Property Consultants & Services, Inc. © 2019 <br>
             CL# 927489 | Classification: C61, D63, D64
           </div>
@@ -93,7 +93,7 @@
               <img src="/social-facebook.svg" class="pl-4" alt="facebook">
             </a>
             <br><br>
-            <img src="/logo-light.png" class="w-25 pb-2" alt=""> <br>
+            <img src="/logo-light.svg" class="w-25 pb-2" alt=""> <br>
             PPC&S, Inc. © 2019 
           </div>
           <div class="col-md-6">
