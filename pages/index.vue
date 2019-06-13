@@ -36,12 +36,13 @@
       </div> -->
       <div class="container">
         <div class="row pt-4 pb-4">
-          <div class="col-md-12">
+          <div class="offset-md-1 col-md-10">
             <h5>The Leading Company for Building Restoration and Preservation </h5>
-            <p>
+            <p class="intro-text pt-2">
               Since 1983, it has been our mission to be the leading source for efficient building restoration and preservation services.
               When you choose PPC&S’s building preservation services, you are receiving services from our efficient and results driven professionals. We are proud to have an exemplary safety record and a work force of over 100 highly trained and dedicated men and women. 
-            </p></div>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -74,48 +75,50 @@
         </div>
       </div>
     </section>
-    <div class="container">
-      <div class="row pt-4">
-        <div class="col-md-6">
-          <h5>Recent Projects</h5>
+    <section class="section-recent-projects">
+      <div class="container">
+        <div class="row pt-4">
+          <div class="col-md-6">
+            <h5>Recent Projects</h5>
+          </div>
+          <div class="col-md-6 text-right font-sml">
+            <nuxt-link to="projects/recent">
+              View All →
+            </nuxt-link>
+          </div>
         </div>
-        <div class="col-md-6 text-right font-sml">
-          <nuxt-link to="projects/recent">
-            View All →
-          </nuxt-link>
+        <div class="row">
+          <div class="col-md-12">
+            <hr class="mt-0">
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <hr class="mt-0">
-        </div>
-      </div>
-      <div class="row">
-        <div v-for="(project, index) in recentProjects" :key="index" class="col-md-4 mb-custom">
-          <div class="services-panel h-100">
-            <div class="position-relative">
-              <nuxt-link :to="project.url">
-                <div class="position-absolute w-100 bg-overlay h-100">
-                </div>
-                <div>
-                  <div class="w-100 bg-light">
-                    <img :src="project.thumbnail" class="w-100" alt="">
+        <div class="row">
+          <div v-for="(project, index) in recentProjects" :key="index" class="col-md-4 mb-custom">
+            <div class="services-panel h-100">
+              <div class="position-relative">
+                <nuxt-link :to="project.url">
+                  <div class="position-absolute w-100 bg-overlay h-100">
                   </div>
-                </div>
-              </nuxt-link>
-            </div>
-            <div class="w-100 p-4">
-              <nuxt-link :to="project.url">
-                <h6 class="link-dark">{{ project.title }}</h6>
-              </nuxt-link>
-              <p>
-                {{ project.shortDescription }}
-              </p>
+                  <div>
+                    <div class="w-100 bg-light">
+                      <img :src="project.thumbnail" class="w-100" alt="">
+                    </div>
+                  </div>
+                </nuxt-link>
+              </div>
+              <div class="w-100 p-4">
+                <nuxt-link :to="project.url">
+                  <h6 class="link-dark">{{ project.title }}</h6>
+                </nuxt-link>
+                <p>
+                  {{ project.shortDescription }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- <section>
       <div class="container">
         <div class="row">
@@ -232,15 +235,12 @@ export default {
   opacity: .1;
 }
 
-.section-service {
-  background: #f6f6f6;
+.intro-text {
+  font-size: 18px !important;
+  color: #111 !important;
 }
 
-.bg-light-custom {
-  background: #f6f6f6;
-}
-
-.bg-light-custom {
+.section-service, .section-recent-projects, .bg-light-custom {
   background: #f6f6f6;
 }
 

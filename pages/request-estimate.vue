@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="container pb-5">
-      <div class="row">
-        <div class="col-md-12">
+    <div class="container pb-4">
+      <div class="row pb-3">
+        <div class="col-md-12 pt-4">
           <form action="https://formspree.io/ppcswww@gmail.com" method="POST">
             <h5>Request an Estimate</h5>
             <p class="pt-3 pb-0 mb-2">

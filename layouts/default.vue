@@ -17,7 +17,7 @@
             </h5>
           </div>
           <div class="col-md-3 text-center px-0 pt-2 pb-1">
-            <nuxt-link to="/contact/request">
+            <nuxt-link to="/request-estimate">
               <button class="fake-link form-control fake-link text-uppercase font-weight-bold btn-dark px-1">Request an Estimate</button>
             </nuxt-link>
           </div>
@@ -99,8 +99,11 @@
       <div class="container pt-3 pb-5 d-md-none">
         <div class="row">
           <div class="col-md-6">
+            <a href="https://twitter.com/ppcsrestore" target="_blank">
+              <img src="/social-twitter.svg" class="" alt="twitter">
+            </a>
             <a href="https://instagram.com/ppcsrestore" target="_blank">
-              <img src="/social-instagram.svg" alt="instagram">
+              <img src="/social-instagram.svg" class="pl-4" alt="instagram">
             </a>
             <a href="https://www.facebook.com/ppcsrestore" target="_blank">
               <img src="/social-facebook.svg" class="pl-4" alt="facebook">
@@ -297,7 +300,6 @@ a:hover {
   /* background-color: #74BFF0!important; */
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .3)!important;
 }
-
 
 .fake-link:hover {
   cursor: pointer;

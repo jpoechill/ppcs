@@ -105,7 +105,7 @@ export default {
   min-height: 600px;
 }
 
-.description-text p {
+.description-text p{
   font-size: 18px !important;
   color: #111 !important;
 }
