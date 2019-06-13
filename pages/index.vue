@@ -35,7 +35,7 @@
         <!-- </div>
       </div> -->
       <div class="container">
-        <div class="row pt-4 pb-5">
+        <div class="row pt-4 pb-4">
           <div class="col-md-12">
             <h5>The Leading Company for Building Restoration and Preservation </h5>
             <p>
@@ -233,7 +233,7 @@ export default {
 }
 
 .section-service {
-  /* background: #f6f6f6; */
+  background: #f6f6f6;
 }
 
 .bg-light-custom {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-custom">
     <div class="container">
       <div class="row pt-3 pb-4">
         <div class="col-md-12">
@@ -81,5 +81,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.bg-custom {
+  background-color: #f7f7f7!important;
+  border-bottom: none;
+}
 </style>

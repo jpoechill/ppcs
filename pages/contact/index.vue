@@ -1,9 +1,10 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-3">
+      <div class="row pt-3 pb-0">
         <div class="col-md-12">
-          <h3>About Us</h3>
+          <h3>Contact</h3>
+          <!-- <img src="desk.png" class="w-100 mb-3" alt=""> -->
           <p>
             We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
           </p>
@@ -32,47 +33,40 @@
         </div>
       </div>
     </div>
-    <div class="pb-5">
+    <div class="">
       <nuxt-child></nuxt-child>
     </div>
   </div>
 </template>
 
 <script>
+import Logo from '~/components/Logo.vue'
+
 export default {
+  components: {
+    Logo
+  },
   data() {
     return {
       links: [
         {
-          title: 'About',
-          name: 'about',
-          url: '/about',
+          title: 'Request an Estimate',
+          name: 'request',
+          url: '/contact/request',
+          isActive: false
+        },
+        {
+          title: 'Telephone',
+          name: 'telephone',
+          url: '/contact/telephone',
+          isActive: false
+        },
+        {
+          title: 'Locations',
+          name: 'contact',
+          url: '/contact',
           isActive: true
         },
-        {
-          title: 'History',
-          name: 'history',
-          url: '/about/history',
-          isActive: false
-        },
-        {
-          title: 'Leadership',
-          name: 'leadership',
-          url: '/about/leadership',
-          isActive: false
-        },
-        {
-          title: 'Safety',
-          name: 'safety',
-          url: '/about/safety',
-          isActive: false
-        },
-        {
-          title: 'Careers',
-          name: 'careers',
-          url: '/about/careers',
-          isActive: false
-        }
       ]
     }
   },
@@ -85,24 +79,28 @@ export default {
           link.isActive = false
         }
       })
-    }
-  },
-  watch: {
-    $route () {
-      // update active links
+    },
+    updatePath () {
       let path = this.$route.path.split('/')
       let fullPath = this.$route.path
 
-
-      if (path[1] === 'about') {
+      if (path[1] === 'contact') {
         this.links.forEach(function(link) {
           if (link.url === fullPath) {
             link.isActive = true
           } else {
             link.isActive = false
           }
-      })
+        })
       }
+    }
+  },
+  mounted() {
+    this.updatePath()
+  },
+  watch: {
+    $route () {
+      this.updatePath()
     }
   },
   transition: 'fade'
@@ -110,4 +108,8 @@ export default {
 </script>
 
 <style>
+input, textarea {
+  border-radius: 18px!important;
+  padding-left: 18px!important;
+}
 </style>

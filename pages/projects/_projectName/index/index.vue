@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="container mh-custom">
-      <div class="row mb-0-responsive pt-2-responsive pb-32">
-        <div class="col-md-12">
+  <div class="mh-custom bg-white pb-4">
+    <div class="w-100">
+      <div class="row mb-0-responsive bg-white pt-2-responsive pb-32">
+        <div class="col-md-12 bg-white">
           <div v-if="currProject.headerImages.length === 1">
             <img :src="currProject.headerImages[0]" class="w-100 mb-3" alt="">
           </div>
@@ -24,8 +24,18 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-          <h3 class="pb-1">{{ currProject.title }}</h3>
-          <div v-html="currProject.fullDescription"></div>
+          <div class="container">
+            <div class="row">
+              <div class="offset-md-1 col-md-10">
+                <div class="m-auto">
+                  <h3 class="pb-1">{{ currProject.title }}</h3>
+                  <div class="description-text" v-html="currProject.fullDescription"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
         </div>
       </div>
       <div v-if="currProject.selectedImages" class="container p-0 mt-4">
@@ -42,24 +52,26 @@
           </div>
         </div>
       </div>
-      <div class="row mb-4 mt-4">
-        <div class="col-md-4">
-          <h6>Client</h6>
-          <p>
-            {{ currProject.client }}
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h6>Location</h6>
-          <p>
-            {{ currProject.location }}
-          </p>
-        </div>
-        <div class="col-md-4">
-          <h6>Project Type</h6>
-          <p>
-            {{ currProject.reference }}
-          </p>
+      <div class="container">
+        <div class="row mb-4 mt-4">
+          <div class="col-md-4">
+            <h6>Client</h6>
+            <p>
+              {{ currProject.client }}
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h6>Location</h6>
+            <p>
+              {{ currProject.location }}
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h6>Project Type</h6>
+            <p>
+              {{ currProject.reference }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -88,8 +100,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .mh-custom {
   min-height: 600px;
+}
+
+.description-text p {
+  font-size: 18px !important;
+  color: #111 !important;
 }
 </style>

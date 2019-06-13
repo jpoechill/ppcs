@@ -1,19 +1,11 @@
 <template>
   <div>
     <div class="container">
-      <div class="row pt-3 pb-0">
-        <div class="col-md-12">
-          <h3>Contact</h3>
-          <!-- <img src="desk.png" class="w-100 mb-3" alt=""> -->
-          <p>
-            We are an experienced and licensed contracting company that offers top notch building restoration and preservation services. We know how important it is for your building or property to look perfect on the outside. It is our priority to be experts in all the latest methods and utilize only state-of-the-art technology to provide superior building preservation services.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-        <div class="row pt-3">
-          <div class="col-md-6 mb-2">
+        <div class="row pt-0 pb-5">
+          <div class="col-md-12">
+            <h5>Locations</h5>
+          </div>
+          <div class="col-md-6 pt-2 mb-2">
             <div class="w-100 pt-2">
               <h5>San Francisco</h5>
               <p>

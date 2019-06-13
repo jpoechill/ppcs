@@ -100,7 +100,7 @@ module.exports = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://ppc-restore.com/covers/vegas.png'
+        content: 'https://ppc-restore.com/covers/millenium-02.png'
       },
     ],
     link: [
