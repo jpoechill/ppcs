@@ -64,7 +64,11 @@
             <div class="services-panel h-100">
               <div class="w-100 bg-light">
                 <nuxt-link :to="service.url">
-                  <img :src="service.img" class="w-100" alt="">
+                  <div class="d-block position-relative overflow-hidden w-100" style="padding-top: 61%">
+                    <div class="position-absolute" style="top: 0; right: 0; left: 0; bottom: 0;">
+                      <img :src="service.img" class="w-100" alt="">
+                    </div>
+                  </div>
                 </nuxt-link>
               </div>
               <div class="w-100 p-4">
@@ -104,9 +108,9 @@
                 <nuxt-link :to="project.url">
                   <div class="position-absolute w-100 bg-overlay h-100">
                   </div>
-                  <div>
-                    <div class="w-100 bg-light">
-                      <img :src="project.thumbnail" class="w-100" alt="">
+                  <div class="d-block position-relative overflow-hidden w-100" style="padding-top: 61%">
+                    <div class="position-absolute" style="top: 0; right: 0; left: 0; bottom: 0;">
+                      <img :src="project.thumbnail" class="w-100">
                     </div>
                   </div>
                 </nuxt-link>

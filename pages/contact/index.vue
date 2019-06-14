@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <div class="container pt-3">
+    <!-- <div class="container pt-3">
         <div class="row pt-0">
           <div class="col-md-12">
             <h5>Telephone</h5>
@@ -77,9 +77,9 @@
             </div>
           </div>
         </div>
-    </div>
+    </div> -->
     <!-- Desktop -->
-    <!-- <div class="container d-none d-md-block">
+    <div class="container d-none d-md-block">
       <div class="row pt-4">
         <div class="col-md-12 text-center pb-1 letter-spacing">
           <h5 class="font-light">
@@ -88,9 +88,9 @@
           <hr>
         </div>
       </div>
-    </div> -->
+    </div>
     <!-- Mobile -->
-    <!-- <div class="container d-md-none">
+    <div class="container d-md-none">
       <div class="row pt-4">
         <div class="col-md-12 text-center pb-0">
           <h5 class="font-light">
@@ -102,7 +102,7 @@
     </div>
     <div class="">
       <nuxt-child></nuxt-child>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -117,15 +117,9 @@ export default {
     return {
       links: [
         {
-          title: 'Request an Estimate',
-          name: 'request',
-          url: '/contact/request',
-          isActive: false
-        },
-        {
           title: 'Telephone',
-          name: 'telephone',
-          url: '/contact/telephone',
+          name: 'phone',
+          url: '/contact/phone',
           isActive: false
         },
         {

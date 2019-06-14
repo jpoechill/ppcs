@@ -7,7 +7,7 @@
           </div>
           <div class="col-md-12 pt-3 pb-5">
             <p>
-              Please reach us directly by telephone at: 415-555-555. 
+              Please reach us directly by phone at: 1-888-772-2448. 
             </p>
             <p>
               Our hours are 9am-5pm, Monday through Friday.

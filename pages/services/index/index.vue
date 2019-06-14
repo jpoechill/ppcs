@@ -10,7 +10,7 @@
               </nuxt-link>
             </div>
             <div class="w-100 p-4">
-              <nuxt-link to="/services/historic-restoration">
+              <nuxt-link :to="service.url">
                 <h6>{{ service.title }}</h6>
               </nuxt-link>
               <p>

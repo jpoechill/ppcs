@@ -2,9 +2,9 @@
   <div>
     <div class="container">
         <div class="row pt-0 pb-5">
-          <div class="col-md-12">
+          <!-- <div class="col-md-12">
             <h5>Locations</h5>
-          </div>
+          </div> -->
           <div class="col-md-6 pt-2 mb-2">
             <div class="w-100 pt-2">
               <h5>San Francisco</h5>

@@ -93,10 +93,6 @@ export default {
   font-weight: 500;
 }
 
-h5 a {
-  padding: 10px;
-}
-
 .bg-custom {
   background-color: #f7f7f7!important;
   border-bottom: none;

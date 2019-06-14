@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-custom fixed-top">
+    <div v-bind:class="{ 'nav-hidden': toggleNav }" class="bg-custom fixed-top">
       <!-- Navigation -->
       <!-- Desktop -->
       <div class="container pt-2 pb-2 d-none d-md-block">
@@ -127,6 +127,8 @@ import { mapMutations } from 'vuex'
 export default {
   data() {
     return {
+      toggleNav: false,
+      scrollPos: 0,
       links: [
         {
           title: 'About',
@@ -187,6 +189,9 @@ export default {
       return this.$store.state.allWork
     }
   },
+  deactivate () {
+    // window.removeEventListener('scroll', this.handleScroll);
+  },
   mounted () {
     let currPath = this.$route.path.split('/')[1]
 
@@ -195,8 +200,33 @@ export default {
         link.isActive = true
       }
     })
+
+    // window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
+    handleScroll () {
+      let prevScroll = this.scrollPos
+      let currScroll = window.scrollY
+      
+      // if (currScroll <= prevScroll) {
+      //   this.toggleNav = !this.toggleNav
+      // }
+
+      if (currScroll <= prevScroll) {
+        // console.log('Going up')
+        this.toggleNav = false;
+
+        // this.showOverlay = false
+      } else {
+        // console.log('Going down')
+        this.toggleNav = true;
+
+        // this.showOverlay = true
+      }
+
+
+      this.scrollPos = window.scrollY
+    },
     handleClick(linkName) {
       this.links.forEach(function(link) {
         if (link.name === linkName) {
@@ -214,6 +244,10 @@ export default {
 body, html {
   font-size: 18px;
   background-color: none;
+}
+
+.nav-hidden {
+  top: -100px;
 }
 
 p, ul li, .font-sml {
@@ -245,6 +279,7 @@ a:hover {
 
 .header-links {
   color: #111;
+  padding: 10px;
 }
 
 .header-links:hover {
@@ -276,6 +311,7 @@ a:hover {
 .bg-custom {
   background-color: #fafafa;
   border-bottom: 1px solid #d9d9d9;
+  transition: .24s ease-in-out;
   /* height: 86px; */
 }
 
