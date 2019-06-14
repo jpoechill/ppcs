@@ -141,34 +141,6 @@ export const state = () => ({
             ],
             reference: 'Restoration, Window Cleaning, Weather Proofing'
         },
-        // {
-        //     title: '1712 Commerce, Dallas, TX',
-        //     name: 'millenium-tower',
-        //     shortDescription: 'We are contracted to clean the exteriors windows of the renowned Millenium Tower.',
-        //     fullDescription: `
-        //         <p>
-        //             The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
-        //             There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
-        //             After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
-        //         </p>
-        //         <p>
-        //             Once our weatherproofing procedure was complete, we then applied an elastomeric coating to make the building aesthetically pleasing and also provided a complete window cleaning to finish it off.
-        //         </p>
-        //     `,
-        //     url: '/projects/sitel-san-angelo',
-        //     client: 'Sitel Corporation',
-        //     location: 'San Angelo, TX',
-        //     featured: true,
-        //     recent: true,
-        //     type: ['historic'],
-        //     thumbnail: '/_thumbnails/sitel-corp.png',
-        //     headerImages: [
-        //         '/_headerImgs/sitel-01.jpg',
-        //         '/_headerImgs/sitel-02.jpg',
-        //         '/_headerImgs/sitel-03.jpg'
-        //     ],
-        //     reference: 'Historic Restoration'
-        // },
         {
             title: 'Sitel Corporation',
             name: 'sitel-san-angelo',
@@ -177,6 +149,8 @@ export const state = () => ({
                 <p>
                     The Sitel Building in San Angelo, Texas had been through decades of harsh weather and needed our services to help preserve their structure.
                     There were many leaks penetrating into the building, so in turn, we removed all old caulking and replaced the backing rods throughout the property.
+                </p>
+                <p>
                     After the removal of the deteriorated joints we then prepped, re-caulked, and wet glazed the entire building to stop all leaks and completely weatherproof the structure.
                 </p>
                 <p>
@@ -191,9 +165,25 @@ export const state = () => ({
             type: ['historic'],
             thumbnail: '/_thumbnails/sitel-corp.png',
             headerImages: [
-                '/_headerImgs/sitel-01.jpg',
-                '/_headerImgs/sitel-02.jpg',
-                '/_headerImgs/sitel-03.jpg'
+                '/_headerImgs/sitel-04.png'
+            ],
+            selectedImagesBy2: [
+                {
+                    url: '/_gallery/sitel/sitel-gallery-04.png'
+                }, 
+                {
+                    url: '/_gallery/sitel/sitel-gallery-05.png'
+                }
+            ],
+            selectedImages: [{
+                url: '/_gallery/sitel/sitel-gallery-01.png'
+              },
+              {
+                url: '/_gallery/sitel/sitel-gallery-02.png'
+              },
+              {
+                url: '/_gallery/sitel/sitel-gallery-03.png'
+              },
             ],
             reference: 'Historic Restoration'
         },

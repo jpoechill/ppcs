@@ -4,7 +4,12 @@
       <!-- <div class="container">
         <div class="row"> -->
           <!-- <div class="col-md-12 pt-0"> -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="container-fixed-ratio"> 
+              <div class="content-fixed-ratio overflow-hidden d-flex align-items-center">
+                <video class="w-100" autoplay muted loop src="https://player.vimeo.com/external/312895181.sd.mp4?s=2d29fcdbc7b110e80d0cf3c8bee7a75843bb9625&amp;profile_id=164&amp;oauth2_token_id=57447761" style=""></video>
+              </div> 
+            </div>
+            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -29,16 +34,16 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
-            </div>
+            </div> -->
             <!-- <img src="covers/vegas.png" class="w-100 pt-3" alt=""> -->
           <!-- </div> -->
         <!-- </div>
       </div> -->
       <div class="container">
-        <div class="row pt-4 pb-4">
-          <div class="offset-md-1 col-md-10">
+        <div class="row pt-4 pb-5">
+          <div class="col-md-12">
             <h5>The Leading Company for Building Restoration and Preservation </h5>
-            <p class="intro-text pt-2">
+            <p class="pt-2">
               Since 1983, it has been our mission to be the leading source for efficient building restoration and preservation services.
               When you choose PPC&S’s building preservation services, you are receiving services from our efficient and results driven professionals. We are proud to have an exemplary safety record and a work force of over 100 highly trained and dedicated men and women. 
             </p>
@@ -119,15 +124,6 @@
         </div>
       </div>
     </section>
-    <!-- <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            Request a Free Estimate
-          </div>
-        </div>
-      </div>
-    </section> -->
     <section class="bg-white">
       <div class="container pb-4 mt-4">
         <div class="row pt-4">
@@ -270,6 +266,21 @@ export default {
 
 .mb-80-custom {
   margin-bottom: -80px;
+}
+
+.container-fixed-ratio {
+  
+   position: relative;
+   width: 100%;
+   padding-top: 40%; /* 16:9 Aspect Ratio */
+}
+
+.content-fixed-ratio {
+   position:  absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
 }
 
 @media only screen and (max-width: 768px) {

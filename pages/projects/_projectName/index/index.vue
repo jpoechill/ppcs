@@ -1,8 +1,8 @@
 <template>
-  <div class="mh-custom bg-white pb-4">
+  <div class="mh-custom overflow-hidden bg-white pb-4">
     <div class="w-100">
       <div class="row mb-0-responsive bg-white pt-2-responsive pb-32">
-        <div class="col-md-12 bg-white">
+        <div class="col-md-12 pr-0 overflow-hidden bg-white">
           <div v-if="currProject.headerImages.length === 1">
             <img :src="currProject.headerImages[0]" class="w-100 mb-3" alt="">
           </div>
@@ -33,18 +33,21 @@
                 </div>
               </div>
             </div>
-
           </div>
-          
         </div>
       </div>
-      <div v-if="currProject.selectedImages" class="container p-0 mt-4">
+      <div v-if="currProject.selectedImages" class="container  mt-4">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 pr-2">
             <p>
               <em>Selected Project Images</em>
             </p>
           </div>  
+        </div>
+        <div v-if="currProject.selectedImagesBy2" class="row">
+          <div v-for="(img, index) in currProject.selectedImagesBy2" :key="index" class="col-md-6">
+            <img :src="img.url" class="w-100 mb-4" alt="">
+          </div>
         </div>
         <div class="row">
           <div v-for="(img, index) in currProject.selectedImages" :key="index" class="col-md-4">
@@ -106,7 +109,7 @@ export default {
 }
 
 .description-text p{
-  font-size: 18px !important;
+  font-size: 16px !important;
   color: #111 !important;
 }
 </style>
