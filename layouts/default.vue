@@ -279,6 +279,9 @@ a:hover {
 
 .header-links {
   color: #111;
+}
+
+h5 a {
   padding: 10px;
 }
 
