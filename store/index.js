@@ -1,45 +1,45 @@
 export const state = () => ({
     allWork: [
-        {
-            title: 'US Post Office',
-            name: 'stanford-knight-center',
-            shortDescription: 'We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.',
-            fullDescription: `
-                <p>
-                    We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.
-                </p>
-            `,
-            selectedImages: [
-                {
-                    url: '/_gallery/usps/usps-01.png'
-                },
-                {
-                    url: '/_gallery/usps/usps-02.png'
-                },
-                {
-                    url: '/_gallery/usps/usps-03.png'
-                }
-            ],
-            // selectedImagesByTwo: [
-            //     {
-            //         url: '/_gallery/usps/usps-01.png'
-            //     },
-            //     {
-            //         url: '/_gallery/usps/usps-03.png'
-            //     },
-            // ],
-            url: '/projects/stanford-knight-center',
-            client: 'Walters & Wolfe',
-            location: 'San Francisco, CA',
-            featured: true,
-            recent: true,
-            type: ['restoration', 'glass'],
-            thumbnail: '/_thumbnails/usps-01.jpg',
-            headerImages: [
-                '/_headerImgs/usps-01.png',
-            ],
-            reference: 'Restoration, Window Cleaning'
-        },
+        // {
+        //     title: 'US Post Office',
+        //     name: 'stanford-knight-center',
+        //     shortDescription: 'We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.',
+        //     fullDescription: `
+        //         <p>
+        //             We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.
+        //         </p>
+        //     `,
+        //     selectedImages: [
+        //         {
+        //             url: '/_gallery/usps/usps-01.png'
+        //         },
+        //         {
+        //             url: '/_gallery/usps/usps-02.png'
+        //         },
+        //         {
+        //             url: '/_gallery/usps/usps-03.png'
+        //         }
+        //     ],
+        //     // selectedImagesByTwo: [
+        //     //     {
+        //     //         url: '/_gallery/usps/usps-01.png'
+        //     //     },
+        //     //     {
+        //     //         url: '/_gallery/usps/usps-03.png'
+        //     //     },
+        //     // ],
+        //     url: '/projects/stanford-knight-center',
+        //     client: 'Walters & Wolfe',
+        //     location: 'San Francisco, CA',
+        //     featured: true,
+        //     recent: true,
+        //     type: ['restoration', 'glass'],
+        //     thumbnail: '/_thumbnails/usps-01.jpg',
+        //     headerImages: [
+        //         '/_headerImgs/usps-01.png',
+        //     ],
+        //     reference: 'Restoration, Window Cleaning'
+        // },
         {
             title: 'Stanford Knight Center',
             name: 'stanford-knight-center',
@@ -81,9 +81,55 @@ export const state = () => ({
             reference: 'Restoration, Window Cleaning'
         },
         {
+            title: '600 Canal',
+            name: '600-canal',
+            shortDescription: 'We worked on a weather proofing and restoration project for the University of New Orleans.',
+            fullDescription: `
+                <p>
+                    We worked on a project for the University of New Orleans, in Lousiana, during one of their most rainiest seasons on record. 
+                </p>
+                <p>
+                    Some of the details of this project included window restoration, ACM panel installations, and a full chemical cleaning. 
+                </p>
+                <p>
+                    We also placed 50,000 linear feet of caulking to further protect the exteriors of the building from rain and climate weather.
+                </p>
+                <p>
+                    This project was long term project, taking 8 months to complete. 
+                </p>
+            `,
+            selectedImages: [
+                {
+                    url: '/_gallery/600canal/600-canal-01.png'
+                },
+                {
+                    url: '/_gallery/600canal/600-canal-02.png'
+                },
+                {
+                    url: '/_gallery/600canal/600-canal-03.png'
+                },
+            ],
+            url: '/projects/600-canal',
+            client: '600 Canal',
+            location: 'New Orleans, LA',
+            featured: true,
+            recent: true,
+            type: ['restoration', 'weatherproofing'],
+            thumbnail: '/_thumbnails/600-canal.png',
+            headerImages: [
+                '/_headerImgs/600-canal.png',
+            ],
+            reference: 'Restoration, Window Cleaning, Weather Proofing'
+        },
+        {
             title: 'Millenium Tower',
             name: 'millenium-tower',
             shortDescription: 'We are contracted to clean and fix cracks in the exteriors windows of the renowned Millenium Tower.',
+            medDescription: `
+                <p>
+                    The Millenium Tower in San Francisco opened to residents in 2009, and includes two buildings – one over 12 stories tall, and the other over 58 stories. In 2016, it was discovered and released to the public that the tower was sinking and leaning.
+                </p>
+            `,
             fullDescription: `
                 <p>
                     The Millenium Tower in San Francisco opened to residents in 2009, and includes two buildings – one over 12 stories tall, and the other over 58 stories. In 2016, it was discovered and released to the public that the tower was sinking and leaning.
@@ -121,6 +167,7 @@ export const state = () => ({
             url: '/projects/millenium-tower',
             client: 'Millenium Tower',
             location: 'San Francisco, CA',
+            hero: true,
             featured: true,
             recent: true,
             type: ['restoration'],
@@ -179,47 +226,6 @@ export const state = () => ({
                 '/_headerImgs/dropbox-02.png',
             ],
             reference: 'Restoration, Window Cleaning, Anti-Graffiti'
-        },
-        {
-            title: '600 Canal',
-            name: '600-canal',
-            shortDescription: 'We worked on a weather proofing and restoration project for the University of New Orleans.',
-            fullDescription: `
-                <p>
-                    We worked on a project for the University of New Orleans, in Lousiana, during one of their most rainiest seasons on record. 
-                </p>
-                <p>
-                    Some of the details of this project included window restoration, ACM panel installations, and a full chemical cleaning. 
-                </p>
-                <p>
-                    We also placed 50,000 linear feet of caulking to further protect the exteriors of the building from rain and climate weather.
-                </p>
-                <p>
-                    This project was long term project, taking 8 months to complete. 
-                </p>
-            `,
-            selectedImages: [
-                {
-                    url: '/_gallery/600canal/600-canal-01.png'
-                },
-                {
-                    url: '/_gallery/600canal/600-canal-02.png'
-                },
-                {
-                    url: '/_gallery/600canal/600-canal-03.png'
-                },
-            ],
-            url: '/projects/600-canal',
-            client: '600 Canal',
-            location: 'New Orleans, LA',
-            featured: true,
-            recent: true,
-            type: ['restoration', 'weatherproofing'],
-            thumbnail: '/_thumbnails/600-canal.png',
-            headerImages: [
-                '/_headerImgs/600-canal.png',
-            ],
-            reference: 'Restoration, Window Cleaning, Weather Proofing'
         },
         {
             title: 'Sitel Corporation',
@@ -340,8 +346,8 @@ export const state = () => ({
             url: '/projects/hilton-waco',
             client: 'Hilton Hotel',
             location: 'Waco, TX',        
-            featured: false,
-            recent: false,
+            featured: true,
+            recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/hilton-hotel-waco.png',
             headerImages: [
@@ -384,8 +390,8 @@ export const state = () => ({
             url: '/projects/samsung-mountain-view',
             client: 'Walters & Wolf',
             location: 'Mountain View, CA',
-            featured: false,
-            recent: false,
+            featured: true,
+            recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/samsung-mountain-view.png',
             headerImages: [

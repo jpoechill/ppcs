@@ -15,17 +15,20 @@
           </div>
         </div>
         <div class="row">
-          <div v-for="(project, index) in featuredProjects" :key="index" class="col-md-12 mb-3">
+          <div v-for="(project, index) in heroProject" :key="index" class="col-md-12 mb-3">
             <div class="services-panel w-100 h-100 d-none d-md-block">
-              <div class="d-inline-block" style="width: 60%">
-                <img :src="project.thumbnail" class="w-100">
+              <div class="d-inline-block bg-img-cover h-100" style="width: 60%; min-height: 350px;" :style="'background: url(' + project.thumbnail + ') no-repeat center center; background-size: cover;'">
+                <!-- <img :src="project.thumbnail" class="w-100"> -->
               </div>
-              <div class="float-right p-4 h-100" style="width: 40%;">
+              <div class="float-right px-4 pt-4 pb-0 h-100" style="width: 40%;">
                 <nuxt-link :to="project.url">
                   <h6 class="link-dark">{{ project.title }}</h6>
                 </nuxt-link>
+                <div v-html="project.medDescription"></div>
                 <p>
-                  {{ project.shortDescription }}
+                  <nuxt-link :to="project.url" style="color: #333;"> 
+                    Learn more...
+                  </nuxt-link>
                 </p>
               </div>
             </div>
@@ -208,9 +211,9 @@ export default {
         return project.recent
       }).slice(0, 6)
     },
-    featuredProjects () {
+    heroProject () {
       return this.$store.state.allWork.filter(function (project) {
-        return project.featured
+        return project.hero
       }).slice(0, 1)
     },
     allWork () {
@@ -333,6 +336,14 @@ export default {
    position: relative;
    width: 100%;
    padding-top: 40%; /* 16:9 Aspect Ratio */
+}
+
+.bg-img-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
 }
 
 .content-fixed-ratio {
