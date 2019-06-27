@@ -1,14 +1,119 @@
 <template>
   <div>
+    <section class="section-recent-projects">
+      <div class="container">
+        <div class="row pt-4 mb-2">
+          <div class="col-md-6">
+            <h5>Featured Work</h5>
+          </div>
+          <div class="col-md-6 text-right font-sml">
+            <nuxt-link to="projects/recent">
+              View All →
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <hr class="mt-0"> -->
+          </div>
+        </div>
+        <div class="row">
+          <div v-for="(project, index) in featuredProjects" :key="index" class="col-md-4 mb-custom">
+            <div class="services-panel h-100">
+              <div class="position-relative">
+                <nuxt-link :to="project.url">
+                  <div class="position-absolute w-100 bg-overlay h-100">
+                  </div>
+                  <div class="d-block position-relative overflow-hidden w-100" style="padding-top: 61%">
+                    <div class="position-absolute" style="top: 0; right: 0; left: 0; bottom: 0;">
+                      <img :src="project.thumbnail" class="w-100">
+                    </div>
+                  </div>
+                </nuxt-link>
+              </div>
+              <div class="w-100 p-4">
+                <nuxt-link :to="project.url">
+                  <h6 class="link-dark">{{ project.title }}</h6>
+                </nuxt-link>
+                <p>
+                  {{ project.shortDescription }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-recent-projects">
+      <div class="container">
+        <div class="row pt-4 mb-2">
+          <div class="col-md-6">
+            <h5>Recent Projects</h5>
+          </div>
+          <div class="col-md-6 text-right font-sml">
+            <nuxt-link to="projects/recent">
+              View All →
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <hr class="mt-0"> -->
+          </div>
+        </div>
+        <div class="row">
+          <div v-for="(project, index) in recentProjects" :key="index" class="col-md-4 mb-custom">
+            <div class="services-panel h-100">
+              <div class="position-relative">
+                <nuxt-link :to="project.url">
+                  <div class="position-absolute w-100 bg-overlay h-100">
+                  </div>
+                  <div class="d-block position-relative overflow-hidden w-100" style="padding-top: 61%">
+                    <div class="position-absolute" style="top: 0; right: 0; left: 0; bottom: 0;">
+                      <img :src="project.thumbnail" class="w-100">
+                    </div>
+                  </div>
+                </nuxt-link>
+              </div>
+              <div class="w-100 p-4">
+                <nuxt-link :to="project.url">
+                  <h6 class="link-dark">{{ project.title }}</h6>
+                </nuxt-link>
+                <p>
+                  {{ project.shortDescription }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="bg-white">
+      <div class="container mt-4">
+        <div class="row pt-4">
+          <div class="col-md-6">
+            <h5>Client List</h5>
+          </div>
+          <div class="col-md-6 text-right">
+            <!-- <nuxt-link to="/clients">View All</nuxt-link> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <img src="construction-logos.png" class="w-100" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-light-custom">
       <!-- <div class="container">
         <div class="row"> -->
           <!-- <div class="col-md-12 pt-0"> -->
-            <div class="container-fixed-ratio"> 
+            <!-- <div class="container-fixed-ratio"> 
               <div class="content-fixed-ratio overflow-hidden d-flex align-items-center">
                 <video class="w-100" autoplay muted loop src="https://player.vimeo.com/external/312895181.sd.mp4?s=2d29fcdbc7b110e80d0cf3c8bee7a75843bb9625&amp;profile_id=164&amp;oauth2_token_id=57447761" style=""></video>
               </div> 
-            </div>
+            </div> -->
             <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -40,9 +145,9 @@
         <!-- </div>
       </div> -->
       <div class="container">
-        <div class="row pt-4 pb-5">
-          <div class="col-md-12">
-            <h5>The Leading Company for Building Restoration and Preservation </h5>
+        <div class="row pt-5 pb-5">
+          <div class="col-md-12 px-4 text-center">
+            <h5>PPCS is the Leading Company for Building Restoration and Preservation </h5>
             <p class="pt-2">
               Since 1983, it has been our mission to be the leading source for efficient building restoration and preservation services.
               When you choose PPC&S’s building preservation services, you are receiving services from our efficient and results driven professionals. We are proud to have an exemplary safety record and a work force of over 100 highly trained and dedicated men and women. 
@@ -51,29 +156,28 @@
         </div>
       </div>
     </section>
-    <section class="section-service">
+    <!-- <section class="section-service">
       <div class="container">
         <div class="row pt-5">
-          <div class="col-md-12">
+          <div class="col-md-12 pb-3">
             <h5>Services</h5>
-            <hr>
           </div>
         </div>
         <div class="row">
           <div v-for="(service, index) in services" :key="index" class="col-md-4 mb-custom">
-            <div class="services-panel h-100">
+            <div class="services-panel h-100 text-center">
               <div class="w-100 bg-light">
                 <nuxt-link :to="service.url">
-                  <div class="d-block position-relative overflow-hidden w-100" style="padding-top: 61%">
+                  <div class="d-block position-relative overflow-hidden w-100" style="padding-top: 0%">
                     <div class="position-absolute" style="top: 0; right: 0; left: 0; bottom: 0;">
                       <img :src="service.img" class="w-100" alt="">
                     </div>
                   </div>
                 </nuxt-link>
               </div>
-              <div class="w-100 p-4">
+              <div class="w-100 h-100 p-4 d-flex justify-content-center align-items-center">
                 <nuxt-link to="/services/historic-restoration">
-                  <h6>{{ service.title }}</h6>
+                  <h6 class="mb-0">{{ service.title }}</h6>
                 </nuxt-link>
                 <p>
                   {{ service.description }}
@@ -83,68 +187,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="section-recent-projects">
-      <div class="container">
-        <div class="row pt-4">
-          <div class="col-md-6">
-            <h5>Recent Projects</h5>
-          </div>
-          <div class="col-md-6 text-right font-sml">
-            <nuxt-link to="projects/recent">
-              View All →
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <hr class="mt-0">
-          </div>
-        </div>
-        <div class="row">
-          <div v-for="(project, index) in recentProjects" :key="index" class="col-md-4 mb-custom">
-            <div class="services-panel h-100">
-              <div class="position-relative">
-                <nuxt-link :to="project.url">
-                  <div class="position-absolute w-100 bg-overlay h-100">
-                  </div>
-                  <div class="d-block position-relative overflow-hidden w-100" style="padding-top: 61%">
-                    <div class="position-absolute" style="top: 0; right: 0; left: 0; bottom: 0;">
-                      <img :src="project.thumbnail" class="w-100">
-                    </div>
-                  </div>
-                </nuxt-link>
-              </div>
-              <div class="w-100 p-4">
-                <nuxt-link :to="project.url">
-                  <h6 class="link-dark">{{ project.title }}</h6>
-                </nuxt-link>
-                <p>
-                  {{ project.shortDescription }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-white">
-      <div class="container pb-4 mt-4">
-        <div class="row pt-4">
-          <div class="col-md-6 pt-4">
-            <h5>Client List</h5>
-          </div>
-          <div class="col-md-6 text-right">
-            <!-- <nuxt-link to="/clients">View All</nuxt-link> -->
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <img src="construction-logos.png" class="w-100" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -156,6 +199,11 @@ export default {
     recentProjects () {
       return this.$store.state.allWork.filter(function (project) {
         return project.recent
+      }).slice(0, 6)
+    },
+    featuredProjects () {
+      return this.$store.state.allWork.filter(function (project) {
+        return project.featured
       }).slice(0, 3)
     },
     allWork () {
@@ -248,12 +296,13 @@ export default {
   background-color: #fff;
   box-shadow: 6px 6px 14px rgba(0, 0, 0, .075);
   border-radius: 10px;
-  overflow: hidden;    
+  overflow: hidden; 
+  /* border: 1px solid #ccc;    */
   /* -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
     -ms-transition: 1s ease-in-out;
     -o-transition: 1s ease-in-out; */
-    transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .services-panel:hover {
@@ -285,6 +334,15 @@ export default {
    left: 0;
    bottom: 0;
    right: 0;
+}
+
+
+.custom-border {
+  border: 1px solid #ddd;
+}
+
+.no-box-shadow {
+  box-shadow: none!important;
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,6 +1,86 @@
 export const state = () => ({
     allWork: [
         {
+            title: 'US Post Office',
+            name: 'stanford-knight-center',
+            shortDescription: 'We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.',
+            fullDescription: `
+                <p>
+                    We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.
+                </p>
+            `,
+            selectedImages: [
+                {
+                    url: '/_gallery/usps/usps-01.png'
+                },
+                {
+                    url: '/_gallery/usps/usps-02.png'
+                },
+                {
+                    url: '/_gallery/usps/usps-03.png'
+                }
+            ],
+            // selectedImagesByTwo: [
+            //     {
+            //         url: '/_gallery/usps/usps-01.png'
+            //     },
+            //     {
+            //         url: '/_gallery/usps/usps-03.png'
+            //     },
+            // ],
+            url: '/projects/stanford-knight-center',
+            client: 'Walters & Wolfe',
+            location: 'San Francisco, CA',
+            featured: true,
+            recent: true,
+            type: ['restoration', 'glass'],
+            thumbnail: '/_thumbnails/usps-01.jpg',
+            headerImages: [
+                '/_headerImgs/usps-01.png',
+            ],
+            reference: 'Restoration, Window Cleaning'
+        },
+        {
+            title: 'Stanford Knight Center',
+            name: 'stanford-knight-center',
+            shortDescription: 'We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.',
+            fullDescription: `
+                <p>
+                    We restored and detailed the exterior windows of the Stanford Knight Center, in Palo Alto, CA.
+                </p>
+            `,
+            selectedImages: [
+                {
+                    url: '/_gallery/stanford-knight/stanford-knight-01.png'
+                },
+                {
+                    url: '/_gallery/stanford-knight/stanford-knight-02.png'
+                },
+                {
+                    url: '/_gallery/stanford-knight/stanford-knight-03.png'
+                }
+            ],
+            selectedImagesByTwo: [
+                {
+                    url: '/_gallery/stanford-knight/stanford-knight-04.png'
+                },
+                {
+                    url: '/_gallery/stanford-knight/stanford-knight-05.png'
+                },
+            ],
+            url: '/projects/stanford-knight-center',
+            client: 'Walters & Wolfe',
+            location: 'Palo Alto, CA',
+            featured: true,
+            recent: true,
+            type: ['restoration', 'glass'],
+            thumbnail: '/_thumbnails/stanford-knight-01.png',
+            headerImages: [
+                '/_headerImgs/standford-knight-center-01.png',
+            ],
+            reference: 'Restoration, Window Cleaning'
+        },
+        {
             title: 'Millenium Tower',
             name: 'millenium-tower',
             shortDescription: 'We are contracted to clean and fix cracks in the exteriors windows of the renowned Millenium Tower.',
@@ -167,7 +247,7 @@ export const state = () => ({
             headerImages: [
                 '/_headerImgs/sitel-04.png'
             ],
-            selectedImagesBy2: [
+            selectedImagesByTwo: [
                 {
                     url: '/_gallery/sitel/sitel-gallery-04.png'
                 }, 
@@ -209,7 +289,7 @@ export const state = () => ({
             client: 'Sitel Corporation',
             location: 'San Angelo, TX',      
             featured: false,
-            recent: true,
+            recent: false,
             type: ['restoration'],
             thumbnail: '/_thumbnails/hyatt-regency-bird-01.png',
             headerImages: [
@@ -237,7 +317,7 @@ export const state = () => ({
             url: '/projects/panama-stanford',
             client: 'Stanford University',
             location: 'Palo Alto, CA',           
-            featured: true,
+            featured: false,
             recent: true,
             type: ['restoration'],
             thumbnail: '/_thumbnails/408-panama-stanford.png',
@@ -260,8 +340,8 @@ export const state = () => ({
             url: '/projects/hilton-waco',
             client: 'Hilton Hotel',
             location: 'Waco, TX',        
-            featured: true,
-            recent: true,
+            featured: false,
+            recent: false,
             type: ['restoration'],
             thumbnail: '/_thumbnails/hilton-hotel-waco.png',
             headerImages: [

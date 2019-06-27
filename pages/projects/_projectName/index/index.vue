@@ -1,8 +1,8 @@
 <template>
-  <div class="mh-custom overflow-hidden bg-white pb-4">
+  <div class="mh-custom overflow-hidden bg-light-custom pb-4">
     <div class="w-100">
-      <div class="row mb-0-responsive bg-white pt-2-responsive pb-32">
-        <div class="col-md-12 pr-0 overflow-hidden bg-white">
+      <div class="row mb-0-responsive pt-2-responsive pb-32">
+        <div class="col-md-12 pr-0 overflow-hidden">
           <div v-if="currProject.headerImages.length === 1">
             <img :src="currProject.headerImages[0]" class="w-100 mb-3" alt="">
           </div>
@@ -44,8 +44,8 @@
             </p>
           </div>  
         </div>
-        <div v-if="currProject.selectedImagesBy2" class="row">
-          <div v-for="(img, index) in currProject.selectedImagesBy2" :key="index" class="col-md-6">
+        <div v-if="currProject.selectedImagesByTwo" class="row">
+          <div v-for="(img, index) in currProject.selectedImagesByTwo" :key="index" class="col-md-6">
             <img :src="img.url" class="w-100 mb-4" alt="">
           </div>
         </div>

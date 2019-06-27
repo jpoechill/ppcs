@@ -1,6 +1,50 @@
 <template>
   <div>
-    <div v-bind:class="{ 'nav-hidden': toggleNav }" class="bg-custom fixed-top">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div>
+    <div class="container px-4">
+      <form action="https://formspree.io/ppcswww@gmail.com" method="POST">
+        <div class="row pb-1">
+          <div class="col-md-12 pt-3">
+              <h5>PPCS | Request an Estimate</h5>
+              <p class="pt-3 pb-0 mb-2">
+                Who are you?
+              </p>
+              <input type="text" name="Name" placeholder="John Smith, General Manager" class="form-control w-100">
+              <p class="pt-3 pb-0 mb-2">
+                Who do you represent?
+              </p>
+              <input type="text" name="Company" placeholder="The White House – USA" class="form-control w-100">
+              <p class="pt-3 pb-0 mb-2">
+                Where is your building, or worksite located (city, state)?
+              </p>
+              <input type="text" name="Location" placeholder="Washington D.C, MD" class="form-control w-100">
+              <p class="pt-3 pb-0 mb-2">
+                What is your concern, or what do you need to have restored?
+              </p>
+              <textarea rows="4" name="Description" placeholder="Tell us about your building, what services you might need, or what expertise you might currently require." class="form-control w-100"></textarea>
+              <p class="pt-3 pb-0 mb-2">
+                Lastly, how can we contact you?
+              </p>
+              <input type="text" name="Contact" placeholder="john.smith@gmail.com, or phone at 415-555-5555" class="form-control w-100">
+          </div>
+        </div>
+        <div class="row pb-4">
+          <div class="offset-md-2 col-md-8 text-center">
+            <button type="submit" class="mx-auto px-5 fake-link text-uppercase font-weight-bold btn-dark py-1 mt-3">
+              Request An Estimate
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    <div v-bind:class="{ 'nav-hidden': toggleNav }" class="bg-white fixed-top">
       <!-- Navigation -->
       <!-- Desktop -->
       <div class="container pt-2 pb-2 d-none d-md-block">
@@ -17,9 +61,13 @@
             </h5>
           </div>
           <div class="col-md-3 text-center px-0 pt-2 pb-1">
-            <nuxt-link to="/request-estimate">
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Request an Estimate
+            </button> -->
+            <button data-toggle="modal" data-target="#exampleModal" class="fake-link form-control fake-link text-uppercase font-weight-bold btn-dark px-1">Request an Estimate</button>
+            <!-- <nuxt-link to="/request-estimate">
               <button class="fake-link form-control fake-link text-uppercase font-weight-bold btn-dark px-1">Request an Estimate</button>
-            </nuxt-link>
+            </nuxt-link> -->
           </div>
         </div>
       </div>
@@ -43,7 +91,7 @@
     <!-- Project Header Links -->
     <!-- Desktop -->
     <transition name="fade" appear>
-      <div class="bg-white w-100">
+      <div class="bg-light-custom w-100">
         <div v-if="currIndex !== -1" class="container mt-80 mb-80-custom d-none d-md-block">
           <div class="row pt-3">
             <div class="col-md-12 font-sml">
@@ -294,7 +342,8 @@ h5 a {
 }
 
 .footer {
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
+  background-color: white;
   font-size: 16px;
   color: #111;
 }
@@ -338,6 +387,20 @@ h5 a {
 .btn-dark:hover, btn-dark:active, btn-dark:focus {
   /* background-color: #74BFF0!important; */
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .3)!important;
+}
+
+/* Start Modal */
+
+.modal-dialog {
+  margin: none!important;
+}
+
+.modal {
+  padding: 0 15px;
+}
+
+.modal-dialog {
+  max-width: 1040px!important;
 }
 
 .fake-link:hover {
