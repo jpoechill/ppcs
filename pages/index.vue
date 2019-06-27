@@ -3,23 +3,33 @@
     <section class="section-recent-projects">
       <div class="container">
         <div class="row pt-4 mb-2">
-          <div class="col-md-6">
-            <h5>Featured Work</h5>
-          </div>
-          <div class="col-md-6 text-right font-sml">
-            <nuxt-link to="projects/recent">
-              View All →
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-12">
-            <!-- <hr class="mt-0"> -->
+            <div class="w-50 d-inline-block">
+              <h5>Featured Project</h5>
+            </div>
+            <div class="float-right">
+              <nuxt-link to="projects/recent">
+                View All →
+              </nuxt-link>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div v-for="(project, index) in featuredProjects" :key="index" class="col-md-4 mb-custom">
-            <div class="services-panel h-100">
+          <div v-for="(project, index) in featuredProjects" :key="index" class="col-md-12 mb-3">
+            <div class="services-panel w-100 h-100 d-none d-md-block">
+              <div class="d-inline-block" style="width: 60%">
+                <img :src="project.thumbnail" class="w-100">
+              </div>
+              <div class="float-right p-4 h-100" style="width: 40%;">
+                <nuxt-link :to="project.url">
+                  <h6 class="link-dark">{{ project.title }}</h6>
+                </nuxt-link>
+                <p>
+                  {{ project.shortDescription }}
+                </p>
+              </div>
+            </div>
+            <div class="services-panel w-100 h-100 d-md-none">
               <div class="position-relative">
                 <nuxt-link :to="project.url">
                   <div class="position-absolute w-100 bg-overlay h-100">
@@ -47,18 +57,15 @@
     <section class="section-recent-projects">
       <div class="container">
         <div class="row pt-4 mb-2">
-          <div class="col-md-6">
-            <h5>Recent Projects</h5>
-          </div>
-          <div class="col-md-6 text-right font-sml">
-            <nuxt-link to="projects/recent">
-              View All →
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-12">
-            <!-- <hr class="mt-0"> -->
+            <div class="w-50 d-inline-block">
+              <h5>Recent Projects</h5>
+            </div>
+            <div class="float-right">
+              <nuxt-link to="projects/recent">
+                View All →
+              </nuxt-link>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -204,7 +211,7 @@ export default {
     featuredProjects () {
       return this.$store.state.allWork.filter(function (project) {
         return project.featured
-      }).slice(0, 3)
+      }).slice(0, 1)
     },
     allWork () {
       return this.$store.state.allWork.map(function (item) {
